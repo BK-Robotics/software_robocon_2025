@@ -40,7 +40,7 @@ The following constraints are built into the simulation:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/basketball-simulator.git
+   git clone https://github.com/BK-Robotics/software_robocon_2025/tree/7ca5c96fc6c6401cbb30024edbcd18f035e84087/Full%20robot%20calculation
    cd basketball-simulator
    ```
 
