@@ -10,7 +10,7 @@ BASKET_HEIGHT = 2430
 MAX_THROW_DISTANCE = 6000
 MIN_TRAJECTORY_HEIGHT = 6000  # Minimum height for trajectory
 ROBOT_HEIGHT = 1000  # Height of the robot's shooting mechanism
-BASKET_RADIUS = 225  # Radius of the basketball hoop
+BASKET_RADIUS = 450  # Radius of the basketball hoop
 MIN_ANGLE = 60  # Minimum launch angle in degrees
 MAX_VELOCITY = 15.0  # Maximum initial velocity in m/s
 
