@@ -20,10 +20,12 @@ def create_sliders(fig, init_velocity=9.0, init_angle=MIN_ANGLE):
         Tuple containing (velocity_slider, angle_slider)
     """
     slider_color = COLORS['slider_bg']
-    v0_slider_ax = plt.axes([0.25, 0.12, 0.65, 0.03], facecolor=slider_color)
-    angle_slider_ax = plt.axes([0.25, 0.07, 0.65, 0.03], facecolor=slider_color)
     
-    v0_slider = Slider(v0_slider_ax, 'Initial Velocity (m/s)', 1.0, MAX_VELOCITY, valinit=init_velocity, valstep=0.1)
+    # Changed width from 0.65 to 0.8, and adjusted x-position to 0.1 to center the sliders
+    v0_slider_ax = plt.axes([0.1, 0.12, 0.8, 0.03], facecolor=slider_color)
+    angle_slider_ax = plt.axes([0.1, 0.07, 0.8, 0.03], facecolor=slider_color)
+    
+    v0_slider = Slider(v0_slider_ax, 'Initial Velocity (m/s)', 1.0, MAX_VELOCITY, valinit=init_velocity, valstep=0.01)
     angle_slider = Slider(angle_slider_ax, f'Launch Angle (°) - Min: {MIN_ANGLE}°', 
                          MIN_ANGLE, 90, valinit=init_angle, valstep=0.5)
     

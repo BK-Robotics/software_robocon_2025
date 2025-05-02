@@ -137,7 +137,7 @@ def generate_trajectory_data(v0, angle_degrees, h0_m, target_distance_m):
         t_target = target_distance_m / vx0
         
         # Calculate points along trajectory
-        t = np.linspace(0, t_target * 1.2, num=100)  # Extra time to show full arc
+        t = np.linspace(0, t_target * 3, num=200)  # Extra time to show full arc
         x = vx0 * t
         y = h0_m + vy0 * t - 0.5 * g * t**2
         

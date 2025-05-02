@@ -11,7 +11,7 @@ MAX_THROW_DISTANCE = 6000
 MIN_TRAJECTORY_HEIGHT = 6000  # Minimum height for trajectory
 ROBOT_HEIGHT = 1000  # Height of the robot's shooting mechanism
 BASKET_RADIUS = 450  # Radius of the basketball hoop
-MIN_ANGLE = 60  # Minimum launch angle in degrees
+MIN_ANGLE = 30  # Minimum launch angle in degrees
 MAX_VELOCITY = 15.0  # Maximum initial velocity in m/s
 
 # Colors for visualization
@@ -39,4 +39,4 @@ HORIZONTAL_DISTANCE = math.sqrt(MAX_THROW_DISTANCE**2 - BASKET_HEIGHT**2)
 
 # Plot style settings
 def set_plot_style():
-    plt.style.use('seaborn-v0_8-whitegrid')
+    plt.style.use('seaborn-whitegrid')

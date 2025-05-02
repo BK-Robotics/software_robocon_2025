@@ -58,7 +58,24 @@ def plot_trajectory(ax, v0, angle_degrees, h0, target_distance, basket_height, b
         return "Invalid velocity", 0, 0, None, None
     
     # Plot trajectory
-    ax.plot(x, y, '-', color=COLORS['trajectory'], linewidth=3)
+    ax.plot(x, y, '-', color=COLORS['trajectory'], linewidth=1)
+    
+    # Find where the ball touches the ground (y=0)
+    landing_point_x = None
+    for i in range(len(y)-1):
+        if y[i] > 0 and y[i+1] <= 0:
+            # Linear interpolation to find the exact point where y=0
+            ratio = abs(y[i]) / abs(y[i+1] - y[i])
+            landing_point_x = x[i] + ratio * (x[i+1] - x[i])
+            break
+    
+    # Mark the landing point if found
+    if landing_point_x is not None:
+        ax.scatter(landing_point_x, 0, color='darkred', marker='v', s=100, zorder=5, label='Landing point')
+        ax.plot([landing_point_x, landing_point_x], [0, 0.2], 'darkred', linestyle='--', alpha=0.7)
+        ax.text(landing_point_x, 0.25, f"Landing: {landing_point_x:.2f} m",
+               color='darkred', fontsize=10, ha='center',
+               bbox=dict(facecolor='white', alpha=0.7, boxstyle='round,pad=0.2'))
     
     # Mark target position
     ax.axvline(x=target_distance_m, color='gray', linestyle='--', alpha=0.5)
@@ -169,7 +186,8 @@ def plot_trajectory(ax, v0, angle_degrees, h0, target_distance, basket_height, b
           bbox=dict(facecolor='white', alpha=0.7, boxstyle='round,pad=0.2'))
     
     # Set reasonable y axis limits
-    ax.set_ylim(0, max(min_height_m * 1.1, max(y) * 1.1))
+    ax.set_xlim(0, max(target_distance_m * 1.2, landing_point_x * 1.1 if landing_point_x else target_distance_m * 3))
+    ax.set_ylim(0, max(min_height_m * 1.2, max(y) * 1.2))
     
     ax.legend(loc='best')
     setup_trajectory_axis(ax)
