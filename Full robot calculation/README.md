@@ -54,7 +54,7 @@ The following constraints are built into the simulation:
 Run the simulator with:
 
 ```bash
-python main.py
+python3 main.py
 ```
 
 ### Basic Usage Guide:
