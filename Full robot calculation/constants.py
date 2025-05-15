@@ -7,12 +7,13 @@ import matplotlib.pyplot as plt
 COURT_WIDTH = 15000
 COURT_HEIGHT = 8000
 BASKET_HEIGHT = 2430
-MAX_THROW_DISTANCE = 6000
-MIN_TRAJECTORY_HEIGHT = 6000  # Minimum height for trajectory
+MAX_THROW_DISTANCE = 7000
+MIN_TRAJECTORY_HEIGHT = 3000  # Minimum height for trajectory
 ROBOT_HEIGHT = 1000  # Height of the robot's shooting mechanism
 BASKET_RADIUS = 450  # Radius of the basketball hoop
-MIN_ANGLE = 30  # Minimum launch angle in degrees
+MIN_ANGLE = 60  # Minimum launch angle in degrees
 MAX_VELOCITY = 15.0  # Maximum initial velocity in m/s
+X_OFFSET = 0.5  # X offset for the robot's position
 
 # Colors for visualization
 COLORS = {

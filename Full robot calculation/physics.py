@@ -111,42 +111,50 @@ def is_valid_trajectory(v0, angle_degrees, h0_m, target_distance_m, basket_heigh
     # Check if it's a basket
     return is_basket(v0, angle_degrees, h0_m, target_distance_m, basket_height_m, basket_radius_m)
 
-def generate_trajectory_data(v0, angle_degrees, h0_m, target_distance_m):
+
+def generate_trajectory_data(v0, angle_degrees, h0_m, target_distance_m, x_offset=0.0):
     """
-    Generate trajectory data points.
+    Generate trajectory data points with an additional x-axis offset.
     
     Args:
-        v0: Initial velocity in m/s
-        angle_degrees: Launch angle in degrees
-        h0_m: Initial height in meters
-        target_distance_m: Horizontal distance to target in meters
+        v0 (float): Initial velocity in m/s.
+        angle_degrees (float): Launch angle in degrees.
+        h0_m (float): Initial height in meters.
+        target_distance_m (float): Global horizontal target x coordinate in meters.
+        x_offset (float): Additional x-axis offset where the ball is launched.
         
     Returns:
-        Tuple containing (x_points, y_points, ball_height_at_target, max_height, time_to_target)
-        or (None, None, 0, 0, 0) if trajectory is invalid
+        Tuple (x_points, y_points, ball_height_at_target, max_height, t_target, x_max)
+        where x_max is the x coordinate at which max_height occurs.
+        If trajectory is invalid, returns (None, None, 0, 0, 0, 0).
     """
+    import numpy as np
+    import math
+
     g = 9.81  # Gravity acceleration in m/s²
+    angle_rad = math.radians(angle_degrees)
+    vx0 = v0 * math.cos(angle_rad)
+    vy0 = v0 * math.sin(angle_rad)
     
-    # Calculate trajectory
-    angle_rad = np.radians(angle_degrees)
-    vx0 = v0 * np.cos(angle_rad)
-    vy0 = v0 * np.sin(angle_rad)
-    
-    # Time to reach basket horizontally
-    if vx0 > 0:
-        t_target = target_distance_m / vx0
-        
-        # Calculate points along trajectory
-        t = np.linspace(0, t_target * 3, num=200)  # Extra time to show full arc
-        x = vx0 * t
-        y = h0_m + vy0 * t - 0.5 * g * t**2
-        
-        # Calculate ball height at target
-        ball_height_at_target = h0_m + vy0 * t_target - 0.5 * g * t_target**2
-        
-        # Calculate maximum height
-        max_height = calculate_max_height(v0, angle_degrees, h0_m)
-        
-        return x, y, ball_height_at_target, max_height, t_target
-    
-    return None, None, 0, 0, 0
+    # Adjust target distance to be relative to the launch x position.
+    effective_distance = target_distance_m - x_offset
+    if effective_distance <= 0 or vx0 <= 0:
+        return None, None, 0, 0, 0, 0
+
+    # Time required to reach the target x position relative to the launch point.
+    t_target = effective_distance / vx0
+
+    # Generate time points over the flight
+    t = np.linspace(0, t_target * 1.5, num=200)
+    x = x_offset + vx0 * t
+    y = h0_m + vy0 * t - 0.5 * g * t**2
+
+    ball_height_at_target = h0_m + vy0 * t_target - 0.5 * g * t_target**2
+
+    # Time to reach maximum height (vertical velocity = 0)
+    t_max = vy0 / g
+    max_height = h0_m + vy0 * t_max - 0.5 * g * t_max**2
+    # Compute the x coordinate for maximum height with offset
+    x_max = x_offset + vx0 * t_max
+
+    return x, y, ball_height_at_target, max_height, t_target, x_max

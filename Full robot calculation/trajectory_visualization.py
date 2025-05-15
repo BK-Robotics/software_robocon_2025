@@ -4,7 +4,7 @@ Functions for visualizing the basketball trajectories.
 import matplotlib.pyplot as plt
 from matplotlib.patches import Arc
 import numpy as np
-from constants import COLORS, MIN_TRAJECTORY_HEIGHT
+from constants import COLORS, MIN_TRAJECTORY_HEIGHT, X_OFFSET
 from physics import generate_trajectory_data, calculate_max_height
 
 def setup_trajectory_axis(ax):
@@ -49,8 +49,8 @@ def plot_trajectory(ax, v0, angle_degrees, h0, target_distance, basket_height, b
     min_height_m = min_height / 1000.0  # Minimum trajectory height in meters
     
     # Generate trajectory data
-    x, y, ball_height_at_target, max_height, t_target = generate_trajectory_data(
-        v0, angle_degrees, h0_m, target_distance_m)
+    x, y, ball_height_at_target, max_height, t_target, _ = generate_trajectory_data(
+    v0, angle_degrees, h0_m, target_distance_m, x_offset=X_OFFSET)
     
     if x is None:
         ax.set_title("Invalid trajectory parameters", fontsize=14, fontweight='bold', color=COLORS['warning'])
@@ -144,7 +144,7 @@ def plot_trajectory(ax, v0, angle_degrees, h0, target_distance, basket_height, b
         t_max = vy0 / g
         if t_max < t_target:  # Only if max height is reached before the target
             vx0 = v0 * np.cos(angle_rad)
-            x_max = vx0 * t_max
+            x_max = vx0 * t_max + X_OFFSET
             ax.scatter(x_max, max_height, color='purple', marker='o', s=50)
             ax.plot([x_max, x_max], [0, max_height], 'purple', linestyle='--', alpha=0.3)
     
@@ -154,25 +154,25 @@ def plot_trajectory(ax, v0, angle_degrees, h0, target_distance, basket_height, b
     angle_y_end = h0_m + arrow_length * np.sin(angle_rad)
     
     # Plot the indicator arrow
-    angle_indicator = ax.arrow(0, h0_m, angle_x_end, angle_y_end - h0_m,
+    angle_indicator = ax.arrow(X_OFFSET, h0_m, angle_x_end, angle_y_end - h0_m,
                              head_width=0.2, head_length=0.3,
                              fc='red', ec='red', width=0.05,
                              length_includes_head=True)
     
     # Add an arc to show the angle
     r = arrow_length / 3
-    angle_arc = Arc((0, h0_m), r*2, r*2,
+    angle_arc = Arc((X_OFFSET, h0_m), r*2, r*2,
                    theta1=0, theta2=angle_degrees,
                    color='red', lw=2)
     ax.add_patch(angle_arc)
     
     # Add text to show the angle value
-    ax.text(r/2, h0_m + r/2, f"{angle_degrees:.1f}°",
+    ax.text(r/2+X_OFFSET, h0_m + r/2, f"{angle_degrees:.1f}°",
             color='red', fontsize=10, ha='center', va='center',
             bbox=dict(facecolor='white', alpha=0.7, boxstyle='round,pad=0.2'))
     
     # Add launch point
-    ax.scatter(0, h0_m, color=COLORS['robot_color'], marker='o', s=80, zorder=5, label='Launch point')
+    ax.scatter(X_OFFSET, h0_m, color=COLORS['robot_color'], marker='o', s=80, zorder=5, label='Launch point')
     
     # Add velocity information
     ax.text(target_distance_m/2, h0_m/2, f"Velocity: {v0:.2f} m/s",
