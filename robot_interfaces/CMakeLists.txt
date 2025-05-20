@@ -24,6 +24,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/Control.srv"
   "srv/RequestCalculation.srv"
   "srv/RequestAction.srv"
+  "srv/BaseControl.srv"
 )
 
 add_executable(uart_node src/MCU_Interface.cpp)
