@@ -1,0 +1,147 @@
+[0.000000] (-) TimerEvent: {}
+[0.000222] (-) JobUnselected: {'identifier': 'astra_camera'}
+[0.000389] (-) JobUnselected: {'identifier': 'astra_camera_msgs'}
+[0.000407] (-) JobUnselected: {'identifier': 'gamepad_interface'}
+[0.000421] (-) JobUnselected: {'identifier': 'main_controller_pkg'}
+[0.000434] (-) JobUnselected: {'identifier': 'odrive_interface'}
+[0.000447] (-) JobUnselected: {'identifier': 'robot_bringup'}
+[0.000462] (robot_interfaces) JobQueued: {'identifier': 'robot_interfaces', 'dependencies': OrderedDict()}
+[0.000478] (robot_interfaces) JobStarted: {'identifier': 'robot_interfaces'}
+[0.006741] (robot_interfaces) JobProgress: {'identifier': 'robot_interfaces', 'progress': 'cmake'}
+[0.007246] (robot_interfaces) JobProgress: {'identifier': 'robot_interfaces', 'progress': 'build'}
+[0.007737] (robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ddon/software_robocon_2025/build/robot_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/ddon/software_robocon_2025/build/robot_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'vi:en'), ('USER', 'ddon'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ddon/ros2_ws_cpp/install/shooter_control/lib:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg/lib:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ddon'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/ddon'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '2063'), ('SYSTEMD_EXEC_PID', '2392'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '269172'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ddon/ros2_ws_cpp/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ddon'), ('JOURNAL_STREAM', '8:18732'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ddon'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ddon/miniconda3/bin:/home/ddon/miniconda3/condabin:/opt/ros/humble/bin:/home/ddon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ddon:@/tmp/.ICE-unix/2364,unix/Ddon:/tmp/.ICE-unix/2364'), ('INVOCATION_ID', '4f101de2979d491b9a20a636f10e1f08'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'vi_VN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ddon/ros2_ws_cpp/install/shooter_control:/home/ddon/ros2_ws_cpp/install/can_control_package:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg:/home/ddon/ros2_ws_cpp/install/odrive_can_cpp:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain:/home/ddon/ros2_ws_cpp/install/dual_sense_controller:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ddon/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:50c1fd55-2035-4748-8066-7156f24cfbcd'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ddon/software_robocon_2025/build/robot_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ddon/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ddon/ros2_ws_cpp/install/shooter_control/lib/python3.12/site-packages:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg/lib/python3.12/site-packages:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain/lib/python3.12/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('CONDA_PREFIX', '/home/ddon/miniconda3'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ddon/ros2_ws_cpp/install/shooter_control:/home/ddon/ros2_ws_cpp/install/can_control_package:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg:/home/ddon/ros2_ws_cpp/install/odrive_can_cpp:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain:/home/ddon/ros2_ws_cpp/install/dual_sense_controller:/opt/ros/humble')]), 'shell': False}
+[0.053952] (robot_interfaces) StdoutLine: {'line': b'[  1%] Built target robot_interfaces__cpp\n'}
+[0.054705] (robot_interfaces) StdoutLine: {'line': b'[ 12%] Built target robot_interfaces__rosidl_generator_c\n'}
+[0.064017] (robot_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_robot_interfaces\n'}
+[0.077956] (robot_interfaces) StdoutLine: {'line': b'[ 23%] Built target robot_interfaces__rosidl_typesupport_cpp\n'}
+[0.081930] (robot_interfaces) StdoutLine: {'line': b'[ 34%] Built target robot_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.082149] (robot_interfaces) StdoutLine: {'line': b'[ 45%] Built target robot_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.092503] (robot_interfaces) StdoutLine: {'line': b'[ 56%] Built target robot_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.094303] (robot_interfaces) StdoutLine: {'line': b'[ 67%] Built target robot_interfaces__rosidl_typesupport_c\n'}
+[0.095033] (robot_interfaces) StdoutLine: {'line': b'[ 79%] Built target robot_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.099818] (-) TimerEvent: {}
+[0.103895] (robot_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/uart_node.dir/src/MCU_Interface.cpp.o\x1b[0m\n'}
+[0.111111] (robot_interfaces) StdoutLine: {'line': b'[ 80%] Built target robot_interfaces\n'}
+[0.128434] (robot_interfaces) StdoutLine: {'line': b'[ 81%] Built target robot_interfaces__py\n'}
+[0.151415] (robot_interfaces) StdoutLine: {'line': b'[ 91%] Built target robot_interfaces__rosidl_generator_py\n'}
+[0.175486] (robot_interfaces) StdoutLine: {'line': b'[ 93%] Built target robot_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[0.177914] (robot_interfaces) StdoutLine: {'line': b'[ 98%] Built target robot_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.178205] (robot_interfaces) StdoutLine: {'line': b'[ 98%] Built target robot_interfaces__rosidl_typesupport_c__pyext\n'}
+[0.199905] (-) TimerEvent: {}
+[0.300192] (-) TimerEvent: {}
+[0.316957] (robot_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[0.338934] (robot_interfaces) StdoutLine: {'line': b'writing robot_interfaces.egg-info/PKG-INFO\n'}
+[0.339258] (robot_interfaces) StdoutLine: {'line': b'writing dependency_links to robot_interfaces.egg-info/dependency_links.txt\n'}
+[0.339491] (robot_interfaces) StdoutLine: {'line': b'writing top-level names to robot_interfaces.egg-info/top_level.txt\n'}
+[0.407408] (-) TimerEvent: {}
+[0.436188] (robot_interfaces) StdoutLine: {'line': b"reading manifest file 'robot_interfaces.egg-info/SOURCES.txt'\n"}
+[0.438075] (robot_interfaces) StdoutLine: {'line': b"writing manifest file 'robot_interfaces.egg-info/SOURCES.txt'\n"}
+[0.477532] (robot_interfaces) StdoutLine: {'line': b'[ 98%] Built target ament_cmake_python_build_robot_interfaces_egg\n'}
+[0.507489] (-) TimerEvent: {}
+[0.607861] (-) TimerEvent: {}
+[0.708145] (-) TimerEvent: {}
+[0.808400] (-) TimerEvent: {}
+[0.908659] (-) TimerEvent: {}
+[1.008910] (-) TimerEvent: {}
+[1.109219] (-) TimerEvent: {}
+[1.209478] (-) TimerEvent: {}
+[1.309728] (-) TimerEvent: {}
+[1.410003] (-) TimerEvent: {}
+[1.510258] (-) TimerEvent: {}
+[1.610518] (-) TimerEvent: {}
+[1.710790] (-) TimerEvent: {}
+[1.811098] (-) TimerEvent: {}
+[1.911389] (-) TimerEvent: {}
+[2.011616] (-) TimerEvent: {}
+[2.111854] (-) TimerEvent: {}
+[2.212089] (-) TimerEvent: {}
+[2.312356] (-) TimerEvent: {}
+[2.324340] (robot_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ddon/software_robocon_2025/robot_interfaces/src/MCU_Interface.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KUARTNode::UARTNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.324753] (robot_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ddon/software_robocon_2025/robot_interfaces/src/MCU_Interface.cpp:35:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<long int, std::ratio<1, 1000> >::duration(double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.324818] (robot_interfaces) StderrLine: {'line': b'   35 |         std::chrono::milliseconds(1.5\x1b[01;31m\x1b[K)\x1b[m\x1b[K, std::bind(&UARTNode::process_uart_queue, this)\n'}
+[2.324870] (robot_interfaces) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.324919] (robot_interfaces) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/mutex:39\x1b[m\x1b[K,\n'}
+[2.324966] (robot_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[2.325013] (robot_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[2.325059] (robot_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.325104] (robot_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ddon/software_robocon_2025/robot_interfaces/include/robot_interfaces/MCU_Interface.hpp:3\x1b[m\x1b[K,\n'}
+[2.325150] (robot_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ddon/software_robocon_2025/robot_interfaces/src/MCU_Interface.cpp:1\x1b[m\x1b[K:\n'}
+[2.325196] (robot_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/chrono:529:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Rep2, class _Period2, class> constexpr std::chrono::duration<_Rep, _Period>::duration(const std::chrono::duration<_Rep, _Period>&) [with _Rep2 = _Rep2; _Period2 = _Period2; <template-parameter-2-3> = <template-parameter-1-3>; _Rep = long int; _Period = std::ratio<1, 1000>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.325264] (robot_interfaces) StderrLine: {'line': b'  529 |           constexpr \x1b[01;36m\x1b[Kduration\x1b[m\x1b[K(const duration<_Rep2, _Period2>& __d)\n'}
+[2.325310] (robot_interfaces) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.325354] (robot_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/chrono:529:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.325398] (robot_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ddon/software_robocon_2025/robot_interfaces/src/MCU_Interface.cpp:35:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::chrono::duration<_Rep1, _Period1>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.325444] (robot_interfaces) StderrLine: {'line': b'   35 |         std::chrono::milliseconds(1.5\x1b[01;36m\x1b[K)\x1b[m\x1b[K, std::bind(&UARTNode::process_uart_queue, this)\n'}
+[2.325494] (robot_interfaces) StderrLine: {'line': b'      |                                      \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.325539] (robot_interfaces) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/mutex:39\x1b[m\x1b[K,\n'}
+[2.325583] (robot_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[2.325626] (robot_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[2.325670] (robot_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.325713] (robot_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ddon/software_robocon_2025/robot_interfaces/include/robot_interfaces/MCU_Interface.hpp:3\x1b[m\x1b[K,\n'}
+[2.325756] (robot_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ddon/software_robocon_2025/robot_interfaces/src/MCU_Interface.cpp:1\x1b[m\x1b[K:\n'}
+[2.325807] (robot_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/chrono:521:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Rep2, class> constexpr std::chrono::duration<_Rep, _Period>::duration(const _Rep2&) [with _Rep2 = _Rep2; <template-parameter-2-2> = <template-parameter-1-2>; _Rep = long int; _Period = std::ratio<1, 1000>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.325853] (robot_interfaces) StderrLine: {'line': b'  521 |           constexpr explicit \x1b[01;36m\x1b[Kduration\x1b[m\x1b[K(const _Rep2& __rep)\n'}
+[2.325896] (robot_interfaces) StderrLine: {'line': b'      |                              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.325938] (robot_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/chrono:521:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.325980] (robot_interfaces) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/move.h:57\x1b[m\x1b[K,\n'}
+[2.326023] (robot_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:59\x1b[m\x1b[K,\n'}
+[2.326065] (robot_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[2.326107] (robot_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[2.326154] (robot_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.326197] (robot_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ddon/software_robocon_2025/robot_interfaces/include/robot_interfaces/MCU_Interface.hpp:3\x1b[m\x1b[K,\n'}
+[2.326259] (robot_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ddon/software_robocon_2025/robot_interfaces/src/MCU_Interface.cpp:1\x1b[m\x1b[K:\n'}
+[2.326321] (robot_interfaces) StderrLine: {'line': b'/usr/include/c++/11/type_traits: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<bool _Cond, class _Tp> using __enable_if_t = typename std::enable_if::type [with bool _Cond = false; _Tp = void]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.326379] (robot_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2209:11:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ... _Cond> using _Require = std::__enable_if_t<std::__and_< <template-parameter-1-1> >::value> [with _Cond = {std::is_convertible<const double&, long int>, std::__or_<std::chrono::treat_as_floating_point<long int>, std::__not_<std::chrono::treat_as_floating_point<double> > >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.326442] (robot_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/chrono:518:27:\x1b[m\x1b[K   required from here\n'}
+[2.326503] (robot_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2205:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.326562] (robot_interfaces) StderrLine: {'line': b' 2205 |     using \x1b[01;31m\x1b[K__enable_if_t\x1b[m\x1b[K = typename enable_if<_Cond, _Tp>::type;\n'}
+[2.326611] (robot_interfaces) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.326660] (robot_interfaces) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/mutex:39\x1b[m\x1b[K,\n'}
+[2.326708] (robot_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[2.326757] (robot_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[2.326805] (robot_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.326853] (robot_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ddon/software_robocon_2025/robot_interfaces/include/robot_interfaces/MCU_Interface.hpp:3\x1b[m\x1b[K,\n'}
+[2.326901] (robot_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ddon/software_robocon_2025/robot_interfaces/src/MCU_Interface.cpp:1\x1b[m\x1b[K:\n'}
+[2.326950] (robot_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/chrono:514:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr std::chrono::duration<_Rep, _Period>::duration(const std::chrono::duration<_Rep, _Period>&) [with _Rep = long int; _Period = std::ratio<1, 1000>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.327001] (robot_interfaces) StderrLine: {'line': b'  514 |         \x1b[01;36m\x1b[Kduration\x1b[m\x1b[K(const duration&) = default;\n'}
+[2.327050] (robot_interfaces) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.327099] (robot_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/chrono:514:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::chrono::duration<long int, std::ratio<1, 1000> >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.327156] (robot_interfaces) StderrLine: {'line': b'  514 |         duration(\x1b[01;36m\x1b[Kconst duration&\x1b[m\x1b[K) = default;\n'}
+[2.327217] (robot_interfaces) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.327274] (robot_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/chrono:512:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<_Rep, _Period>::duration() [with _Rep = long int; _Period = std::ratio<1, 1000>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.327342] (robot_interfaces) StderrLine: {'line': b'  512 |         constexpr \x1b[01;36m\x1b[Kduration\x1b[m\x1b[K() = default;\n'}
+[2.327385] (robot_interfaces) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.327427] (robot_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/chrono:512:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 1 provided\n'}
+[2.412443] (-) TimerEvent: {}
+[2.512669] (-) TimerEvent: {}
+[2.612894] (-) TimerEvent: {}
+[2.713145] (-) TimerEvent: {}
+[2.813376] (-) TimerEvent: {}
+[2.913618] (-) TimerEvent: {}
+[3.013871] (-) TimerEvent: {}
+[3.114135] (-) TimerEvent: {}
+[3.214429] (-) TimerEvent: {}
+[3.314723] (-) TimerEvent: {}
+[3.415015] (-) TimerEvent: {}
+[3.515329] (-) TimerEvent: {}
+[3.615614] (-) TimerEvent: {}
+[3.715866] (-) TimerEvent: {}
+[3.816148] (-) TimerEvent: {}
+[3.916427] (-) TimerEvent: {}
+[4.016722] (-) TimerEvent: {}
+[4.117047] (-) TimerEvent: {}
+[4.219661] (-) TimerEvent: {}
+[4.319969] (-) TimerEvent: {}
+[4.420272] (-) TimerEvent: {}
+[4.520562] (-) TimerEvent: {}
+[4.620842] (-) TimerEvent: {}
+[4.721134] (-) TimerEvent: {}
+[4.821421] (-) TimerEvent: {}
+[4.921708] (-) TimerEvent: {}
+[5.008732] (robot_interfaces) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/uart_node.dir/build.make:76: CMakeFiles/uart_node.dir/src/MCU_Interface.cpp.o] Error 1\n'}
+[5.008979] (robot_interfaces) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/uart_node.dir/all] Error 2\n'}
+[5.009148] (robot_interfaces) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.011050] (robot_interfaces) CommandEnded: {'returncode': 2}
+[5.021488] (robot_interfaces) JobEnded: {'identifier': 'robot_interfaces', 'rc': 2}
+[5.021862] (-) TimerEvent: {}
+[5.031885] (-) EventReactorShutdown: {}

@@ -1,0 +1,30 @@
+[35m[1mConsolidate compiler generated dependencies of target gamepad_driver[0m
+[ 33%] Built target gamepad_driver
+[35m[1mConsolidate compiler generated dependencies of target robot_input_mapper[0m
+[ 66%] Built target robot_input_mapper
+[35m[1mConsolidate compiler generated dependencies of target gamepad_node[0m
+[100%] Built target gamepad_node
+-- Install configuration: ""
+-- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/include
+-- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/include/gamepad_interface
+-- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/include/gamepad_interface/mapper.hpp
+-- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/include/gamepad_interface/gamepad.hpp
+-- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/lib/libgamepad_driver.a
+-- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/lib/librobot_input_mapper.a
+-- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/lib/gamepad_interface/gamepad_node
+-- Set runtime path of "/home/ddon/software_robocon_2025/install/gamepad_interface/lib/gamepad_interface/gamepad_node" to ""
+-- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/share/ament_index/resource_index/package_run_dependencies/gamepad_interface
+-- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/share/ament_index/resource_index/parent_prefix_path/gamepad_interface
+-- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/environment/ament_prefix_path.sh
+-- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/environment/path.sh
+-- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/environment/path.dsv
+-- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/local_setup.bash
+-- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/local_setup.sh
+-- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/local_setup.zsh
+-- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/local_setup.dsv
+-- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/package.dsv
+-- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/share/ament_index/resource_index/packages/gamepad_interface
+-- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/cmake/gamepad_interfaceConfig.cmake
+-- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/cmake/gamepad_interfaceConfig-version.cmake
+-- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/package.xml

@@ -32,7 +32,7 @@ UARTNode::UARTNode() : Node("uart_node") {
 
     // setup a timer to process the UART queue every 2ms (because baudrate is 115200 so 12byte take 2ms is enough)
     uart_tx_timer_ = this->create_wall_timer(
-        std::chrono::milliseconds(1,5), std::bind(&UARTNode::process_uart_queue, this)
+        std::chrono::milliseconds(2), std::bind(&UARTNode::process_uart_queue, this)
     );
 
     send_initialization_commands();

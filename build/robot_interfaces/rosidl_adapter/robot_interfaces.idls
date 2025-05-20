@@ -1,0 +1,8 @@
+/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces:msg/BaseCMD.idl
+/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces:msg/IMU.idl
+/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces:srv/RotateBase.idl
+/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces:srv/PushBall.idl
+/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces:srv/Control.idl
+/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces:srv/RequestCalculation.idl
+/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces:srv/RequestAction.idl
+/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces:srv/BaseControl.idl
