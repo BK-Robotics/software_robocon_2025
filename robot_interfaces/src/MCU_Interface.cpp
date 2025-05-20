@@ -8,6 +8,8 @@ UARTNode::UARTNode() : Node("uart_node") {
         return;
     }
 
+    this->mode_state = 1;
+
     configure_port(uart_fd_, B115200);
 
     pub_imu_ = this->create_publisher<robot_interfaces::msg::IMU>("/imu", 10);
@@ -15,6 +17,11 @@ UARTNode::UARTNode() : Node("uart_node") {
     service_rotate_ = this->create_service<robot_interfaces::srv::RotateBase>(
         "/rotate_base",
         std::bind(&UARTNode::handle_rotate_service, this, std::placeholders::_1, std::placeholders::_2)
+    );
+
+    service_base_control_ = this->create_service<robot_interfaces::srv::BaseControl>(
+        "/base_control",
+        std::bind(&UARTNode::handle_base_control_service, this, std::placeholders::_1, std::placeholders::_2)
     );
 
     service_push_ball_ = this->create_service<robot_interfaces::srv::PushBall>(
@@ -91,12 +98,35 @@ void UARTNode::Senqueue_uart_packet(uint8_t cmd, const uint8_t* data8) {
 void UARTNode::process_uart_queue() {
     std::lock_guard<std::mutex> lock(uart_queue_mutex_);
 
-    if(!Suart_queue_.empty()) {
+    if(!SSuart_queue_.empty()) {
+        std::vector<uint8_t> frame = SSuart_queue_.front();
+        SSuart_queue_.pop();
+
+        if (SSuart_queue_.size() >= 3) {
+            RCLCPP_WARN(this->get_logger(), "SSUART queue is full, dropping packet.");
+            while(!SSuart_queue_.empty()) {
+                SSuart_queue_.pop();
+            }
+        }
+
+        write(uart_fd_, frame.data(), frame.size());
+
+        std::ostringstream oss;
+        oss << "UART TX [";
+        for (size_t i = 0; i < frame.size(); ++i) {
+            oss << "0x" << std::hex << std::uppercase << std::setw(2) << std::setfill('0')
+            << static_cast<int>(frame[i]);
+            if (i != frame.size() - 1) oss << " ";
+        }
+        oss << "]";
+        RCLCPP_INFO(this->get_logger(), "%s", oss.str().c_str());
+    }
+    else if(!Suart_queue_.empty()) {
         std::vector<uint8_t> frame = Suart_queue_.front();
         Suart_queue_.pop();
 
-        if (Suart_queue_.size() >= 3) {
-            RCLCPP_WARN(this->get_logger(), "UART queue is full, dropping packet.");
+        if (Suart_queue_.size() >= 5) {
+            RCLCPP_WARN(this->get_logger(), "SUART queue is full, dropping packet.");
             while(!Suart_queue_.empty()) {
                 Suart_queue_.pop();
             }
@@ -145,7 +175,8 @@ void UARTNode::send_initialization_commands() {
     std::vector<std::vector<uint8_t>> init_cmds = {
         {0x99, 0x01, 0x05, 0x71, 0x64, 0x00, 0x64, 0x00, 0x0A, 0x00, 0x00, 0x00},
         {0x99, 0x01, 0x00, 0x9B, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00},
-        {0x99, 0x01, 0x00, 0x9A, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
+        {0x99, 0x01, 0x00, 0x9A, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00},
+        {0x99, 0x01, 0x02, 0x9D, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
     };
     for (auto& frame : init_cmds){
         Suart_queue_.push(frame);
@@ -169,6 +200,7 @@ void UARTNode::handle_base_cmd(const robot_interfaces::msg::BaseCMD::SharedPtr m
 // cai rot nay la t thuc thi theo kieu assign nhe tai anh thinh gui theo kieu float.
 void UARTNode::handle_rotate_service(const std::shared_ptr<robot_interfaces::srv::RotateBase::Request> request,
                                      std::shared_ptr<robot_interfaces::srv::RotateBase::Response> response) {
+    SSuart_queue_.push(FRAME_ROTATE_MODE);
     float angle = request->angle;
     uint8_t data[8];
     float32_to_little_endian_8byte(angle, data);
@@ -176,7 +208,48 @@ void UARTNode::handle_rotate_service(const std::shared_ptr<robot_interfaces::srv
         data[i] = data[i-1];
     }
     data[0] = 0x04;
+
     Senqueue_uart_packet(0x10, data);
+    response->success = true;
+}
+
+void UARTNode::handle_base_control_service(
+    const std::shared_ptr<robot_interfaces::srv::BaseControl::Request> request,
+    std::shared_ptr<robot_interfaces::srv::BaseControl::Response> response) {
+    uint8_t cmd = request->cmd;
+    std::vector<std::vector<uint8_t>> frames;
+
+    switch (cmd) {
+        case 0: frames.push_back(FRAME_IDLE); break;
+        case 1: frames.push_back(FRAME_CLOSED_LOOP); break;
+        case 2: frames.push_back(FRAME_HOMING); break;
+        case 3: frames.push_back(FRAME_RESET_IMU); frames.push_back(FRAME_RESET_ENCODER); break;
+        case 4: frames.push_back(FRAME_CLEAR_ERRORS); break;
+        case 5: {
+            if (this->mode_state == 0) frames.push_back(FRAME_MANUAL_MODE);
+            else if (this->mode_state == 1) frames.push_back(FRAME_SEMI_AUTO_MODE);
+            this->mode_state = (this->mode_state + 1) % 2;
+            break;
+        }
+        case 6: frames.push_back(FRAME_AUTO_IDLE); break; // set up lai chu trinh 1
+        case 7: frames.push_back(FRAME_GO_BACK); break; // set up lai chu trinh 2
+        case 8: frames.push_back(FRAME_GO_STRAIGHT); break; // set up lai chu trinh 3
+        case 9: frames.push_back(FRAME_TURN_LEFT); break; // set up lai chu trinh 4
+        case 10: frames.push_back(FRAME_EMERGENCY_STOP); break;
+
+        default:
+            RCLCPP_WARN(this->get_logger(), "Unknown base_control cmd: %d", cmd);
+            response->success = false;
+            return;
+    }
+
+    {
+        std::lock_guard<std::mutex> lock(uart_queue_mutex_);
+        for (const auto& frame : frames) {
+            SSuart_queue_.push(frame);
+        }
+    }
+
     response->success = true;
 }
 
@@ -186,10 +259,12 @@ void UARTNode::handle_push_ball_service(const std::shared_ptr<robot_interfaces::
         response->success = false;
         return;
     }
-    std::vector<uint8_t> frame = {0x99, 0x02, 0x00, 0xA7, 0x0C, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+    std::vector<uint8_t> frame = FRAME_PUSH_BALL;
     std::lock_guard<std::mutex> lock(uart_queue_mutex_);
     Suart_queue_.push(frame);
     response->success = true;
+
+    this->mode_state = 0;
 }
 
 float UARTNode::convert_to_angle(uint8_t low, uint8_t high) {
