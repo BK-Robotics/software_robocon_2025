@@ -12,6 +12,10 @@
     "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces:srv/RequestAction.idl",
     "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces:srv/BaseControl.idl"
   ],
+  "ros_interface_dependencies": [
+    "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Time.idl"
+  ],
   "target_dependencies": [
     "/opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp",
     "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_cpp/__init__.py",
@@ -26,6 +30,8 @@
     "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces/srv/Control.idl",
     "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces/srv/RequestCalculation.idl",
     "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces/srv/RequestAction.idl",
-    "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces/srv/BaseControl.idl"
+    "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces/srv/BaseControl.idl",
+    "/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/humble/share/builtin_interfaces/msg/Time.idl"
   ]
 }

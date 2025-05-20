@@ -177,7 +177,7 @@ rosidl_typesupport_introspection_c/astra_camera_msgs/msg/detail/device_info__ros
 rosidl_typesupport_introspection_c/astra_camera_msgs/msg/detail/device_info__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/std_msgs/msg/UInt8.idl
 rosidl_typesupport_introspection_c/astra_camera_msgs/msg/detail/device_info__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ddon/software_robocon_2025/build/astra_camera_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
-	/home/ddon/miniconda3/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/ddon/software_robocon_2025/build/astra_camera_msgs/rosidl_typesupport_introspection_c__arguments.json
+	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/ddon/software_robocon_2025/build/astra_camera_msgs/rosidl_typesupport_introspection_c__arguments.json
 
 rosidl_typesupport_introspection_c/astra_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/astra_camera_msgs/msg/detail/device_info__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/astra_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_c.h

@@ -1,0 +1,631 @@
+[0.000000] (-) TimerEvent: {}
+[0.000428] (-) JobUnselected: {'identifier': 'astra_camera'}
+[0.000470] (-) JobUnselected: {'identifier': 'astra_camera_msgs'}
+[0.000485] (-) JobUnselected: {'identifier': 'gamepad_interface'}
+[0.000499] (-) JobUnselected: {'identifier': 'main_controller_pkg'}
+[0.000510] (-) JobUnselected: {'identifier': 'odrive_interface'}
+[0.000522] (-) JobUnselected: {'identifier': 'robot_bringup'}
+[0.000536] (robot_interfaces) JobQueued: {'identifier': 'robot_interfaces', 'dependencies': OrderedDict()}
+[0.000551] (robot_interfaces) JobStarted: {'identifier': 'robot_interfaces'}
+[0.006780] (robot_interfaces) JobProgress: {'identifier': 'robot_interfaces', 'progress': 'cmake'}
+[0.007049] (robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/ddon/software_robocon_2025/robot_interfaces', '-DPYTHON_EXECUTABLE=/usr/bin/python3.10', '-DCMAKE_INSTALL_PREFIX=/home/ddon/software_robocon_2025/install/robot_interfaces'], 'cwd': '/home/ddon/software_robocon_2025/build/robot_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'vi:en'), ('USER', 'ddon'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ddon/ros2_ws_cpp/install/shooter_control/lib:/home/ddon/ros2_ws_cpp/install/robot_interfaces/lib:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg/lib:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain/lib:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ddon'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/ddon/software_robocon_2025'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '2063'), ('SYSTEMD_EXEC_PID', '2392'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '829256'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ddon/ros2_ws_cpp/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ddon'), ('JOURNAL_STREAM', '8:18732'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ddon'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ddon/miniconda3/condabin:/opt/ros/humble/bin:/home/ddon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ddon:@/tmp/.ICE-unix/2364,unix/Ddon:/tmp/.ICE-unix/2364'), ('INVOCATION_ID', '4f101de2979d491b9a20a636f10e1f08'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'vi_VN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ddon/ros2_ws_cpp/install/shooter_control:/home/ddon/ros2_ws_cpp/install/robot_interfaces:/home/ddon/ros2_ws_cpp/install/robot_bringup:/home/ddon/ros2_ws_cpp/install/odrive_interface:/home/ddon/ros2_ws_cpp/install/can_control_package:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg:/home/ddon/ros2_ws_cpp/install/odrive_can_cpp:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain:/home/ddon/ros2_ws_cpp/install/gamepad_interface:/home/ddon/ros2_ws_cpp/install/dual_sense_controller:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ddon/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:ace1db7d-1eb3-403d-9b77-29c907b34c32'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ddon/software_robocon_2025/build/robot_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ddon/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ddon/ros2_ws_cpp/install/shooter_control/lib/python3.12/site-packages:/home/ddon/ros2_ws_cpp/install/robot_interfaces/lib/python3.12/site-packages:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg/lib/python3.12/site-packages:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain/lib/python3.12/site-packages:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs/lib/python3.12/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ddon/ros2_ws_cpp/install/shooter_control:/home/ddon/ros2_ws_cpp/install/robot_interfaces:/home/ddon/ros2_ws_cpp/install/robot_bringup:/home/ddon/ros2_ws_cpp/install/odrive_interface:/home/ddon/ros2_ws_cpp/install/can_control_package:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg:/home/ddon/ros2_ws_cpp/install/odrive_can_cpp:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain:/home/ddon/ros2_ws_cpp/install/gamepad_interface:/home/ddon/ros2_ws_cpp/install/dual_sense_controller:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs:/opt/ros/humble')]), 'shell': False}
+[0.047983] (robot_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.089864] (robot_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.095158] (robot_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099843] (-) TimerEvent: {}
+[0.147609] (robot_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.153587] (robot_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.153724] (robot_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.154020] (robot_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.156339] (robot_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199964] (-) TimerEvent: {}
+[0.213109] (robot_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.219385] (robot_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.219652] (robot_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.220019] (robot_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.222158] (robot_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300045] (-) TimerEvent: {}
+[0.358428] (robot_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.400184] (-) TimerEvent: {}
+[0.456397] (robot_interfaces) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.490882] (robot_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.495130] (robot_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.500244] (-) TimerEvent: {}
+[0.501889] (robot_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.511945] (robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.525391] (robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.562566] (robot_interfaces) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.564899] (robot_interfaces) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.600338] (-) TimerEvent: {}
+[0.631196] (robot_interfaces) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.654892] (robot_interfaces) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.685718] (robot_interfaces) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.692774] (robot_interfaces) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.700452] (-) TimerEvent: {}
+[0.747075] (robot_interfaces) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.747419] (robot_interfaces) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.799720] (robot_interfaces) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.800511] (-) TimerEvent: {}
+[0.800640] (robot_interfaces) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.846414] (robot_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.900607] (-) TimerEvent: {}
+[1.000888] (-) TimerEvent: {}
+[1.101096] (-) TimerEvent: {}
+[1.127497] (robot_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.201229] (-) TimerEvent: {}
+[1.301418] (-) TimerEvent: {}
+[1.378869] (robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.401538] (-) TimerEvent: {}
+[1.475395] (robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.492986] (robot_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3.10 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.494375] (robot_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.501603] (-) TimerEvent: {}
+[1.516003] (robot_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.516148] (robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3.10\n'}
+[1.516230] (robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.516278] (robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.535703] (robot_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.574342] (robot_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.601710] (-) TimerEvent: {}
+[1.611373] (robot_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[1.622458] (robot_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/ddon/software_robocon_2025/build/robot_interfaces\n'}
+[1.631841] (robot_interfaces) CommandEnded: {'returncode': 0}
+[1.632631] (robot_interfaces) JobProgress: {'identifier': 'robot_interfaces', 'progress': 'build'}
+[1.633590] (robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ddon/software_robocon_2025/build/robot_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/ddon/software_robocon_2025/build/robot_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'vi:en'), ('USER', 'ddon'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ddon/ros2_ws_cpp/install/shooter_control/lib:/home/ddon/ros2_ws_cpp/install/robot_interfaces/lib:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg/lib:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain/lib:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ddon'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/ddon/software_robocon_2025'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '2063'), ('SYSTEMD_EXEC_PID', '2392'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '829256'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ddon/ros2_ws_cpp/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ddon'), ('JOURNAL_STREAM', '8:18732'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ddon'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ddon/miniconda3/condabin:/opt/ros/humble/bin:/home/ddon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ddon:@/tmp/.ICE-unix/2364,unix/Ddon:/tmp/.ICE-unix/2364'), ('INVOCATION_ID', '4f101de2979d491b9a20a636f10e1f08'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'vi_VN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ddon/ros2_ws_cpp/install/shooter_control:/home/ddon/ros2_ws_cpp/install/robot_interfaces:/home/ddon/ros2_ws_cpp/install/robot_bringup:/home/ddon/ros2_ws_cpp/install/odrive_interface:/home/ddon/ros2_ws_cpp/install/can_control_package:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg:/home/ddon/ros2_ws_cpp/install/odrive_can_cpp:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain:/home/ddon/ros2_ws_cpp/install/gamepad_interface:/home/ddon/ros2_ws_cpp/install/dual_sense_controller:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ddon/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:ace1db7d-1eb3-403d-9b77-29c907b34c32'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ddon/software_robocon_2025/build/robot_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ddon/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ddon/ros2_ws_cpp/install/shooter_control/lib/python3.12/site-packages:/home/ddon/ros2_ws_cpp/install/robot_interfaces/lib/python3.12/site-packages:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg/lib/python3.12/site-packages:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain/lib/python3.12/site-packages:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs/lib/python3.12/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ddon/ros2_ws_cpp/install/shooter_control:/home/ddon/ros2_ws_cpp/install/robot_interfaces:/home/ddon/ros2_ws_cpp/install/robot_bringup:/home/ddon/ros2_ws_cpp/install/odrive_interface:/home/ddon/ros2_ws_cpp/install/can_control_package:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg:/home/ddon/ros2_ws_cpp/install/odrive_can_cpp:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain:/home/ddon/ros2_ws_cpp/install/gamepad_interface:/home/ddon/ros2_ws_cpp/install/dual_sense_controller:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs:/opt/ros/humble')]), 'shell': False}
+[1.664777] (robot_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.671867] (robot_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.678216] (robot_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_robot_interfaces\n'}
+[1.701800] (-) TimerEvent: {}
+[1.802053] (-) TimerEvent: {}
+[1.902332] (-) TimerEvent: {}
+[1.910872] (robot_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[1.911363] (robot_interfaces) StdoutLine: {'line': b'creating robot_interfaces.egg-info\n'}
+[1.911593] (robot_interfaces) StdoutLine: {'line': b'writing robot_interfaces.egg-info/PKG-INFO\n'}
+[1.911763] (robot_interfaces) StdoutLine: {'line': b'writing dependency_links to robot_interfaces.egg-info/dependency_links.txt\n'}
+[1.911907] (robot_interfaces) StdoutLine: {'line': b'writing top-level names to robot_interfaces.egg-info/top_level.txt\n'}
+[1.912154] (robot_interfaces) StdoutLine: {'line': b"writing manifest file 'robot_interfaces.egg-info/SOURCES.txt'\n"}
+[1.913788] (robot_interfaces) StdoutLine: {'line': b"reading manifest file 'robot_interfaces.egg-info/SOURCES.txt'\n"}
+[1.914263] (robot_interfaces) StdoutLine: {'line': b"writing manifest file 'robot_interfaces.egg-info/SOURCES.txt'\n"}
+[1.939933] (robot_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_build_robot_interfaces_egg\n'}
+[2.002410] (-) TimerEvent: {}
+[2.102634] (-) TimerEvent: {}
+[2.202837] (-) TimerEvent: {}
+[2.303075] (-) TimerEvent: {}
+[2.319623] (robot_interfaces) StdoutLine: {'line': b'[  2%] Built target robot_interfaces__cpp\n'}
+[2.330199] (robot_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.330409] (robot_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.330503] (robot_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.403184] (-) TimerEvent: {}
+[2.478243] (robot_interfaces) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/srv/detail/rotate_base__functions.c.o\x1b[0m\n'}
+[2.478431] (robot_interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/imu__functions.c.o\x1b[0m\n'}
+[2.478556] (robot_interfaces) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/base_cmd__functions.c.o\x1b[0m\n'}
+[2.483689] (robot_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/srv/detail/control__functions.c.o\x1b[0m\n'}
+[2.487132] (robot_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/srv/detail/push_ball__functions.c.o\x1b[0m\n'}
+[2.503294] (-) TimerEvent: {}
+[2.548718] (robot_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/srv/detail/request_calculation__functions.c.o\x1b[0m\n'}
+[2.551665] (robot_interfaces) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/srv/detail/request_action__functions.c.o\x1b[0m\n'}
+[2.569487] (robot_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/srv/detail/base_control__functions.c.o\x1b[0m\n'}
+[2.603386] (-) TimerEvent: {}
+[2.640003] (robot_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32m\x1b[1mLinking C shared library librobot_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[2.682313] (robot_interfaces) StdoutLine: {'line': b'[ 15%] Built target robot_interfaces__rosidl_generator_c\n'}
+[2.692273] (robot_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.693552] (robot_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.693713] (robot_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.703474] (-) TimerEvent: {}
+[2.803727] (-) TimerEvent: {}
+[2.889596] (robot_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/base_cmd__type_support.cpp.o\x1b[0m\n'}
+[2.900013] (robot_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/imu__type_support.cpp.o\x1b[0m\n'}
+[2.903388] (robot_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/srv/rotate_base__type_support.cpp.o\x1b[0m\n'}
+[2.905310] (-) TimerEvent: {}
+[3.006189] (-) TimerEvent: {}
+[3.106466] (-) TimerEvent: {}
+[3.206832] (-) TimerEvent: {}
+[3.277214] (robot_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/srv/push_ball__type_support.cpp.o\x1b[0m\n'}
+[3.282512] (robot_interfaces) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/srv/control__type_support.cpp.o\x1b[0m\n'}
+[3.306929] (-) TimerEvent: {}
+[3.379218] (robot_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/base_cmd__type_support.cpp.o\x1b[0m\n'}
+[3.394463] (robot_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/srv/request_calculation__type_support.cpp.o\x1b[0m\n'}
+[3.407028] (-) TimerEvent: {}
+[3.417124] (robot_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/msg/detail/dds_fastrtps/base_cmd__type_support.cpp.o\x1b[0m\n'}
+[3.507143] (-) TimerEvent: {}
+[3.542920] (robot_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/msg/base_cmd__type_support.cpp.o\x1b[0m\n'}
+[3.607215] (-) TimerEvent: {}
+[3.620628] (robot_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/msg/imu__type_support.cpp.o\x1b[0m\n'}
+[3.669406] (robot_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/srv/rotate_base__type_support.cpp.o\x1b[0m\n'}
+[3.679465] (robot_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/msg/detail/dds_fastrtps/imu__type_support.cpp.o\x1b[0m\n'}
+[3.700209] (robot_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/imu__type_support.cpp.o\x1b[0m\n'}
+[3.707322] (-) TimerEvent: {}
+[3.715228] (robot_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/srv/push_ball__type_support.cpp.o\x1b[0m\n'}
+[3.754903] (robot_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/srv/control__type_support.cpp.o\x1b[0m\n'}
+[3.803390] (robot_interfaces) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/srv/request_calculation__type_support.cpp.o\x1b[0m\n'}
+[3.807428] (-) TimerEvent: {}
+[3.814438] (robot_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/srv/request_action__type_support.cpp.o\x1b[0m\n'}
+[3.846752] (robot_interfaces) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/srv/request_action__type_support.cpp.o\x1b[0m\n'}
+[3.853517] (robot_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/base_cmd__type_support.c.o\x1b[0m\n'}
+[3.859390] (robot_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/base_cmd__type_support_c.cpp.o\x1b[0m\n'}
+[3.903281] (robot_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/srv/base_control__type_support.cpp.o\x1b[0m\n'}
+[3.910210] (-) TimerEvent: {}
+[3.915223] (robot_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/srv/base_control__type_support.cpp.o\x1b[0m\n'}
+[3.923560] (robot_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/imu__type_support.c.o\x1b[0m\n'}
+[3.977951] (robot_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/srv/detail/rotate_base__type_support.c.o\x1b[0m\n'}
+[3.985344] (robot_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.993228] (robot_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/srv/detail/push_ball__type_support.c.o\x1b[0m\n'}
+[4.010314] (-) TimerEvent: {}
+[4.036282] (robot_interfaces) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/srv/detail/dds_fastrtps/rotate_base__type_support.cpp.o\x1b[0m\n'}
+[4.050965] (robot_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/srv/detail/control__type_support.c.o\x1b[0m\n'}
+[4.076069] (robot_interfaces) StdoutLine: {'line': b'[ 50%] Built target robot_interfaces__rosidl_typesupport_c\n'}
+[4.095189] (robot_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/imu__type_support_c.cpp.o\x1b[0m\n'}
+[4.114022] (-) TimerEvent: {}
+[4.134748] (robot_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/srv/detail/request_calculation__type_support.c.o\x1b[0m\n'}
+[4.181784] (robot_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/srv/detail/rotate_base__type_support_c.cpp.o\x1b[0m\n'}
+[4.191926] (robot_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/srv/detail/request_action__type_support.c.o\x1b[0m\n'}
+[4.214135] (-) TimerEvent: {}
+[4.242429] (robot_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/srv/detail/rotate_base__type_support.cpp.o\x1b[0m\n'}
+[4.245464] (robot_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/srv/detail/base_control__type_support.c.o\x1b[0m\n'}
+[4.256410] (robot_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/srv/detail/push_ball__type_support.cpp.o\x1b[0m\n'}
+[4.300393] (robot_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.314341] (-) TimerEvent: {}
+[4.338263] (robot_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking C shared library librobot_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.360056] (robot_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/srv/detail/dds_fastrtps/push_ball__type_support.cpp.o\x1b[0m\n'}
+[4.360386] (robot_interfaces) StdoutLine: {'line': b'[ 61%] Built target robot_interfaces__rosidl_typesupport_cpp\n'}
+[4.370808] (robot_interfaces) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/srv/detail/control__type_support.cpp.o\x1b[0m\n'}
+[4.417200] (-) TimerEvent: {}
+[4.417456] (robot_interfaces) StdoutLine: {'line': b'[ 62%] Built target robot_interfaces__rosidl_typesupport_introspection_c\n'}
+[4.468909] (robot_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/uart_node.dir/src/MCU_Interface.cpp.o\x1b[0m\n'}
+[4.517310] (-) TimerEvent: {}
+[4.620356] (-) TimerEvent: {}
+[4.625016] (robot_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/srv/detail/push_ball__type_support_c.cpp.o\x1b[0m\n'}
+[4.681330] (robot_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/srv/detail/dds_fastrtps/control__type_support.cpp.o\x1b[0m\n'}
+[4.720459] (-) TimerEvent: {}
+[4.738758] (robot_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/srv/detail/dds_fastrtps/request_calculation__type_support.cpp.o\x1b[0m\n'}
+[4.774023] (robot_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/srv/detail/dds_fastrtps/request_action__type_support.cpp.o\x1b[0m\n'}
+[4.820557] (-) TimerEvent: {}
+[4.843176] (robot_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/srv/detail/control__type_support_c.cpp.o\x1b[0m\n'}
+[4.907438] (robot_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/srv/detail/request_calculation__type_support.cpp.o\x1b[0m\n'}
+[4.920660] (-) TimerEvent: {}
+[4.978150] (robot_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/srv/detail/request_calculation__type_support_c.cpp.o\x1b[0m\n'}
+[5.020765] (-) TimerEvent: {}
+[5.121175] (-) TimerEvent: {}
+[5.174739] (robot_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/srv/detail/request_action__type_support_c.cpp.o\x1b[0m\n'}
+[5.221278] (-) TimerEvent: {}
+[5.323323] (-) TimerEvent: {}
+[5.345585] (robot_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/srv/detail/base_control__type_support_c.cpp.o\x1b[0m\n'}
+[5.358223] (robot_interfaces) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/srv/detail/request_action__type_support.cpp.o\x1b[0m\n'}
+[5.426202] (-) TimerEvent: {}
+[5.469790] (robot_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/srv/detail/base_control__type_support.cpp.o\x1b[0m\n'}
+[5.480407] (robot_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/srv/detail/dds_fastrtps/base_control__type_support.cpp.o\x1b[0m\n'}
+[5.526303] (-) TimerEvent: {}
+[5.626614] (-) TimerEvent: {}
+[5.726937] (-) TimerEvent: {}
+[5.827202] (-) TimerEvent: {}
+[5.835957] (robot_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.927274] (-) TimerEvent: {}
+[5.928056] (robot_interfaces) StdoutLine: {'line': b'[ 78%] Built target robot_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[5.958638] (robot_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[5.994750] (robot_interfaces) StdoutLine: {'line': b'[ 79%] Built target robot_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[6.023919] (robot_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[6.027378] (-) TimerEvent: {}
+[6.094503] (robot_interfaces) StdoutLine: {'line': b'[ 80%] Built target robot_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[6.110457] (robot_interfaces) StdoutLine: {'line': b'[ 80%] Built target robot_interfaces\n'}
+[6.126700] (robot_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[6.127433] (-) TimerEvent: {}
+[6.227628] (-) TimerEvent: {}
+[6.327900] (-) TimerEvent: {}
+[6.428220] (-) TimerEvent: {}
+[6.528505] (-) TimerEvent: {}
+[6.628779] (-) TimerEvent: {}
+[6.729035] (-) TimerEvent: {}
+[6.829292] (-) TimerEvent: {}
+[6.929544] (-) TimerEvent: {}
+[7.029812] (-) TimerEvent: {}
+[7.130084] (-) TimerEvent: {}
+[7.181033] (robot_interfaces) StdoutLine: {'line': b'[ 82%] Built target robot_interfaces__py\n'}
+[7.201985] (robot_interfaces) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/srv/_push_ball_s.c.o\x1b[0m\n'}
+[7.202206] (robot_interfaces) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/srv/_rotate_base_s.c.o\x1b[0m\n'}
+[7.202309] (robot_interfaces) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/srv/_control_s.c.o\x1b[0m\n'}
+[7.202404] (robot_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/srv/_request_action_s.c.o\x1b[0m\n'}
+[7.202610] (robot_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/msg/_base_cmd_s.c.o\x1b[0m\n'}
+[7.202729] (robot_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/srv/_request_calculation_s.c.o\x1b[0m\n'}
+[7.204215] (robot_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/msg/_imu_s.c.o\x1b[0m\n'}
+[7.230196] (-) TimerEvent: {}
+[7.330503] (-) TimerEvent: {}
+[7.344143] (robot_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/srv/_base_control_s.c.o\x1b[0m\n'}
+[7.430614] (-) TimerEvent: {}
+[7.431087] (robot_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_interfaces/librobot_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[7.464461] (robot_interfaces) StdoutLine: {'line': b'[ 92%] Built target robot_interfaces__rosidl_generator_py\n'}
+[7.481190] (robot_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[7.481404] (robot_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[7.486460] (robot_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[7.530722] (-) TimerEvent: {}
+[7.598167] (robot_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.598362] (robot_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.628962] (robot_interfaces) StdoutLine: {'line': b'[ 97%] Built target robot_interfaces__rosidl_typesupport_c__pyext\n'}
+[7.630806] (-) TimerEvent: {}
+[7.633610] (robot_interfaces) StdoutLine: {'line': b'[ 97%] Built target robot_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[7.667152] (robot_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.696634] (robot_interfaces) StdoutLine: {'line': b'[ 98%] Built target robot_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[7.730930] (-) TimerEvent: {}
+[7.831232] (-) TimerEvent: {}
+[7.931464] (-) TimerEvent: {}
+[8.031716] (-) TimerEvent: {}
+[8.131952] (-) TimerEvent: {}
+[8.232212] (-) TimerEvent: {}
+[8.332420] (-) TimerEvent: {}
+[8.432631] (-) TimerEvent: {}
+[8.532878] (-) TimerEvent: {}
+[8.633179] (-) TimerEvent: {}
+[8.733497] (-) TimerEvent: {}
+[8.833707] (-) TimerEvent: {}
+[8.933957] (-) TimerEvent: {}
+[9.034199] (-) TimerEvent: {}
+[9.134449] (-) TimerEvent: {}
+[9.234700] (-) TimerEvent: {}
+[9.334921] (-) TimerEvent: {}
+[9.435178] (-) TimerEvent: {}
+[9.535508] (-) TimerEvent: {}
+[9.635756] (-) TimerEvent: {}
+[9.735990] (-) TimerEvent: {}
+[9.836241] (-) TimerEvent: {}
+[9.936471] (-) TimerEvent: {}
+[10.036690] (-) TimerEvent: {}
+[10.136912] (-) TimerEvent: {}
+[10.237184] (-) TimerEvent: {}
+[10.337400] (-) TimerEvent: {}
+[10.437609] (-) TimerEvent: {}
+[10.537818] (-) TimerEvent: {}
+[10.638026] (-) TimerEvent: {}
+[10.738316] (-) TimerEvent: {}
+[10.838524] (-) TimerEvent: {}
+[10.938735] (-) TimerEvent: {}
+[11.038944] (-) TimerEvent: {}
+[11.139157] (-) TimerEvent: {}
+[11.239366] (-) TimerEvent: {}
+[11.339571] (-) TimerEvent: {}
+[11.439776] (-) TimerEvent: {}
+[11.539985] (-) TimerEvent: {}
+[11.640234] (-) TimerEvent: {}
+[11.740440] (-) TimerEvent: {}
+[11.840650] (-) TimerEvent: {}
+[11.940899] (-) TimerEvent: {}
+[12.041148] (-) TimerEvent: {}
+[12.141440] (-) TimerEvent: {}
+[12.241683] (-) TimerEvent: {}
+[12.341925] (-) TimerEvent: {}
+[12.442202] (-) TimerEvent: {}
+[12.542456] (-) TimerEvent: {}
+[12.642667] (-) TimerEvent: {}
+[12.742877] (-) TimerEvent: {}
+[12.843120] (-) TimerEvent: {}
+[12.943352] (-) TimerEvent: {}
+[13.043593] (-) TimerEvent: {}
+[13.143799] (-) TimerEvent: {}
+[13.244048] (-) TimerEvent: {}
+[13.344340] (-) TimerEvent: {}
+[13.444555] (-) TimerEvent: {}
+[13.544771] (-) TimerEvent: {}
+[13.645010] (-) TimerEvent: {}
+[13.725043] (robot_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable uart_node\x1b[0m\n'}
+[13.745133] (-) TimerEvent: {}
+[13.845410] (-) TimerEvent: {}
+[13.945659] (-) TimerEvent: {}
+[14.045876] (-) TimerEvent: {}
+[14.118754] (robot_interfaces) StdoutLine: {'line': b'[100%] Built target uart_node\n'}
+[14.128395] (robot_interfaces) CommandEnded: {'returncode': 0}
+[14.128930] (robot_interfaces) JobProgress: {'identifier': 'robot_interfaces', 'progress': 'install'}
+[14.136025] (robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ddon/software_robocon_2025/build/robot_interfaces'], 'cwd': '/home/ddon/software_robocon_2025/build/robot_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'vi:en'), ('USER', 'ddon'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ddon/ros2_ws_cpp/install/shooter_control/lib:/home/ddon/ros2_ws_cpp/install/robot_interfaces/lib:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg/lib:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain/lib:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ddon'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/ddon/software_robocon_2025'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '2063'), ('SYSTEMD_EXEC_PID', '2392'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '829256'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ddon/ros2_ws_cpp/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ddon'), ('JOURNAL_STREAM', '8:18732'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ddon'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ddon/miniconda3/condabin:/opt/ros/humble/bin:/home/ddon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ddon:@/tmp/.ICE-unix/2364,unix/Ddon:/tmp/.ICE-unix/2364'), ('INVOCATION_ID', '4f101de2979d491b9a20a636f10e1f08'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'vi_VN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ddon/ros2_ws_cpp/install/shooter_control:/home/ddon/ros2_ws_cpp/install/robot_interfaces:/home/ddon/ros2_ws_cpp/install/robot_bringup:/home/ddon/ros2_ws_cpp/install/odrive_interface:/home/ddon/ros2_ws_cpp/install/can_control_package:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg:/home/ddon/ros2_ws_cpp/install/odrive_can_cpp:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain:/home/ddon/ros2_ws_cpp/install/gamepad_interface:/home/ddon/ros2_ws_cpp/install/dual_sense_controller:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ddon/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:ace1db7d-1eb3-403d-9b77-29c907b34c32'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ddon/software_robocon_2025/build/robot_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ddon/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ddon/ros2_ws_cpp/install/shooter_control/lib/python3.12/site-packages:/home/ddon/ros2_ws_cpp/install/robot_interfaces/lib/python3.12/site-packages:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg/lib/python3.12/site-packages:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain/lib/python3.12/site-packages:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs/lib/python3.12/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ddon/ros2_ws_cpp/install/shooter_control:/home/ddon/ros2_ws_cpp/install/robot_interfaces:/home/ddon/ros2_ws_cpp/install/robot_bringup:/home/ddon/ros2_ws_cpp/install/odrive_interface:/home/ddon/ros2_ws_cpp/install/can_control_package:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg:/home/ddon/ros2_ws_cpp/install/odrive_can_cpp:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain:/home/ddon/ros2_ws_cpp/install/gamepad_interface:/home/ddon/ros2_ws_cpp/install/dual_sense_controller:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs:/opt/ros/humble')]), 'shell': False}
+[14.142573] (robot_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.142703] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/ament_index/resource_index/rosidl_interfaces/robot_interfaces\n'}
+[14.142825] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[14.142894] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[14.142958] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[14.143022] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__type_support.h\n'}
+[14.143084] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__functions.h\n'}
+[14.143150] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__functions.h\n'}
+[14.143217] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__struct.h\n'}
+[14.143280] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__type_support.h\n'}
+[14.143342] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__struct.h\n'}
+[14.143404] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__functions.c\n'}
+[14.143466] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__functions.c\n'}
+[14.143528] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/imu.h\n'}
+[14.143590] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/base_cmd.h\n'}
+[14.143653] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[14.143711] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv\n'}
+[14.143782] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail\n'}
+[14.143827] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__functions.c\n'}
+[14.143892] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__type_support.h\n'}
+[14.143942] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__struct.h\n'}
+[14.144004] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__type_support.h\n'}
+[14.144066] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__functions.h\n'}
+[14.144128] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__functions.h\n'}
+[14.144196] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__type_support.h\n'}
+[14.144258] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__functions.c\n'}
+[14.144320] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__functions.c\n'}
+[14.144380] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__functions.c\n'}
+[14.144441] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__functions.h\n'}
+[14.144514] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__type_support.h\n'}
+[14.144575] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__functions.h\n'}
+[14.144635] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__functions.c\n'}
+[14.144695] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__struct.h\n'}
+[14.144769] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__functions.h\n'}
+[14.144832] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__functions.h\n'}
+[14.144932] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__type_support.h\n'}
+[14.145022] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__struct.h\n'}
+[14.145086] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__struct.h\n'}
+[14.145161] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__functions.c\n'}
+[14.145229] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__type_support.h\n'}
+[14.145293] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__struct.h\n'}
+[14.145353] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__struct.h\n'}
+[14.145412] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/control.h\n'}
+[14.145468] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/rotate_base.h\n'}
+[14.145526] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/request_action.h\n'}
+[14.145597] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/base_control.h\n'}
+[14.145661] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/request_calculation.h\n'}
+[14.145724] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/push_ball.h\n'}
+[14.145812] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/environment/library_path.sh\n'}
+[14.145901] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/environment/library_path.dsv\n'}
+[14.145944] (-) TimerEvent: {}
+[14.146034] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_c.so\n'}
+[14.146364] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_c.so" to ""\n'}
+[14.146441] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[14.146512] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[14.146559] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[14.146614] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[14.146680] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__rosidl_typesupport_fastrtps_c.h\n'}
+[14.146727] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__rosidl_typesupport_fastrtps_c.h\n'}
+[14.146795] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv\n'}
+[14.146851] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail\n'}
+[14.146902] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__rosidl_typesupport_fastrtps_c.h\n'}
+[14.146952] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__rosidl_typesupport_fastrtps_c.h\n'}
+[14.146998] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__rosidl_typesupport_fastrtps_c.h\n'}
+[14.147062] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__rosidl_typesupport_fastrtps_c.h\n'}
+[14.147117] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__rosidl_typesupport_fastrtps_c.h\n'}
+[14.147173] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__rosidl_typesupport_fastrtps_c.h\n'}
+[14.147236] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[14.147435] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[14.147491] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[14.147558] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[14.147603] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[14.147649] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__type_support.hpp\n'}
+[14.147713] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__traits.hpp\n'}
+[14.147774] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__struct.hpp\n'}
+[14.147820] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__builder.hpp\n'}
+[14.147884] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__builder.hpp\n'}
+[14.147939] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__struct.hpp\n'}
+[14.147993] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__traits.hpp\n'}
+[14.148037] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__type_support.hpp\n'}
+[14.148102] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/base_cmd.hpp\n'}
+[14.148157] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/imu.hpp\n'}
+[14.148217] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[14.148283] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv\n'}
+[14.148328] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail\n'}
+[14.148374] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__type_support.hpp\n'}
+[14.148438] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__builder.hpp\n'}
+[14.148484] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__struct.hpp\n'}
+[14.148548] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__traits.hpp\n'}
+[14.148593] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__struct.hpp\n'}
+[14.148652] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__traits.hpp\n'}
+[14.148714] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__type_support.hpp\n'}
+[14.148769] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__builder.hpp\n'}
+[14.148828] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__builder.hpp\n'}
+[14.148890] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__struct.hpp\n'}
+[14.148952] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__builder.hpp\n'}
+[14.149013] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__builder.hpp\n'}
+[14.149074] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__struct.hpp\n'}
+[14.149134] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__struct.hpp\n'}
+[14.149205] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__type_support.hpp\n'}
+[14.149265] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__traits.hpp\n'}
+[14.149329] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__traits.hpp\n'}
+[14.149394] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__type_support.hpp\n'}
+[14.149453] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__traits.hpp\n'}
+[14.149515] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__builder.hpp\n'}
+[14.149577] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__struct.hpp\n'}
+[14.149646] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__type_support.hpp\n'}
+[14.149708] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__traits.hpp\n'}
+[14.149775] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__type_support.hpp\n'}
+[14.149839] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/base_control.hpp\n'}
+[14.149898] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/request_calculation.hpp\n'}
+[14.149957] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/control.hpp\n'}
+[14.150017] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/rotate_base.hpp\n'}
+[14.150075] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/request_action.hpp\n'}
+[14.150144] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/push_ball.hpp\n'}
+[14.150237] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[14.150306] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[14.150351] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[14.150404] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.150450] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.150514] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/dds_fastrtps\n'}
+[14.150561] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[14.150626] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv\n'}
+[14.150671] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail\n'}
+[14.150717] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.150785] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.150831] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.150877] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.150941] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/dds_fastrtps\n'}
+[14.150988] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.151050] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.151110] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[14.151448] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[14.151508] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[14.151575] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[14.151620] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[14.151665] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__rosidl_typesupport_introspection_c.h\n'}
+[14.151730] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__type_support.c\n'}
+[14.151777] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__rosidl_typesupport_introspection_c.h\n'}
+[14.151841] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__type_support.c\n'}
+[14.151887] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[14.151951] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv\n'}
+[14.151996] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail\n'}
+[14.152062] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__type_support.c\n'}
+[14.152107] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__rosidl_typesupport_introspection_c.h\n'}
+[14.152170] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__type_support.c\n'}
+[14.152218] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__type_support.c\n'}
+[14.152283] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__rosidl_typesupport_introspection_c.h\n'}
+[14.152327] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__type_support.c\n'}
+[14.152386] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__rosidl_typesupport_introspection_c.h\n'}
+[14.152450] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__rosidl_typesupport_introspection_c.h\n'}
+[14.152510] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__type_support.c\n'}
+[14.152570] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__rosidl_typesupport_introspection_c.h\n'}
+[14.152630] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__rosidl_typesupport_introspection_c.h\n'}
+[14.152690] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__type_support.c\n'}
+[14.152792] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[14.153025] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[14.153085] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_c.so\n'}
+[14.153296] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[14.153359] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[14.153421] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[14.153468] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[14.153538] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__type_support.cpp\n'}
+[14.153584] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__type_support.cpp\n'}
+[14.153631] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.153692] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.153759] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv\n'}
+[14.153808] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail\n'}
+[14.153854] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.153922] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.153967] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.154014] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__type_support.cpp\n'}
+[14.154081] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__type_support.cpp\n'}
+[14.154129] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.154220] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__type_support.cpp\n'}
+[14.154280] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.154348] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.154394] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__type_support.cpp\n'}
+[14.154455] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__type_support.cpp\n'}
+[14.154522] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__type_support.cpp\n'}
+[14.154589] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[14.154876] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[14.154936] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_cpp.so\n'}
+[14.155154] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[14.155221] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/environment/pythonpath.sh\n'}
+[14.155301] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/environment/pythonpath.dsv\n'}
+[14.155382] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info\n'}
+[14.155467] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[14.155531] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[14.155591] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[14.155648] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[14.155735] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces\n'}
+[14.155789] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg\n'}
+[14.155845] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_base_cmd.py\n'}
+[14.155902] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_imu_s.c\n'}
+[14.155959] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_imu.py\n'}
+[14.156024] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_base_cmd_s.c\n'}
+[14.156087] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/__init__.py\n'}
+[14.156168] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[14.156274] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[14.156378] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.156473] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.156566] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/librobot_interfaces__rosidl_generator_py.so\n'}
+[14.156656] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[14.156747] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv\n'}
+[14.156820] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_base_control_s.c\n'}
+[14.156884] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_request_action_s.c\n'}
+[14.156941] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_push_ball_s.c\n'}
+[14.157001] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_base_control.py\n'}
+[14.157063] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_request_calculation_s.c\n'}
+[14.157130] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_request_calculation.py\n'}
+[14.157202] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_control_s.c\n'}
+[14.157264] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_rotate_base_s.c\n'}
+[14.157324] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_rotate_base.py\n'}
+[14.157387] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_control.py\n'}
+[14.157454] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_push_ball.py\n'}
+[14.157520] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_request_action.py\n'}
+[14.157585] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/__init__.py\n'}
+[14.157645] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/__init__.py\n'}
+[14.157709] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.194719] (robot_interfaces) StdoutLine: {'line': b"Listing '/home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces'...\n"}
+[14.194840] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/__init__.py'...\n"}
+[14.194894] (robot_interfaces) StdoutLine: {'line': b"Listing '/home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg'...\n"}
+[14.194939] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/__init__.py'...\n"}
+[14.194982] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_base_cmd.py'...\n"}
+[14.195024] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_imu.py'...\n"}
+[14.195066] (robot_interfaces) StdoutLine: {'line': b"Listing '/home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv'...\n"}
+[14.195107] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/__init__.py'...\n"}
+[14.195185] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_base_control.py'...\n"}
+[14.195249] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_control.py'...\n"}
+[14.195291] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_push_ball.py'...\n"}
+[14.195332] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_request_action.py'...\n"}
+[14.195381] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_request_calculation.py'...\n"}
+[14.195423] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_rotate_base.py'...\n"}
+[14.198830] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.199035] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[14.199267] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.199517] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[14.199703] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.199909] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[14.199987] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_py.so\n'}
+[14.200210] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_py.so" to ""\n'}
+[14.200286] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/msg/BaseCMD.idl\n'}
+[14.200370] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/msg/IMU.idl\n'}
+[14.200488] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RotateBase.idl\n'}
+[14.200612] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/PushBall.idl\n'}
+[14.200727] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/Control.idl\n'}
+[14.200790] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RequestCalculation.idl\n'}
+[14.200872] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RequestAction.idl\n'}
+[14.200949] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/BaseControl.idl\n'}
+[14.201032] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/msg/BaseCMD.msg\n'}
+[14.201111] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/msg/IMU.msg\n'}
+[14.201258] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RotateBase.srv\n'}
+[14.201373] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RotateBase_Request.msg\n'}
+[14.201488] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RotateBase_Response.msg\n'}
+[14.201549] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/PushBall.srv\n'}
+[14.201630] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/PushBall_Request.msg\n'}
+[14.201707] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/PushBall_Response.msg\n'}
+[14.201786] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/Control.srv\n'}
+[14.201869] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/Control_Request.msg\n'}
+[14.201960] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/Control_Response.msg\n'}
+[14.202040] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RequestCalculation.srv\n'}
+[14.202125] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RequestCalculation_Request.msg\n'}
+[14.202220] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RequestCalculation_Response.msg\n'}
+[14.202306] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RequestAction.srv\n'}
+[14.202391] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RequestAction_Request.msg\n'}
+[14.202480] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RequestAction_Response.msg\n'}
+[14.202565] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/BaseControl.srv\n'}
+[14.202650] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/BaseControl_Request.msg\n'}
+[14.202729] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/BaseControl_Response.msg\n'}
+[14.202812] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[14.202874] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/MCU_Interface.hpp\n'}
+[14.202973] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/robot_interfaces/uart_node\n'}
+[14.206426] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ddon/software_robocon_2025/install/robot_interfaces/lib/robot_interfaces/uart_node" to ""\n'}
+[14.206521] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/ament_index/resource_index/package_run_dependencies/robot_interfaces\n'}
+[14.206594] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/ament_index/resource_index/parent_prefix_path/robot_interfaces\n'}
+[14.206693] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/environment/ament_prefix_path.sh\n'}
+[14.206845] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/environment/ament_prefix_path.dsv\n'}
+[14.206934] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/environment/path.sh\n'}
+[14.207035] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/environment/path.dsv\n'}
+[14.207147] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/local_setup.bash\n'}
+[14.207283] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/local_setup.sh\n'}
+[14.207387] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/local_setup.zsh\n'}
+[14.207483] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/local_setup.dsv\n'}
+[14.207582] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/package.dsv\n'}
+[14.207656] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/ament_index/resource_index/packages/robot_interfaces\n'}
+[14.207745] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cExport.cmake\n'}
+[14.207812] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[14.207908] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[14.208010] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[14.208114] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cppExport.cmake\n'}
+[14.208233] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[14.208333] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[14.208438] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[14.208539] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[14.208645] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[14.208748] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[14.208854] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[14.208953] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[14.209055] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[14.209179] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[14.209288] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_pyExport.cmake\n'}
+[14.209388] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[14.209481] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[14.209579] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[14.209677] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[14.209775] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[14.209867] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[14.209964] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[14.210058] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[14.210164] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfacesConfig.cmake\n'}
+[14.210236] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfacesConfig-version.cmake\n'}
+[14.210320] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/package.xml\n'}
+[14.212048] (robot_interfaces) CommandEnded: {'returncode': 0}
+[14.227211] (robot_interfaces) JobEnded: {'identifier': 'robot_interfaces', 'rc': 0}
+[14.227730] (-) EventReactorShutdown: {}

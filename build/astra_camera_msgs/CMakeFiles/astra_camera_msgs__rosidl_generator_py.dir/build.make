@@ -220,13 +220,14 @@ rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.
 rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so: CMakeFiles/astra_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/astra_camera_msgs/srv/_get_string_s.c.o
 rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so: CMakeFiles/astra_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/astra_camera_msgs/srv/_set_int32_s.c.o
 rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so: CMakeFiles/astra_camera_msgs__rosidl_generator_py.dir/build.make
-rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so: /home/ddon/miniconda3/lib/libpython3.12.so
+rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so: libastra_camera_msgs__rosidl_typesupport_c.so
 rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_py.so
 rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
 rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
 rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so: libastra_camera_msgs__rosidl_generator_c.so
 rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
+rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
 rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
 rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
@@ -237,7 +238,6 @@ rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.
 rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/librcutils.so
-rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so: CMakeFiles/astra_camera_msgs__rosidl_generator_py.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ddon/software_robocon_2025/build/astra_camera_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C shared library rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/astra_camera_msgs__rosidl_generator_py.dir/link.txt --verbose=$(VERBOSE)

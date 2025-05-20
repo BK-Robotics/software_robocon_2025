@@ -85,8 +85,10 @@ rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/base_cmd__rosidl_types
 rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/base_cmd__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/robot_interfaces/srv/RequestCalculation.idl
 rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/base_cmd__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/robot_interfaces/srv/RequestAction.idl
 rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/base_cmd__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/robot_interfaces/srv/BaseControl.idl
+rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/base_cmd__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/base_cmd__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ddon/software_robocon_2025/build/robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C type support for eProsima Fast-RTPS"
-	/home/ddon/miniconda3/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c --generator-arguments-file /home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_typesupport_fastrtps_c__arguments.json
+	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c --generator-arguments-file /home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_typesupport_fastrtps_c__arguments.json
 
 rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/base_cmd__type_support_c.cpp: rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/base_cmd__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/base_cmd__type_support_c.cpp
@@ -268,11 +270,13 @@ librobot_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/robot_interfac
 librobot_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/srv/detail/request_action__type_support_c.cpp.o
 librobot_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/srv/detail/base_control__type_support_c.cpp.o
 librobot_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make
-librobot_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-librobot_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
 librobot_interfaces__rosidl_typesupport_fastrtps_c.so: librobot_interfaces__rosidl_generator_c.so
+librobot_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
+librobot_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 librobot_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
 librobot_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librmw.so
+librobot_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
+librobot_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 librobot_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 librobot_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librcutils.so
 librobot_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/link.txt

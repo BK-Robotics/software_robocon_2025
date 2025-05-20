@@ -658,4 +658,9 @@ CMakeFiles/uart_node.dir/src/MCU_Interface.cpp.o: \
  /home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/srv/detail/push_ball__struct.hpp \
  /home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/srv/detail/push_ball__builder.hpp \
  /home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/srv/detail/push_ball__traits.hpp \
- /home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/srv/detail/push_ball__type_support.hpp
+ /home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/srv/detail/push_ball__type_support.hpp \
+ /home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/srv/base_control.hpp \
+ /home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/srv/detail/base_control__struct.hpp \
+ /home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/srv/detail/base_control__builder.hpp \
+ /home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/srv/detail/base_control__traits.hpp \
+ /home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/srv/detail/base_control__type_support.hpp

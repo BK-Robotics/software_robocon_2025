@@ -729,8 +729,19 @@ CMakeFiles/uart_node.dir/src/MCU_Interface.cpp.o: /home/ddon/software_robocon_20
   rosidl_generator_cpp/robot_interfaces/srv/detail/push_ball__struct.hpp \
   rosidl_generator_cpp/robot_interfaces/srv/detail/push_ball__builder.hpp \
   rosidl_generator_cpp/robot_interfaces/srv/detail/push_ball__traits.hpp \
-  rosidl_generator_cpp/robot_interfaces/srv/detail/push_ball__type_support.hpp
+  rosidl_generator_cpp/robot_interfaces/srv/detail/push_ball__type_support.hpp \
+  rosidl_generator_cpp/robot_interfaces/srv/base_control.hpp \
+  rosidl_generator_cpp/robot_interfaces/srv/detail/base_control__struct.hpp \
+  rosidl_generator_cpp/robot_interfaces/srv/detail/base_control__builder.hpp \
+  rosidl_generator_cpp/robot_interfaces/srv/detail/base_control__traits.hpp \
+  rosidl_generator_cpp/robot_interfaces/srv/detail/base_control__type_support.hpp
 
+
+rosidl_generator_cpp/robot_interfaces/srv/detail/base_control__type_support.hpp:
+
+rosidl_generator_cpp/robot_interfaces/srv/detail/base_control__builder.hpp:
+
+rosidl_generator_cpp/robot_interfaces/srv/base_control.hpp:
 
 rosidl_generator_cpp/robot_interfaces/srv/detail/push_ball__type_support.hpp:
 
@@ -1304,6 +1315,8 @@ rosidl_generator_cpp/robot_interfaces/msg/detail/imu__traits.hpp:
 
 /usr/include/c++/11/ctime:
 
+rosidl_generator_cpp/robot_interfaces/srv/detail/base_control__traits.hpp:
+
 /opt/ros/humble/include/rcutils/rcutils/types/array_list.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
@@ -1685,6 +1698,8 @@ rosidl_generator_cpp/robot_interfaces/srv/detail/push_ball__traits.hpp:
 /usr/include/string.h:
 
 /usr/include/c++/11/cwctype:
+
+rosidl_generator_cpp/robot_interfaces/srv/detail/base_control__struct.hpp:
 
 /opt/ros/humble/include/rmw/rmw/subscription_content_filter_options.h:
 

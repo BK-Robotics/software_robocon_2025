@@ -13,8 +13,6 @@ find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 
-include_directories(include)
-
 # Generate interfaces in the 'msg' and 'srv' directories
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/BaseCMD.msg"
@@ -25,6 +23,14 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/RequestCalculation.srv"
   "srv/RequestAction.srv"
   "srv/BaseControl.srv"
+  DEPENDENCIES builtin_interfaces
+)
+
+include_directories(include)
+
+install(
+  DIRECTORY include/robot_interfaces
+  DESTINATION include/robot_interfaces
 )
 
 add_executable(uart_node src/MCU_Interface.cpp)
@@ -42,6 +48,7 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME}
 )
 
+ament_export_include_directories(include)
 ament_export_dependencies(rosidl_default_runtime)
 
 ament_package()

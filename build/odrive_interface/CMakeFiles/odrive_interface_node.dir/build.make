@@ -172,7 +172,6 @@ odrive_interface_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_
 odrive_interface_node: /opt/ros/humble/lib/libtracetools.so
 odrive_interface_node: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_c.so
 odrive_interface_node: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_c.so
-odrive_interface_node: /home/ddon/miniconda3/lib/libpython3.12.so
 odrive_interface_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 odrive_interface_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
 odrive_interface_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so

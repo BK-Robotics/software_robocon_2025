@@ -1,0 +1,352 @@
+[0.026s] Invoking command in '/home/ddon/software_robocon_2025/build/robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ddon/software_robocon_2025/robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/ddon/software_robocon_2025/install/robot_interfaces
+[0.041s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.181s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.205s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.207s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.212s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.220s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.233s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.263s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.264s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.369s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.427s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.709s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.031s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.146s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.165s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.185s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3.10
+[1.185s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.185s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.206s] -- Configuring done
+[1.267s] -- Generating done
+[1.282s] -- Build files have been written to: /home/ddon/software_robocon_2025/build/robot_interfaces
+[1.290s] Invoked command in '/home/ddon/software_robocon_2025/build/robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ddon/software_robocon_2025/robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/ddon/software_robocon_2025/install/robot_interfaces
+[1.292s] Invoking command in '/home/ddon/software_robocon_2025/build/robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ddon/software_robocon_2025/build/robot_interfaces -- -j8 -l8
+[1.324s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_generator_c[0m
+[1.338s] [  1%] Built target robot_interfaces__cpp
+[1.343s] [ 12%] Built target robot_interfaces__rosidl_generator_c
+[1.357s] [ 12%] Built target ament_cmake_python_copy_robot_interfaces
+[1.357s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[1.359s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_c[0m
+[1.366s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_introspection_cpp[0m
+[1.370s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_fastrtps_c[0m
+[1.370s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_introspection_c[0m
+[1.374s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_cpp[0m
+[1.375s] [ 23%] Built target robot_interfaces__rosidl_typesupport_c
+[1.398s] [ 34%] Built target robot_interfaces__rosidl_typesupport_cpp
+[1.399s] [ 46%] Built target robot_interfaces__rosidl_typesupport_introspection_c
+[1.400s] [ 57%] Built target robot_interfaces__rosidl_typesupport_introspection_cpp
+[1.403s] [ 68%] Built target robot_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.404s] [ 79%] Built target robot_interfaces__rosidl_typesupport_fastrtps_c
+[1.410s] [35m[1mConsolidate compiler generated dependencies of target uart_node[0m
+[1.426s] [ 79%] Built target robot_interfaces
+[1.428s] [ 82%] Built target uart_node
+[1.446s] [ 83%] Built target robot_interfaces__py
+[1.457s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_generator_py[0m
+[1.477s] [ 93%] Built target robot_interfaces__rosidl_generator_py
+[1.490s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.503s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[1.506s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_c__pyext[0m
+[1.518s] [ 95%] Built target robot_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[1.521s] [ 97%] Built target robot_interfaces__rosidl_typesupport_introspection_c__pyext
+[1.525s] [100%] Built target robot_interfaces__rosidl_typesupport_c__pyext
+[1.702s] running egg_info
+[1.702s] writing robot_interfaces.egg-info/PKG-INFO
+[1.703s] writing dependency_links to robot_interfaces.egg-info/dependency_links.txt
+[1.703s] writing top-level names to robot_interfaces.egg-info/top_level.txt
+[1.705s] reading manifest file 'robot_interfaces.egg-info/SOURCES.txt'
+[1.706s] writing manifest file 'robot_interfaces.egg-info/SOURCES.txt'
+[1.729s] [100%] Built target ament_cmake_python_build_robot_interfaces_egg
+[1.745s] Invoked command in '/home/ddon/software_robocon_2025/build/robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ddon/software_robocon_2025/build/robot_interfaces -- -j8 -l8
+[1.747s] Invoking command in '/home/ddon/software_robocon_2025/build/robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ddon/software_robocon_2025/build/robot_interfaces
+[1.755s] -- Install configuration: ""
+[1.756s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/ament_index/resource_index/rosidl_interfaces/robot_interfaces
+[1.756s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces
+[1.756s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg
+[1.756s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail
+[1.756s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__type_support.h
+[1.756s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__functions.h
+[1.756s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__functions.h
+[1.756s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__struct.h
+[1.756s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__type_support.h
+[1.757s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__struct.h
+[1.757s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__functions.c
+[1.757s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__functions.c
+[1.757s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/imu.h
+[1.757s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/base_cmd.h
+[1.757s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_generator_c__visibility_control.h
+[1.757s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv
+[1.757s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail
+[1.757s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__functions.c
+[1.758s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__type_support.h
+[1.758s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__struct.h
+[1.758s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__type_support.h
+[1.758s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__functions.h
+[1.758s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__functions.h
+[1.758s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__type_support.h
+[1.758s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__functions.c
+[1.758s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__functions.c
+[1.758s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__functions.c
+[1.759s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__functions.h
+[1.759s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__type_support.h
+[1.759s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__functions.h
+[1.759s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__functions.c
+[1.759s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__struct.h
+[1.759s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__functions.h
+[1.759s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__functions.h
+[1.759s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__type_support.h
+[1.759s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__struct.h
+[1.760s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__struct.h
+[1.760s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__functions.c
+[1.760s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__type_support.h
+[1.760s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__struct.h
+[1.760s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__struct.h
+[1.760s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/control.h
+[1.760s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/rotate_base.h
+[1.760s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/request_action.h
+[1.760s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/base_control.h
+[1.760s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/request_calculation.h
+[1.761s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/push_ball.h
+[1.761s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/environment/library_path.sh
+[1.761s] -- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/environment/library_path.dsv
+[1.761s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_c.so
+[1.761s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces
+[1.761s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg
+[1.761s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.761s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail
+[1.761s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__rosidl_typesupport_fastrtps_c.h
+[1.761s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__rosidl_typesupport_fastrtps_c.h
+[1.762s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv
+[1.762s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail
+[1.762s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__rosidl_typesupport_fastrtps_c.h
+[1.762s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__rosidl_typesupport_fastrtps_c.h
+[1.762s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__rosidl_typesupport_fastrtps_c.h
+[1.762s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__rosidl_typesupport_fastrtps_c.h
+[1.762s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__rosidl_typesupport_fastrtps_c.h
+[1.762s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__rosidl_typesupport_fastrtps_c.h
+[1.762s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_c.so
+[1.762s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces
+[1.762s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg
+[1.762s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail
+[1.763s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__type_support.hpp
+[1.763s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__traits.hpp
+[1.763s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__struct.hpp
+[1.763s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__builder.hpp
+[1.763s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__builder.hpp
+[1.763s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__struct.hpp
+[1.763s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__traits.hpp
+[1.763s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__type_support.hpp
+[1.763s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/base_cmd.hpp
+[1.763s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/imu.hpp
+[1.763s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.763s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv
+[1.763s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail
+[1.764s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__type_support.hpp
+[1.764s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__builder.hpp
+[1.764s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__struct.hpp
+[1.764s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__traits.hpp
+[1.764s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__struct.hpp
+[1.764s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__traits.hpp
+[1.764s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__type_support.hpp
+[1.764s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__builder.hpp
+[1.764s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__builder.hpp
+[1.764s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__struct.hpp
+[1.764s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__builder.hpp
+[1.765s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__builder.hpp
+[1.765s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__struct.hpp
+[1.765s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__struct.hpp
+[1.765s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__type_support.hpp
+[1.765s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__traits.hpp
+[1.765s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__traits.hpp
+[1.765s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__type_support.hpp
+[1.765s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__traits.hpp
+[1.765s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__builder.hpp
+[1.765s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__struct.hpp
+[1.765s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__type_support.hpp
+[1.765s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__traits.hpp
+[1.766s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__type_support.hpp
+[1.766s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/base_control.hpp
+[1.766s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/request_calculation.hpp
+[1.766s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/control.hpp
+[1.766s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/rotate_base.hpp
+[1.766s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/request_action.hpp
+[1.766s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/push_ball.hpp
+[1.766s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces
+[1.766s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg
+[1.766s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail
+[1.766s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[1.766s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__rosidl_typesupport_fastrtps_cpp.hpp
+[1.767s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/dds_fastrtps
+[1.767s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.767s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv
+[1.767s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail
+[1.767s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__rosidl_typesupport_fastrtps_cpp.hpp
+[1.767s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__rosidl_typesupport_fastrtps_cpp.hpp
+[1.767s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__rosidl_typesupport_fastrtps_cpp.hpp
+[1.767s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__rosidl_typesupport_fastrtps_cpp.hpp
+[1.767s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/dds_fastrtps
+[1.767s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__rosidl_typesupport_fastrtps_cpp.hpp
+[1.767s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__rosidl_typesupport_fastrtps_cpp.hpp
+[1.767s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[1.768s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces
+[1.768s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg
+[1.768s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail
+[1.768s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__rosidl_typesupport_introspection_c.h
+[1.768s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__type_support.c
+[1.768s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__rosidl_typesupport_introspection_c.h
+[1.768s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__type_support.c
+[1.768s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.768s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv
+[1.768s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail
+[1.768s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__type_support.c
+[1.768s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__rosidl_typesupport_introspection_c.h
+[1.768s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__type_support.c
+[1.769s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__type_support.c
+[1.769s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__rosidl_typesupport_introspection_c.h
+[1.769s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__type_support.c
+[1.769s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__rosidl_typesupport_introspection_c.h
+[1.769s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__rosidl_typesupport_introspection_c.h
+[1.769s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__type_support.c
+[1.769s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__rosidl_typesupport_introspection_c.h
+[1.769s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__rosidl_typesupport_introspection_c.h
+[1.769s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__type_support.c
+[1.769s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_c.so
+[1.769s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_c.so
+[1.769s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces
+[1.770s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg
+[1.770s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail
+[1.770s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__type_support.cpp
+[1.770s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__type_support.cpp
+[1.770s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/imu__rosidl_typesupport_introspection_cpp.hpp
+[1.770s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/base_cmd__rosidl_typesupport_introspection_cpp.hpp
+[1.770s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv
+[1.770s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail
+[1.770s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__rosidl_typesupport_introspection_cpp.hpp
+[1.770s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__rosidl_typesupport_introspection_cpp.hpp
+[1.770s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__rosidl_typesupport_introspection_cpp.hpp
+[1.770s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__type_support.cpp
+[1.770s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__type_support.cpp
+[1.771s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/base_control__rosidl_typesupport_introspection_cpp.hpp
+[1.771s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/push_ball__type_support.cpp
+[1.771s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/control__rosidl_typesupport_introspection_cpp.hpp
+[1.771s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__rosidl_typesupport_introspection_cpp.hpp
+[1.771s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_calculation__type_support.cpp
+[1.771s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/request_action__type_support.cpp
+[1.771s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/rotate_base__type_support.cpp
+[1.771s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_cpp.so
+[1.771s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_cpp.so
+[1.771s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/environment/pythonpath.sh
+[1.771s] -- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/environment/pythonpath.dsv
+[1.771s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info
+[1.772s] -- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.772s] -- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[1.772s] -- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[1.772s] -- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.772s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces
+[1.772s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg
+[1.772s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_base_cmd.py
+[1.772s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_imu_s.c
+[1.772s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_imu.py
+[1.772s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_base_cmd_s.c
+[1.772s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/__init__.py
+[1.772s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_c.c
+[1.773s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[1.773s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.773s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.773s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/librobot_interfaces__rosidl_generator_py.so
+[1.773s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.773s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv
+[1.773s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_base_control_s.c
+[1.773s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_request_action_s.c
+[1.773s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_push_ball_s.c
+[1.773s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_base_control.py
+[1.773s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_request_calculation_s.c
+[1.773s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_request_calculation.py
+[1.774s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_control_s.c
+[1.774s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_rotate_base_s.c
+[1.774s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_rotate_base.py
+[1.774s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_control.py
+[1.774s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_push_ball.py
+[1.774s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_request_action.py
+[1.774s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/__init__.py
+[1.774s] -- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/__init__.py
+[1.774s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.791s] Listing '/home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces'...
+[1.791s] Compiling '/home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/__init__.py'...
+[1.791s] Listing '/home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg'...
+[1.792s] Listing '/home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv'...
+[1.796s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.796s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.796s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.797s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_py.so
+[1.797s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/msg/BaseCMD.idl
+[1.797s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/msg/IMU.idl
+[1.797s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RotateBase.idl
+[1.797s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/PushBall.idl
+[1.797s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/Control.idl
+[1.797s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RequestCalculation.idl
+[1.797s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RequestAction.idl
+[1.797s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/BaseControl.idl
+[1.798s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/msg/BaseCMD.msg
+[1.798s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/msg/IMU.msg
+[1.798s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RotateBase.srv
+[1.798s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RotateBase_Request.msg
+[1.798s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RotateBase_Response.msg
+[1.798s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/PushBall.srv
+[1.798s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/PushBall_Request.msg
+[1.798s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/PushBall_Response.msg
+[1.798s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/Control.srv
+[1.798s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/Control_Request.msg
+[1.799s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/Control_Response.msg
+[1.799s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RequestCalculation.srv
+[1.799s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RequestCalculation_Request.msg
+[1.799s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RequestCalculation_Response.msg
+[1.799s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RequestAction.srv
+[1.799s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RequestAction_Request.msg
+[1.799s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/RequestAction_Response.msg
+[1.799s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/BaseControl.srv
+[1.799s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/BaseControl_Request.msg
+[1.800s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/srv/BaseControl_Response.msg
+[1.800s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces
+[1.800s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/include/robot_interfaces/robot_interfaces/MCU_Interface.hpp
+[1.800s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/robot_interfaces/uart_node
+[1.800s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/ament_index/resource_index/package_run_dependencies/robot_interfaces
+[1.800s] -- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/ament_index/resource_index/parent_prefix_path/robot_interfaces
+[1.800s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/environment/ament_prefix_path.sh
+[1.800s] -- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/environment/ament_prefix_path.dsv
+[1.800s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/environment/path.sh
+[1.800s] -- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/environment/path.dsv
+[1.800s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/local_setup.bash
+[1.801s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/local_setup.sh
+[1.801s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/local_setup.zsh
+[1.801s] -- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/local_setup.dsv
+[1.801s] -- Installing: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/package.dsv
+[1.801s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/ament_index/resource_index/packages/robot_interfaces
+[1.801s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cExport.cmake
+[1.801s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cExport-noconfig.cmake
+[1.801s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[1.801s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.801s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cppExport.cmake
+[1.801s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.802s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.802s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[1.802s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.802s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cExport.cmake
+[1.802s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[1.802s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[1.802s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.802s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cppExport.cmake
+[1.802s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[1.802s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_pyExport.cmake
+[1.802s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[1.803s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake-extras.cmake
+[1.803s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.804s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.804s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[1.804s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[1.804s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.804s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.804s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfacesConfig.cmake
+[1.804s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfacesConfig-version.cmake
+[1.804s] -- Up-to-date: /home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/package.xml
+[1.805s] Invoked command in '/home/ddon/software_robocon_2025/build/robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ddon/software_robocon_2025/build/robot_interfaces

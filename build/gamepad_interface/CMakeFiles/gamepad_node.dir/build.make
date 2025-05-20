@@ -103,7 +103,6 @@ gamepad_node: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/libr
 gamepad_node: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_py.so
 gamepad_node: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_c.so
 gamepad_node: /home/ddon/software_robocon_2025/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_c.so
-gamepad_node: /home/ddon/miniconda3/lib/libpython3.12.so
 gamepad_node: /opt/ros/humble/lib/liblibstatistics_collector.so
 gamepad_node: /opt/ros/humble/lib/librcl.so
 gamepad_node: /opt/ros/humble/lib/librmw_implementation.so

@@ -90,8 +90,10 @@ rosidl_generator_c/robot_interfaces/msg/base_cmd.h: rosidl_adapter/robot_interfa
 rosidl_generator_c/robot_interfaces/msg/base_cmd.h: rosidl_adapter/robot_interfaces/srv/RequestCalculation.idl
 rosidl_generator_c/robot_interfaces/msg/base_cmd.h: rosidl_adapter/robot_interfaces/srv/RequestAction.idl
 rosidl_generator_c/robot_interfaces/msg/base_cmd.h: rosidl_adapter/robot_interfaces/srv/BaseControl.idl
+rosidl_generator_c/robot_interfaces/msg/base_cmd.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+rosidl_generator_c/robot_interfaces/msg/base_cmd.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ddon/software_robocon_2025/build/robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
-	/home/ddon/miniconda3/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_generator_c__arguments.json
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_generator_c__arguments.json
 
 rosidl_generator_c/robot_interfaces/msg/detail/base_cmd__functions.h: rosidl_generator_c/robot_interfaces/msg/base_cmd.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/robot_interfaces/msg/detail/base_cmd__functions.h
@@ -345,6 +347,7 @@ librobot_interfaces__rosidl_generator_c.so: CMakeFiles/robot_interfaces__rosidl_
 librobot_interfaces__rosidl_generator_c.so: CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/srv/detail/request_action__functions.c.o
 librobot_interfaces__rosidl_generator_c.so: CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/srv/detail/base_control__functions.c.o
 librobot_interfaces__rosidl_generator_c.so: CMakeFiles/robot_interfaces__rosidl_generator_c.dir/build.make
+librobot_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 librobot_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 librobot_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 librobot_interfaces__rosidl_generator_c.so: CMakeFiles/robot_interfaces__rosidl_generator_c.dir/link.txt

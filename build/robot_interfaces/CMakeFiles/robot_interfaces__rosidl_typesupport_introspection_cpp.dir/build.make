@@ -85,8 +85,10 @@ rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/base_cmd__rosid
 rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/base_cmd__rosidl_typesupport_introspection_cpp.hpp: rosidl_adapter/robot_interfaces/srv/RequestCalculation.idl
 rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/base_cmd__rosidl_typesupport_introspection_cpp.hpp: rosidl_adapter/robot_interfaces/srv/RequestAction.idl
 rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/base_cmd__rosidl_typesupport_introspection_cpp.hpp: rosidl_adapter/robot_interfaces/srv/BaseControl.idl
+rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/base_cmd__rosidl_typesupport_introspection_cpp.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/base_cmd__rosidl_typesupport_introspection_cpp.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ddon/software_robocon_2025/build/robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ introspection for ROS interfaces"
-	/home/ddon/miniconda3/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp --generator-arguments-file /home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_typesupport_introspection_cpp__arguments.json
+	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp --generator-arguments-file /home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_typesupport_introspection_cpp__arguments.json
 
 rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/imu__rosidl_typesupport_introspection_cpp.hpp: rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/base_cmd__rosidl_typesupport_introspection_cpp.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/imu__rosidl_typesupport_introspection_cpp.hpp
@@ -268,10 +270,11 @@ librobot_interfaces__rosidl_typesupport_introspection_cpp.so: CMakeFiles/robot_i
 librobot_interfaces__rosidl_typesupport_introspection_cpp.so: CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/srv/detail/request_action__type_support.cpp.o
 librobot_interfaces__rosidl_typesupport_introspection_cpp.so: CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/srv/detail/base_control__type_support.cpp.o
 librobot_interfaces__rosidl_typesupport_introspection_cpp.so: CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make
+librobot_interfaces__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 librobot_interfaces__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
+librobot_interfaces__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
 librobot_interfaces__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 librobot_interfaces__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib/librcutils.so
-librobot_interfaces__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
 librobot_interfaces__rosidl_typesupport_introspection_cpp.so: CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ddon/software_robocon_2025/build/robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX shared library librobot_interfaces__rosidl_typesupport_introspection_cpp.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/link.txt --verbose=$(VERBOSE)

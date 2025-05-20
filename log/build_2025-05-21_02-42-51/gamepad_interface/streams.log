@@ -1,0 +1,73 @@
+[0.021s] Invoking command in '/home/ddon/software_robocon_2025/build/gamepad_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ddon/software_robocon_2025/gamepad_interface -DCMAKE_INSTALL_PREFIX=/home/ddon/software_robocon_2025/install/gamepad_interface
+[0.075s] -- The C compiler identification is GNU 11.4.0
+[0.132s] -- The CXX compiler identification is GNU 11.4.0
+[0.138s] -- Detecting C compiler ABI info
+[0.189s] -- Detecting C compiler ABI info - done
+[0.200s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.200s] -- Detecting C compile features
+[0.200s] -- Detecting C compile features - done
+[0.204s] -- Detecting CXX compiler ABI info
+[0.272s] -- Detecting CXX compiler ABI info - done
+[0.283s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.284s] -- Detecting CXX compile features
+[0.284s] -- Detecting CXX compile features - done
+[0.288s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.454s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.585s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.644s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.651s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.664s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.682s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.705s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.755s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.758s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.839s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.877s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.947s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.955s] -- Looking for pthread.h
+[1.015s] -- Looking for pthread.h - found
+[1.015s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.075s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.076s] -- Found Threads: TRUE  
+[1.124s] -- Found robot_interfaces: 0.0.0 (/home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/cmake)
+[1.192s] -- Configuring done
+[1.201s] -- Generating done
+[1.205s] -- Build files have been written to: /home/ddon/software_robocon_2025/build/gamepad_interface
+[1.212s] Invoked command in '/home/ddon/software_robocon_2025/build/gamepad_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ddon/software_robocon_2025/gamepad_interface -DCMAKE_INSTALL_PREFIX=/home/ddon/software_robocon_2025/install/gamepad_interface
+[1.214s] Invoking command in '/home/ddon/software_robocon_2025/build/gamepad_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ddon/software_robocon_2025/build/gamepad_interface -- -j8 -l8
+[1.264s] [ 16%] [32mBuilding CXX object CMakeFiles/gamepad_driver.dir/src/gamepad.cpp.o[0m
+[1.663s] [ 33%] [32m[1mLinking CXX static library libgamepad_driver.a[0m
+[1.692s] [ 33%] Built target gamepad_driver
+[1.709s] [ 50%] [32mBuilding CXX object CMakeFiles/robot_input_mapper.dir/src/mapper.cpp.o[0m
+[2.393s] [ 66%] [32m[1mLinking CXX static library librobot_input_mapper.a[0m
+[2.435s] [ 66%] Built target robot_input_mapper
+[2.462s] [ 83%] [32mBuilding CXX object CMakeFiles/gamepad_node.dir/src/gamepad_node.cpp.o[0m
+[12.178s] [100%] [32m[1mLinking CXX executable gamepad_node[0m
+[12.412s] [100%] Built target gamepad_node
+[12.423s] Invoked command in '/home/ddon/software_robocon_2025/build/gamepad_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ddon/software_robocon_2025/build/gamepad_interface -- -j8 -l8
+[12.424s] Invoking command in '/home/ddon/software_robocon_2025/build/gamepad_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ddon/software_robocon_2025/build/gamepad_interface
+[12.431s] -- Install configuration: ""
+[12.431s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/include
+[12.431s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/include/gamepad_interface
+[12.431s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/include/gamepad_interface/mapper.hpp
+[12.431s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/include/gamepad_interface/gamepad.hpp
+[12.431s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/lib/libgamepad_driver.a
+[12.431s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/lib/librobot_input_mapper.a
+[12.431s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/lib/gamepad_interface/gamepad_node
+[12.433s] -- Set runtime path of "/home/ddon/software_robocon_2025/install/gamepad_interface/lib/gamepad_interface/gamepad_node" to ""
+[12.433s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/share/ament_index/resource_index/package_run_dependencies/gamepad_interface
+[12.433s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/share/ament_index/resource_index/parent_prefix_path/gamepad_interface
+[12.433s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/environment/ament_prefix_path.sh
+[12.434s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/environment/ament_prefix_path.dsv
+[12.434s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/environment/path.sh
+[12.434s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/environment/path.dsv
+[12.434s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/local_setup.bash
+[12.434s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/local_setup.sh
+[12.434s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/local_setup.zsh
+[12.434s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/local_setup.dsv
+[12.434s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/package.dsv
+[12.435s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/share/ament_index/resource_index/packages/gamepad_interface
+[12.435s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/cmake/gamepad_interfaceConfig.cmake
+[12.435s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/cmake/gamepad_interfaceConfig-version.cmake
+[12.435s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/package.xml
+[12.437s] Invoked command in '/home/ddon/software_robocon_2025/build/gamepad_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ddon/software_robocon_2025/build/gamepad_interface

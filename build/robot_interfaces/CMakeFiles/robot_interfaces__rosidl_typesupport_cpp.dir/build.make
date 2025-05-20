@@ -83,8 +83,10 @@ rosidl_typesupport_cpp/robot_interfaces/msg/base_cmd__type_support.cpp: rosidl_a
 rosidl_typesupport_cpp/robot_interfaces/msg/base_cmd__type_support.cpp: rosidl_adapter/robot_interfaces/srv/RequestCalculation.idl
 rosidl_typesupport_cpp/robot_interfaces/msg/base_cmd__type_support.cpp: rosidl_adapter/robot_interfaces/srv/RequestAction.idl
 rosidl_typesupport_cpp/robot_interfaces/msg/base_cmd__type_support.cpp: rosidl_adapter/robot_interfaces/srv/BaseControl.idl
+rosidl_typesupport_cpp/robot_interfaces/msg/base_cmd__type_support.cpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+rosidl_typesupport_cpp/robot_interfaces/msg/base_cmd__type_support.cpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ddon/software_robocon_2025/build/robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ type support dispatch for ROS interfaces"
-	/home/ddon/miniconda3/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp --generator-arguments-file /home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_typesupport_cpp__arguments.json --typesupports rosidl_typesupport_fastrtps_cpp rosidl_typesupport_introspection_cpp
+	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp --generator-arguments-file /home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_typesupport_cpp__arguments.json --typesupports rosidl_typesupport_fastrtps_cpp rosidl_typesupport_introspection_cpp
 
 rosidl_typesupport_cpp/robot_interfaces/msg/imu__type_support.cpp: rosidl_typesupport_cpp/robot_interfaces/msg/base_cmd__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_cpp/robot_interfaces/msg/imu__type_support.cpp
@@ -242,6 +244,7 @@ librobot_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/robot_interfaces__ros
 librobot_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/srv/request_action__type_support.cpp.o
 librobot_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/srv/base_control__type_support.cpp.o
 librobot_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/build.make
+librobot_interfaces__rosidl_typesupport_cpp.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 librobot_interfaces__rosidl_typesupport_cpp.so: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
 librobot_interfaces__rosidl_typesupport_cpp.so: /opt/ros/humble/lib/librosidl_typesupport_c.so
 librobot_interfaces__rosidl_typesupport_cpp.so: /opt/ros/humble/lib/librosidl_runtime_c.so

@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_astra_camera_msgs_egg.dir/compiler_d
 include CMakeFiles/ament_cmake_python_build_astra_camera_msgs_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_astra_camera_msgs_egg:
-	cd /home/ddon/software_robocon_2025/build/astra_camera_msgs/ament_cmake_python/astra_camera_msgs && /home/ddon/miniconda3/bin/python3 setup.py egg_info
+	cd /home/ddon/software_robocon_2025/build/astra_camera_msgs/ament_cmake_python/astra_camera_msgs && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_astra_camera_msgs_egg: CMakeFiles/ament_cmake_python_build_astra_camera_msgs_egg
 ament_cmake_python_build_astra_camera_msgs_egg: CMakeFiles/ament_cmake_python_build_astra_camera_msgs_egg.dir/build.make

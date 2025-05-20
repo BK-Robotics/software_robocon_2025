@@ -9,7 +9,8 @@
                 "${workspaceFolder}/**",
                 "/opt/ros/humble/include/**",
                 "${workspaceFolder}/install/**/include/**",
-                "${workspaceFolder}/build/**/rosidl_generator_cpp/**"
+                "${workspaceFolder}/build/**/rosidl_generator_cpp/**",
+                "${workspaceFolder}/install/robot_interfaces/include/robot_interfaces"
             ],
             "name": "ROS",
             "intelliSenseMode": "gcc-x64",

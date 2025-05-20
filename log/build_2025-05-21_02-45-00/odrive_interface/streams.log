@@ -1,0 +1,26 @@
+[0.287s] Invoking command in '/home/ddon/software_robocon_2025/build/odrive_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ddon/software_robocon_2025/build/odrive_interface -- -j8 -l8
+[0.333s] [100%] Built target odrive_interface_node
+[0.342s] Invoked command in '/home/ddon/software_robocon_2025/build/odrive_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ddon/software_robocon_2025/build/odrive_interface -- -j8 -l8
+[0.343s] Invoking command in '/home/ddon/software_robocon_2025/build/odrive_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ddon/software_robocon_2025/build/odrive_interface
+[0.350s] -- Install configuration: ""
+[0.350s] -- Up-to-date: /home/ddon/software_robocon_2025/install/odrive_interface/lib/odrive_interface/odrive_interface_node
+[0.350s] -- Up-to-date: /home/ddon/software_robocon_2025/install/odrive_interface/include
+[0.350s] -- Up-to-date: /home/ddon/software_robocon_2025/install/odrive_interface/include/odrive_interface
+[0.351s] -- Up-to-date: /home/ddon/software_robocon_2025/install/odrive_interface/include/odrive_interface/can_comm.hpp
+[0.351s] -- Up-to-date: /home/ddon/software_robocon_2025/install/odrive_interface/include/odrive_interface/odrive_motor.hpp
+[0.351s] -- Up-to-date: /home/ddon/software_robocon_2025/install/odrive_interface/share/ament_index/resource_index/package_run_dependencies/odrive_interface
+[0.351s] -- Up-to-date: /home/ddon/software_robocon_2025/install/odrive_interface/share/ament_index/resource_index/parent_prefix_path/odrive_interface
+[0.351s] -- Up-to-date: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/environment/ament_prefix_path.sh
+[0.351s] -- Up-to-date: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/environment/ament_prefix_path.dsv
+[0.351s] -- Up-to-date: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/environment/path.sh
+[0.351s] -- Up-to-date: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/environment/path.dsv
+[0.352s] -- Up-to-date: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/local_setup.bash
+[0.352s] -- Up-to-date: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/local_setup.sh
+[0.352s] -- Up-to-date: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/local_setup.zsh
+[0.352s] -- Up-to-date: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/local_setup.dsv
+[0.352s] -- Installing: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/package.dsv
+[0.352s] -- Up-to-date: /home/ddon/software_robocon_2025/install/odrive_interface/share/ament_index/resource_index/packages/odrive_interface
+[0.352s] -- Up-to-date: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/cmake/odrive_interfaceConfig.cmake
+[0.352s] -- Up-to-date: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/cmake/odrive_interfaceConfig-version.cmake
+[0.352s] -- Up-to-date: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/package.xml
+[0.354s] Invoked command in '/home/ddon/software_robocon_2025/build/odrive_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ddon/software_robocon_2025/build/odrive_interface

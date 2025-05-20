@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_robot_interfaces_egg.dir/compiler_de
 include CMakeFiles/ament_cmake_python_build_robot_interfaces_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_robot_interfaces_egg:
-	cd /home/ddon/software_robocon_2025/build/robot_interfaces/ament_cmake_python/robot_interfaces && /home/ddon/miniconda3/bin/python3 setup.py egg_info
+	cd /home/ddon/software_robocon_2025/build/robot_interfaces/ament_cmake_python/robot_interfaces && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_robot_interfaces_egg: CMakeFiles/ament_cmake_python_build_robot_interfaces_egg
 ament_cmake_python_build_robot_interfaces_egg: CMakeFiles/ament_cmake_python_build_robot_interfaces_egg.dir/build.make

@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"robot_interfaces\" -Drobot_interfaces__rosidl_generator_py_EXPORTS
 
-C_INCLUDES = -I/home/ddon/software_robocon_2025/robot_interfaces/include -I/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_generator_c -I/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_generator_py -I/home/ddon/miniconda3/include/python3.12 -I/home/ddon/miniconda3/lib/python3.12/site-packages/numpy/core/include -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface
+C_INCLUDES = -I/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_generator_c -I/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_generator_py -I/usr/include/python3.10 -I/home/ddon/software_robocon_2025/robot_interfaces/include -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface
 
 C_FLAGS = -fPIC -Wall -Wextra
 

@@ -1,0 +1,41 @@
+[0.782s] Invoking command in '/home/ddon/software_robocon_2025/main_controller_pkg': PYTHONPATH=/home/ddon/software_robocon_2025/build/main_controller_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/main_controller_pkg build --build-base /home/ddon/software_robocon_2025/build/main_controller_pkg/build install --record /home/ddon/software_robocon_2025/build/main_controller_pkg/install.log --single-version-externally-managed install_data
+[1.188s] running egg_info
+[1.188s] creating ../build/main_controller_pkg/main_controller_pkg.egg-info
+[1.189s] writing ../build/main_controller_pkg/main_controller_pkg.egg-info/PKG-INFO
+[1.189s] writing dependency_links to ../build/main_controller_pkg/main_controller_pkg.egg-info/dependency_links.txt
+[1.189s] writing entry points to ../build/main_controller_pkg/main_controller_pkg.egg-info/entry_points.txt
+[1.189s] writing requirements to ../build/main_controller_pkg/main_controller_pkg.egg-info/requires.txt
+[1.189s] writing top-level names to ../build/main_controller_pkg/main_controller_pkg.egg-info/top_level.txt
+[1.189s] writing manifest file '../build/main_controller_pkg/main_controller_pkg.egg-info/SOURCES.txt'
+[1.192s] reading manifest file '../build/main_controller_pkg/main_controller_pkg.egg-info/SOURCES.txt'
+[1.192s] writing manifest file '../build/main_controller_pkg/main_controller_pkg.egg-info/SOURCES.txt'
+[1.192s] running build
+[1.193s] running build_py
+[1.193s] creating /home/ddon/software_robocon_2025/build/main_controller_pkg/build
+[1.193s] creating /home/ddon/software_robocon_2025/build/main_controller_pkg/build/lib
+[1.193s] creating /home/ddon/software_robocon_2025/build/main_controller_pkg/build/lib/main_controller_pkg
+[1.193s] copying main_controller_pkg/main_controller_node.py -> /home/ddon/software_robocon_2025/build/main_controller_pkg/build/lib/main_controller_pkg
+[1.193s] copying main_controller_pkg/full_calculation_node.py -> /home/ddon/software_robocon_2025/build/main_controller_pkg/build/lib/main_controller_pkg
+[1.193s] copying main_controller_pkg/__init__.py -> /home/ddon/software_robocon_2025/build/main_controller_pkg/build/lib/main_controller_pkg
+[1.194s] running install
+[1.194s] running install_lib
+[1.195s] creating /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages/main_controller_pkg
+[1.195s] copying /home/ddon/software_robocon_2025/build/main_controller_pkg/build/lib/main_controller_pkg/main_controller_node.py -> /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages/main_controller_pkg
+[1.195s] copying /home/ddon/software_robocon_2025/build/main_controller_pkg/build/lib/main_controller_pkg/full_calculation_node.py -> /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages/main_controller_pkg
+[1.196s] copying /home/ddon/software_robocon_2025/build/main_controller_pkg/build/lib/main_controller_pkg/__init__.py -> /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages/main_controller_pkg
+[1.196s] byte-compiling /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages/main_controller_pkg/main_controller_node.py to main_controller_node.cpython-310.pyc
+[1.197s] byte-compiling /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages/main_controller_pkg/full_calculation_node.py to full_calculation_node.cpython-310.pyc
+[1.198s] byte-compiling /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages/main_controller_pkg/__init__.py to __init__.cpython-310.pyc
+[1.198s] running install_data
+[1.199s] creating /home/ddon/software_robocon_2025/install/main_controller_pkg/share/ament_index
+[1.199s] creating /home/ddon/software_robocon_2025/install/main_controller_pkg/share/ament_index/resource_index
+[1.199s] creating /home/ddon/software_robocon_2025/install/main_controller_pkg/share/ament_index/resource_index/packages
+[1.199s] copying resource/main_controller_pkg -> /home/ddon/software_robocon_2025/install/main_controller_pkg/share/ament_index/resource_index/packages
+[1.199s] copying package.xml -> /home/ddon/software_robocon_2025/install/main_controller_pkg/share/main_controller_pkg
+[1.199s] running install_egg_info
+[1.201s] Copying ../build/main_controller_pkg/main_controller_pkg.egg-info to /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages/main_controller_pkg-0.0.0-py3.10.egg-info
+[1.202s] running install_scripts
+[1.225s] Installing full_calculation_node script to /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/main_controller_pkg
+[1.225s] Installing main_controller_node script to /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/main_controller_pkg
+[1.225s] writing list of installed files to '/home/ddon/software_robocon_2025/build/main_controller_pkg/install.log'
+[1.259s] Invoked command in '/home/ddon/software_robocon_2025/main_controller_pkg' returned '0': PYTHONPATH=/home/ddon/software_robocon_2025/build/main_controller_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/main_controller_pkg build --build-base /home/ddon/software_robocon_2025/build/main_controller_pkg/build install --record /home/ddon/software_robocon_2025/build/main_controller_pkg/install.log --single-version-externally-managed install_data

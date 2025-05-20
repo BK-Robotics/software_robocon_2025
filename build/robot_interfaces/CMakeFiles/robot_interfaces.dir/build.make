@@ -86,6 +86,8 @@ CMakeFiles/robot_interfaces: rosidl_cmake/srv/RequestAction_Response.msg
 CMakeFiles/robot_interfaces: /home/ddon/software_robocon_2025/robot_interfaces/srv/BaseControl.srv
 CMakeFiles/robot_interfaces: rosidl_cmake/srv/BaseControl_Request.msg
 CMakeFiles/robot_interfaces: rosidl_cmake/srv/BaseControl_Response.msg
+CMakeFiles/robot_interfaces: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+CMakeFiles/robot_interfaces: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 
 robot_interfaces: CMakeFiles/robot_interfaces
 robot_interfaces: CMakeFiles/robot_interfaces.dir/build.make

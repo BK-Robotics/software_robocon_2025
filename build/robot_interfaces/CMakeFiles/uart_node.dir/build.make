@@ -143,13 +143,13 @@ uart_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introsp
 uart_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 uart_node: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 uart_node: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
-uart_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 uart_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 uart_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 uart_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
 uart_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 uart_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 uart_node: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+uart_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 uart_node: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
 uart_node: /opt/ros/humble/lib/librosidl_typesupport_c.so
 uart_node: /opt/ros/humble/lib/librcpputils.so
