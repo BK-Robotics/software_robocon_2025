@@ -1,0 +1,16 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/ddon/ros2_ws_cpp/install/shooter_control/lib/python3.12/site-packages",
+        "/home/ddon/ros2_ws_cpp/install/odrive_custom_msg/lib/python3.12/site-packages",
+        "/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain/lib/python3.12/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/ddon/ros2_ws_cpp/install/shooter_control/lib/python3.12/site-packages",
+        "/home/ddon/ros2_ws_cpp/install/odrive_custom_msg/lib/python3.12/site-packages",
+        "/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain/lib/python3.12/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

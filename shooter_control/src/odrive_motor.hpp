@@ -14,8 +14,8 @@ public:
         POSITION,
         TORQUE
     };
-    
-    static constexpr uint8_t FEEDBACK_CMD_ID = 0x09; 
+
+    static constexpr uint8_t FEEDBACK_CMD_ID = 0x09;
 
     OdriveMotor(uint8_t device_id, ControlMode mode, CANInterface *can_interface);
     ~OdriveMotor();

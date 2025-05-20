@@ -22,7 +22,7 @@ public:
     CANInterface();
     ~CANInterface();
 
-    // Open a CAN interface    
+    // Open a CAN interface
     bool openInterface(const std::string &interface);
 
     // Send a CAN frame
@@ -30,7 +30,7 @@ public:
 
     // Register a callback for feedback
     void registerFeedbackCallback(FeedbackCallback cb);
-    
+
     // Receive loop for incoming CAN frames
     void receiveLoop();
 

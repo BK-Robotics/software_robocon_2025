@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/ddon/ros2_ws_cpp/install/shooter_control/include/**",
+        "/home/ddon/ros2_ws_cpp/install/odrive_custom_msg/include/**",
+        "/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/ddon/ros2_ws_cpp/src/robocon2024/Odrive_CAN_Custom_Msg/can_control_package/include/**",
+        "/home/ddon/ros2_ws_cpp/src/robocon2024/Odrive_CAN_Custom_Msg/odrive_custom_msg/include/**",
+        "/home/ddon/ros2_ws_cpp/src/robocon2024/dual_sense_controller/include/**",
+        "/home/ddon/ros2_ws_cpp/src/robocon2024/mecanum_drivetrain/include/**",
+        "/home/ddon/ros2_ws_cpp/src/robocon2024/odrive_can_cpp/include/**",
+        "/home/ddon/ros2_ws_cpp/src/software_robocon_2025/ros2_astra_camera/astra_camera/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
