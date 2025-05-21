@@ -36,7 +36,7 @@ class MainControllerNode(Node):
         success = False
         if request.action == 1:
             # Main rotate base and distance calculation
-            self.distance = self.shooting_distance_process()
+            # self.distance = self.shooting_distance_process()
             success = self.send_request_calculation(self.distance)
         elif request.action >= 5:
             self.base_mode = request.action - 5
