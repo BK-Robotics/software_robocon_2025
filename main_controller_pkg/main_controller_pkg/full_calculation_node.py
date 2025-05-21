@@ -46,11 +46,11 @@ class FullCalculationNode(Node):
         request.action = action
         request.velocity = velocity
         future = self.control_client.call_async(request)
-        rclpy.spin_until_future_complete(self, future)
+        rclpy.spin_until_future_complete(self, future, timeout_sec=2.0)
         if future.result() is not None:
-            self.get_logger().info('Control request sent: %d' % action)
+            self.get_logger().info('Feedback %d' % action)
         else:
-            self.get_logger().error('Control request failed')
+            self.get_logger().warn('No response from control service: %r' % future.exception())
     # Calculate RPS from linear velocity and pulley diameter
     def calculate_rps(self, linear_velocity):
         """
