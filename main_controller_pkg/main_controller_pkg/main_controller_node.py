@@ -52,27 +52,18 @@ class MainControllerNode(Node):
 
     def send_control_request(self, action, velocity = 0):
         if not self.control_client.wait_for_service(timeout_sec=1.0):
-            self.get_logger().error("No reponse")
-            return False
+            self.get_logger().error('Control service not available, exiting...')
+            return
         request = Control.Request()
         request.action = action
         request.velocity = velocity
         future = self.control_client.call_async(request)
-        timeout_sec = 2.0
-        start = self.get_clock().now()
-        while not future.done():
-            rclpy.spin_once(self, timeout_sec=0.1)
-            elapsed = (self.get_clock().now() - start).nanoseconds / 1e9
-            if elapsed > timeout_sec:
-                self.get_logger().error("No reponse")
-                return False
+        rclpy.spin_until_future_complete(self, future, timeout_sec=2.0)
         if future.result() is not None:
-            self.get_logger().info("feedback")
-            return True
+            self.get_logger().info('Feedback %d' % action)
         else:
-            self.get_logger().error("No reponse")
-            return False
-    
+            self.get_logger().warn('No response from control service: %r' % future.exception())
+
     def send_request_calculation(self, distance):
         if not self.request_calculation_client.wait_for_service(timeout_sec=1.0):
             self.get_logger().error("No reponse")
