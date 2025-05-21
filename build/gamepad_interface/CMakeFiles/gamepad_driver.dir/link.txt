@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgamepad_driver.a CMakeFiles/gamepad_driver.dir/src/gamepad.cpp.o
+/usr/bin/ranlib libgamepad_driver.a

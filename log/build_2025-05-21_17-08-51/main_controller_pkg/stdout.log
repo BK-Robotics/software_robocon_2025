@@ -1,0 +1,39 @@
+running egg_info
+creating ../build/main_controller_pkg/main_controller_pkg.egg-info
+writing ../build/main_controller_pkg/main_controller_pkg.egg-info/PKG-INFO
+writing dependency_links to ../build/main_controller_pkg/main_controller_pkg.egg-info/dependency_links.txt
+writing entry points to ../build/main_controller_pkg/main_controller_pkg.egg-info/entry_points.txt
+writing requirements to ../build/main_controller_pkg/main_controller_pkg.egg-info/requires.txt
+writing top-level names to ../build/main_controller_pkg/main_controller_pkg.egg-info/top_level.txt
+writing manifest file '../build/main_controller_pkg/main_controller_pkg.egg-info/SOURCES.txt'
+reading manifest file '../build/main_controller_pkg/main_controller_pkg.egg-info/SOURCES.txt'
+writing manifest file '../build/main_controller_pkg/main_controller_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ddon/software_robocon_2025/build/main_controller_pkg/build
+creating /home/ddon/software_robocon_2025/build/main_controller_pkg/build/lib
+creating /home/ddon/software_robocon_2025/build/main_controller_pkg/build/lib/main_controller_pkg
+copying main_controller_pkg/main_controller_node.py -> /home/ddon/software_robocon_2025/build/main_controller_pkg/build/lib/main_controller_pkg
+copying main_controller_pkg/full_calculation_node.py -> /home/ddon/software_robocon_2025/build/main_controller_pkg/build/lib/main_controller_pkg
+copying main_controller_pkg/__init__.py -> /home/ddon/software_robocon_2025/build/main_controller_pkg/build/lib/main_controller_pkg
+running install
+running install_lib
+creating /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages/main_controller_pkg
+copying /home/ddon/software_robocon_2025/build/main_controller_pkg/build/lib/main_controller_pkg/main_controller_node.py -> /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages/main_controller_pkg
+copying /home/ddon/software_robocon_2025/build/main_controller_pkg/build/lib/main_controller_pkg/full_calculation_node.py -> /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages/main_controller_pkg
+copying /home/ddon/software_robocon_2025/build/main_controller_pkg/build/lib/main_controller_pkg/__init__.py -> /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages/main_controller_pkg
+byte-compiling /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages/main_controller_pkg/main_controller_node.py to main_controller_node.cpython-310.pyc
+byte-compiling /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages/main_controller_pkg/full_calculation_node.py to full_calculation_node.cpython-310.pyc
+byte-compiling /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages/main_controller_pkg/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/ddon/software_robocon_2025/install/main_controller_pkg/share/ament_index
+creating /home/ddon/software_robocon_2025/install/main_controller_pkg/share/ament_index/resource_index
+creating /home/ddon/software_robocon_2025/install/main_controller_pkg/share/ament_index/resource_index/packages
+copying resource/main_controller_pkg -> /home/ddon/software_robocon_2025/install/main_controller_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/ddon/software_robocon_2025/install/main_controller_pkg/share/main_controller_pkg
+running install_egg_info
+Copying ../build/main_controller_pkg/main_controller_pkg.egg-info to /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages/main_controller_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing full_calculation_node script to /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/main_controller_pkg
+Installing main_controller_node script to /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/main_controller_pkg
+writing list of installed files to '/home/ddon/software_robocon_2025/build/main_controller_pkg/install.log'

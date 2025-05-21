@@ -1,0 +1,39 @@
+[0.295s] Invoking command in '/home/ddon/software_robocon_2025/build/mcu_interface': CMAKE_PREFIX_PATH=/home/ddon/software_robocon_2025/install/robot_interfaces:/home/ddon/software_robocon_2025/install/odrive_interface:/home/ddon/software_robocon_2025/install/gamepad_interface:/home/ddon/software_robocon_2025/install/robot_bringup:/home/ddon/software_robocon_2025/install/astra_camera_msgs:/home/ddon/ros2_ws_cpp/install/shooter_control:/home/ddon/ros2_ws_cpp/install/robot_interfaces:/home/ddon/ros2_ws_cpp/install/robot_bringup:/home/ddon/ros2_ws_cpp/install/odrive_interface:/home/ddon/ros2_ws_cpp/install/can_control_package:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg:/home/ddon/ros2_ws_cpp/install/odrive_can_cpp:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain:/home/ddon/ros2_ws_cpp/install/gamepad_interface:/home/ddon/ros2_ws_cpp/install/dual_sense_controller:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --build /home/ddon/software_robocon_2025/build/mcu_interface -- -j8 -l8
+[0.329s] [35m[1mConsolidate compiler generated dependencies of target uart_node[0m
+[0.343s] [ 50%] [32mBuilding CXX object CMakeFiles/uart_node.dir/src/MCU_Interface.cpp.o[0m
+[2.500s] [01m[K/home/ddon/software_robocon_2025/mcu_interface/src/MCU_Interface.cpp:[m[K In constructor ‘[01m[KUARTNode::UARTNode()[m[K’:
+[2.500s] [01m[K/home/ddon/software_robocon_2025/mcu_interface/src/MCU_Interface.cpp:32:70:[m[K [01;31m[Kerror: [m[K‘[01m[KBaseCMD[m[K’ is not a member of ‘[01m[Krobot_interfaces::msg[m[K’; did you mean ‘[01m[KBaseCmd[m[K’?
+[2.500s]    32 |     sub_base_cmd_ = this->create_subscription<robot_interfaces::msg::[01;31m[KBaseCMD[m[K>(
+[2.501s]       |                                                                      [01;31m[K^~~~~~~[m[K
+[2.501s]       |                                                                      [32m[KBaseCmd[m[K
+[2.503s] [01m[K/home/ddon/software_robocon_2025/mcu_interface/src/MCU_Interface.cpp:32:78:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KUARTNode::create_subscription<<expression error> >(const char [10], int, std::_Bind_helper<false, void (UARTNode::*)(std::shared_ptr<robot_interfaces::msg::BaseCmd_<std::allocator<void> > >), UARTNode*, const std::_Placeholder<1>&>::type)[m[K’
+[2.503s]    32 |     sub_base_cmd_ = [01;31m[Kthis->create_subscription<robot_interfaces::msg::BaseCMD>([m[K
+[2.504s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[2.504s]    33 | [01;31m[K        "/base_cmd", 10,[m[K
+[2.504s]       |         [01;31m[K~~~~~~~~~~~~~~~~[m[K                                                      
+[2.504s]    34 | [01;31m[K        std::bind(&UARTNode::handle_base_cmd, this, std::placeholders::_1)[m[K
+[2.504s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K    
+[2.504s]    35 | [01;31m[K    )[m[K;
+[2.504s]       |     [01;31m[K~[m[K                                                                         
+[2.504s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.504s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[2.504s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.504s]                  from [01m[K/home/ddon/software_robocon_2025/mcu_interface/include/mcu_interface/MCU_Interface.hpp:3[m[K,
+[2.504s]                  from [01m[K/home/ddon/software_robocon_2025/mcu_interface/src/MCU_Interface.cpp:1[m[K:
+[2.504s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[2.504s]   219 |   [01;36m[Kcreate_subscription[m[K(
+[2.504s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.504s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.504s] [01m[K/home/ddon/software_robocon_2025/mcu_interface/src/MCU_Interface.cpp:32:78:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.504s]    32 |     sub_base_cmd_ = [01;31m[Kthis->create_subscription<robot_interfaces::msg::BaseCMD>([m[K
+[2.504s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[2.504s]    33 | [01;31m[K        "/base_cmd", 10,[m[K
+[2.505s]       |         [01;31m[K~~~~~~~~~~~~~~~~[m[K                                                      
+[2.505s]    34 | [01;31m[K        std::bind(&UARTNode::handle_base_cmd, this, std::placeholders::_1)[m[K
+[2.505s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K    
+[2.505s]    35 | [01;31m[K    )[m[K;
+[2.505s]       |     [01;31m[K~[m[K                                                                         
+[4.172s] gmake[2]: *** [CMakeFiles/uart_node.dir/build.make:76: CMakeFiles/uart_node.dir/src/MCU_Interface.cpp.o] Error 1
+[4.172s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/uart_node.dir/all] Error 2
+[4.172s] gmake: *** [Makefile:146: all] Error 2
+[4.174s] Invoked command in '/home/ddon/software_robocon_2025/build/mcu_interface' returned '2': CMAKE_PREFIX_PATH=/home/ddon/software_robocon_2025/install/robot_interfaces:/home/ddon/software_robocon_2025/install/odrive_interface:/home/ddon/software_robocon_2025/install/gamepad_interface:/home/ddon/software_robocon_2025/install/robot_bringup:/home/ddon/software_robocon_2025/install/astra_camera_msgs:/home/ddon/ros2_ws_cpp/install/shooter_control:/home/ddon/ros2_ws_cpp/install/robot_interfaces:/home/ddon/ros2_ws_cpp/install/robot_bringup:/home/ddon/ros2_ws_cpp/install/odrive_interface:/home/ddon/ros2_ws_cpp/install/can_control_package:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg:/home/ddon/ros2_ws_cpp/install/odrive_can_cpp:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain:/home/ddon/ros2_ws_cpp/install/gamepad_interface:/home/ddon/ros2_ws_cpp/install/dual_sense_controller:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --build /home/ddon/software_robocon_2025/build/mcu_interface -- -j8 -l8

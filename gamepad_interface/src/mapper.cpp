@@ -63,7 +63,7 @@ MapperOutput RobotInputMapper::update(const GamepadState &s)
         out.request_odrive = 1;
         out.has_request_odrive = true;
     }
-    if (edge(11))
+    if (edge(12))
     { // R3: Homing
         out.request_mcu = 2; 
         out.has_request_mcu = true;

@@ -18,19 +18,19 @@ DualSenseDriver::DualSenseDriver(const string &dev) : fd_(-1)
 }
 
 /*------------------ auto_detect -----------------------------------------*/
-std::string DualSenseDriver::auto_detect()
+string DualSenseDriver::auto_detect()
 {
     DIR *dir = opendir("/dev/input");
     if (!dir)
-        throw std::runtime_error("Cannot open /dev/input: " + std::string(std::strerror(errno)));
+        throw runtime_error("Cannot open /dev/input: " + string(strerror(errno)));
 
     struct dirent *ent;
     while ((ent = readdir(dir)) != NULL)
     {
-        if (std::strncmp(ent->d_name, "event", 5) != 0)
+        if (strncmp(ent->d_name, "event", 5) != 0)
             continue;
 
-        std::string path = std::string("/dev/input/") + ent->d_name;
+        string path = string("/dev/input/") + ent->d_name;
         int fd = ::open(path.c_str(), O_RDONLY | O_NONBLOCK);
         if (fd < 0)
             continue;
@@ -48,7 +48,7 @@ std::string DualSenseDriver::auto_detect()
         ::close(fd);
     }
     closedir(dir);
-    throw std::runtime_error("DualSense event device not found");
+    throw runtime_error("DualSense event device not found");
 }
 
 /*------------------ read() ----------------------------------------------*/
@@ -97,9 +97,50 @@ bool DualSenseDriver::read(GamepadState &out)
         }
         else if (ev.type == EV_KEY)
         {
-            int idx = ev.code - BTN_SOUTH; // BTN_SOUTH = 304
-            if (idx >= 0 && idx < 13)
-                state_.buttons[idx] = static_cast<uint8_t>(ev.value);
+            switch (ev.code)
+            {
+            case BTN_SOUTH:
+                state_.buttons[0] = ev.value;
+                break; // CROSS
+            case BTN_EAST:
+                state_.buttons[1] = ev.value;
+                break; // CIRCLE
+            case BTN_NORTH:
+                state_.buttons[2] = ev.value;
+                break; // TRIANGLE
+            case BTN_WEST:
+                state_.buttons[3] = ev.value;
+                break; // SQUARE
+            case BTN_TL:
+                state_.buttons[4] = ev.value;
+                break; // L1
+            case BTN_TR:
+                state_.buttons[5] = ev.value;
+                break; // R1
+            case BTN_TL2:
+                state_.buttons[6] = ev.value;
+                break; // L2 (digital)
+            case BTN_TR2:
+                state_.buttons[7] = ev.value;
+                break; // R2 (digital)
+            case BTN_SELECT:
+                state_.buttons[8] = ev.value;
+                break; // Create
+            case BTN_START:
+                state_.buttons[9] = ev.value;
+                break; // Options
+            case BTN_MODE:
+                state_.buttons[10] = ev.value;
+                break; // PS
+            case BTN_THUMBL:
+                state_.buttons[11] = ev.value;
+                break; // L3
+            case BTN_THUMBR:
+                state_.buttons[12] = ev.value;
+                break; // R3
+            default:
+                break;
+            }
         }
     }
 

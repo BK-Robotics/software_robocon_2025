@@ -1,0 +1,522 @@
+[0.089s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-skip', 'astra_camera', 'mcu_interface']
+[0.090s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=['astra_camera', 'mcu_interface'], packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7863fc01f250>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7863fc01eda0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7863fc01eda0>>, mixin_verb=('build',))
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.259s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ddon/software_robocon_2025'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation) by extensions ['ignore', 'ignore_ament_install']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation) by extension 'ignore'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation) by extension 'ignore_ament_install'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation) by extensions ['colcon_pkg']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation) by extension 'colcon_pkg'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation) by extensions ['colcon_meta']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation) by extension 'colcon_meta'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation) by extensions ['ros']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation) by extension 'ros'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation) by extensions ['cmake', 'python']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation) by extension 'cmake'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation) by extension 'python'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation) by extensions ['python_setup_py']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation) by extension 'python_setup_py'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation/__pycache__) by extension 'ignore'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation/__pycache__) by extension 'ignore_ament_install'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation/__pycache__) by extensions ['colcon_pkg']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation/__pycache__) by extension 'colcon_pkg'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation/__pycache__) by extensions ['colcon_meta']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation/__pycache__) by extension 'colcon_meta'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation/__pycache__) by extensions ['ros']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation/__pycache__) by extension 'ros'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation/__pycache__) by extensions ['cmake', 'python']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation/__pycache__) by extension 'cmake'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation/__pycache__) by extension 'python'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation/__pycache__) by extensions ['python_setup_py']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Full robot calculation/__pycache__) by extension 'python_setup_py'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(gamepad_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(gamepad_interface) by extension 'ignore'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(gamepad_interface) by extension 'ignore_ament_install'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(gamepad_interface) by extensions ['colcon_pkg']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(gamepad_interface) by extension 'colcon_pkg'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(gamepad_interface) by extensions ['colcon_meta']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(gamepad_interface) by extension 'colcon_meta'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(gamepad_interface) by extensions ['ros']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(gamepad_interface) by extension 'ros'
+[0.281s] DEBUG:colcon.colcon_core.package_identification:Package 'gamepad_interface' with type 'ros.ament_cmake' and name 'gamepad_interface'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(main_controller_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(main_controller_pkg) by extension 'ignore'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(main_controller_pkg) by extension 'ignore_ament_install'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(main_controller_pkg) by extensions ['colcon_pkg']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(main_controller_pkg) by extension 'colcon_pkg'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(main_controller_pkg) by extensions ['colcon_meta']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(main_controller_pkg) by extension 'colcon_meta'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(main_controller_pkg) by extensions ['ros']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(main_controller_pkg) by extension 'ros'
+[0.283s] DEBUG:colcon.colcon_core.package_identification:Package 'main_controller_pkg' with type 'ros.ament_python' and name 'main_controller_pkg'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(mcu_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(mcu_interface) by extension 'ignore'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(mcu_interface) by extension 'ignore_ament_install'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(mcu_interface) by extensions ['colcon_pkg']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(mcu_interface) by extension 'colcon_pkg'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(mcu_interface) by extensions ['colcon_meta']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(mcu_interface) by extension 'colcon_meta'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(mcu_interface) by extensions ['ros']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(mcu_interface) by extension 'ros'
+[0.284s] DEBUG:colcon.colcon_core.package_identification:Package 'mcu_interface' with type 'ros.ament_cmake' and name 'mcu_interface'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(odrive_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(odrive_interface) by extension 'ignore'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(odrive_interface) by extension 'ignore_ament_install'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(odrive_interface) by extensions ['colcon_pkg']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(odrive_interface) by extension 'colcon_pkg'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(odrive_interface) by extensions ['colcon_meta']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(odrive_interface) by extension 'colcon_meta'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(odrive_interface) by extensions ['ros']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(odrive_interface) by extension 'ros'
+[0.285s] DEBUG:colcon.colcon_core.package_identification:Package 'odrive_interface' with type 'ros.ament_cmake' and name 'odrive_interface'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(robot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(robot_bringup) by extension 'ignore'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(robot_bringup) by extension 'ignore_ament_install'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(robot_bringup) by extensions ['colcon_pkg']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(robot_bringup) by extension 'colcon_pkg'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(robot_bringup) by extensions ['colcon_meta']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(robot_bringup) by extension 'colcon_meta'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(robot_bringup) by extensions ['ros']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(robot_bringup) by extension 'ros'
+[0.285s] DEBUG:colcon.colcon_core.package_identification:Package 'robot_bringup' with type 'ros.ament_cmake' and name 'robot_bringup'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(robot_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(robot_interfaces) by extension 'ignore'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(robot_interfaces) by extension 'ignore_ament_install'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(robot_interfaces) by extensions ['colcon_pkg']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(robot_interfaces) by extension 'colcon_pkg'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(robot_interfaces) by extensions ['colcon_meta']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(robot_interfaces) by extension 'colcon_meta'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(robot_interfaces) by extensions ['ros']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(robot_interfaces) by extension 'ros'
+[0.286s] DEBUG:colcon.colcon_core.package_identification:Package 'robot_interfaces' with type 'ros.ament_cmake' and name 'robot_interfaces'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera) by extension 'ignore'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera) by extension 'ignore_ament_install'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera) by extensions ['colcon_pkg']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera) by extension 'colcon_pkg'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera) by extensions ['colcon_meta']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera) by extension 'colcon_meta'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera) by extensions ['ros']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera) by extension 'ros'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera) by extensions ['cmake', 'python']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera) by extension 'cmake'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera) by extension 'python'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera) by extensions ['python_setup_py']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera) by extension 'python_setup_py'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera/astra_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera/astra_camera) by extension 'ignore'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera/astra_camera) by extension 'ignore_ament_install'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera/astra_camera) by extensions ['colcon_pkg']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera/astra_camera) by extension 'colcon_pkg'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera/astra_camera) by extensions ['colcon_meta']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera/astra_camera) by extension 'colcon_meta'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera/astra_camera) by extensions ['ros']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera/astra_camera) by extension 'ros'
+[0.289s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_astra_camera/astra_camera' with type 'ros.ament_cmake' and name 'astra_camera'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera/astra_camera_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera/astra_camera_msgs) by extension 'ignore'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera/astra_camera_msgs) by extension 'ignore_ament_install'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera/astra_camera_msgs) by extensions ['colcon_pkg']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera/astra_camera_msgs) by extension 'colcon_pkg'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera/astra_camera_msgs) by extensions ['colcon_meta']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera/astra_camera_msgs) by extension 'colcon_meta'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera/astra_camera_msgs) by extensions ['ros']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_astra_camera/astra_camera_msgs) by extension 'ros'
+[0.290s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_astra_camera/astra_camera_msgs' with type 'ros.ament_cmake' and name 'astra_camera_msgs'
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.308s] INFO:colcon.colcon_core.package_selection:Skipping package 'astra_camera' in 'ros2_astra_camera/astra_camera'
+[0.308s] INFO:colcon.colcon_core.package_selection:Skipping package 'mcu_interface' in 'mcu_interface'
+[0.309s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.309s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.311s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/ddon/software_robocon_2025/install
+[0.311s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/ddon/ros2_ws_cpp/install
+[0.312s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 272 installed packages in /opt/ros/humble
+[0.314s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.345s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'astra_camera_msgs' is in: /home/ddon/software_robocon_2025/install/astra_camera_msgs, /home/ddon/ros2_ws_cpp/install/astra_camera_msgs
+	'robot_interfaces' is in: /home/ddon/software_robocon_2025/install/robot_interfaces, /home/ddon/ros2_ws_cpp/install/robot_interfaces
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding astra_camera_msgs robot_interfaces
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'astra_camera_msgs' build argument 'cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'astra_camera_msgs' build argument 'cmake_target' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'astra_camera_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'astra_camera_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'astra_camera_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'astra_camera_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'astra_camera_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'astra_camera_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'astra_camera_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.345s] DEBUG:colcon.colcon_core.verb:Building package 'astra_camera_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ddon/software_robocon_2025/build/astra_camera_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ddon/software_robocon_2025/install/astra_camera_msgs', 'merge_install': False, 'path': '/home/ddon/software_robocon_2025/ros2_astra_camera/astra_camera_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_target' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.346s] DEBUG:colcon.colcon_core.verb:Building package 'robot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ddon/software_robocon_2025/build/robot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ddon/software_robocon_2025/install/robot_bringup', 'merge_install': False, 'path': '/home/ddon/software_robocon_2025/robot_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.347s] DEBUG:colcon.colcon_core.verb:Building package 'robot_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ddon/software_robocon_2025/build/robot_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ddon/software_robocon_2025/install/robot_interfaces', 'merge_install': False, 'path': '/home/ddon/software_robocon_2025/robot_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'gamepad_interface' build argument 'cmake_args' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'gamepad_interface' build argument 'cmake_target' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'gamepad_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'gamepad_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'gamepad_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'gamepad_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'gamepad_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'gamepad_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'gamepad_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.347s] DEBUG:colcon.colcon_core.verb:Building package 'gamepad_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ddon/software_robocon_2025/build/gamepad_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ddon/software_robocon_2025/install/gamepad_interface', 'merge_install': False, 'path': '/home/ddon/software_robocon_2025/gamepad_interface', 'symlink_install': False, 'test_result_base': None}
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'main_controller_pkg' build argument 'cmake_args' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'main_controller_pkg' build argument 'cmake_target' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'main_controller_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'main_controller_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'main_controller_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'main_controller_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'main_controller_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'main_controller_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'main_controller_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.348s] DEBUG:colcon.colcon_core.verb:Building package 'main_controller_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ddon/software_robocon_2025/build/main_controller_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ddon/software_robocon_2025/install/main_controller_pkg', 'merge_install': False, 'path': '/home/ddon/software_robocon_2025/main_controller_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'odrive_interface' build argument 'cmake_args' from command line to 'None'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'odrive_interface' build argument 'cmake_target' from command line to 'None'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'odrive_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'odrive_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'odrive_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'odrive_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'odrive_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'odrive_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'odrive_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.348s] DEBUG:colcon.colcon_core.verb:Building package 'odrive_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ddon/software_robocon_2025/build/odrive_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ddon/software_robocon_2025/install/odrive_interface', 'merge_install': False, 'path': '/home/ddon/software_robocon_2025/odrive_interface', 'symlink_install': False, 'test_result_base': None}
+[0.348s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.349s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.349s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ddon/software_robocon_2025/robot_interfaces' with build type 'ament_cmake'
+[0.349s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ddon/software_robocon_2025/robot_interfaces'
+[0.351s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.351s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.351s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.355s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ddon/software_robocon_2025/ros2_astra_camera/astra_camera_msgs' with build type 'ament_cmake'
+[0.355s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ddon/software_robocon_2025/ros2_astra_camera/astra_camera_msgs'
+[0.355s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.355s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.359s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ddon/software_robocon_2025/robot_bringup' with build type 'ament_cmake'
+[0.359s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ddon/software_robocon_2025/robot_bringup'
+[0.359s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.359s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.366s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ddon/software_robocon_2025/build/robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --build /home/ddon/software_robocon_2025/build/robot_interfaces -- -j8 -l8
+[0.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ddon/software_robocon_2025/build/astra_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --build /home/ddon/software_robocon_2025/build/astra_camera_msgs -- -j8 -l8
+[0.374s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ddon/software_robocon_2025/build/robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --build /home/ddon/software_robocon_2025/build/robot_bringup -- -j8 -l8
+[0.414s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ddon/software_robocon_2025/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --build /home/ddon/software_robocon_2025/build/robot_bringup -- -j8 -l8
+[0.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ddon/software_robocon_2025/build/robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --install /home/ddon/software_robocon_2025/build/robot_bringup
+[0.444s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_bringup)
+[0.447s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_bringup' for CMake module files
+[0.450s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_bringup' for CMake config files
+[0.450s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ddon/software_robocon_2025/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --install /home/ddon/software_robocon_2025/build/robot_bringup
+[0.451s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_bringup', 'cmake_prefix_path')
+[0.451s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.ps1'
+[0.453s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ddon/software_robocon_2025/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.dsv'
+[0.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.sh'
+[0.455s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_bringup/bin'
+[0.455s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_bringup/lib/pkgconfig/robot_bringup.pc'
+[0.456s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_bringup/lib/python3.10/site-packages'
+[0.456s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_bringup/bin'
+[0.457s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/robot_bringup/share/robot_bringup/package.ps1'
+[0.458s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ddon/software_robocon_2025/install/robot_bringup/share/robot_bringup/package.dsv'
+[0.459s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/robot_bringup/share/robot_bringup/package.sh'
+[0.460s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/robot_bringup/share/robot_bringup/package.bash'
+[0.461s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/robot_bringup/share/robot_bringup/package.zsh'
+[0.463s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ddon/software_robocon_2025/install/robot_bringup/share/colcon-core/packages/robot_bringup)
+[0.464s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_bringup)
+[0.465s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_bringup' for CMake module files
+[0.466s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_bringup' for CMake config files
+[0.466s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_bringup', 'cmake_prefix_path')
+[0.466s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.ps1'
+[0.469s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ddon/software_robocon_2025/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.dsv'
+[0.470s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.sh'
+[0.473s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_bringup/bin'
+[0.473s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_bringup/lib/pkgconfig/robot_bringup.pc'
+[0.474s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_bringup/lib/python3.10/site-packages'
+[0.474s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_bringup/bin'
+[0.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/robot_bringup/share/robot_bringup/package.ps1'
+[0.476s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ddon/software_robocon_2025/install/robot_bringup/share/robot_bringup/package.dsv'
+[0.477s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/robot_bringup/share/robot_bringup/package.sh'
+[0.478s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/robot_bringup/share/robot_bringup/package.bash'
+[0.479s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/robot_bringup/share/robot_bringup/package.zsh'
+[0.480s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ddon/software_robocon_2025/install/robot_bringup/share/colcon-core/packages/robot_bringup)
+[0.863s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ddon/software_robocon_2025/build/robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --build /home/ddon/software_robocon_2025/build/robot_interfaces -- -j8 -l8
+[0.865s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ddon/software_robocon_2025/build/robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --install /home/ddon/software_robocon_2025/build/robot_interfaces
+[0.895s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ddon/software_robocon_2025/build/astra_camera_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --build /home/ddon/software_robocon_2025/build/astra_camera_msgs -- -j8 -l8
+[0.895s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ddon/software_robocon_2025/build/astra_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --install /home/ddon/software_robocon_2025/build/astra_camera_msgs
+[0.922s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_interfaces)
+[0.922s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_interfaces' for CMake module files
+[0.922s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ddon/software_robocon_2025/build/robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --install /home/ddon/software_robocon_2025/build/robot_interfaces
+[0.923s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_interfaces' for CMake config files
+[0.923s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_interfaces', 'cmake_prefix_path')
+[0.923s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/hook/cmake_prefix_path.ps1'
+[0.924s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/hook/cmake_prefix_path.dsv'
+[0.924s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/hook/cmake_prefix_path.sh'
+[0.925s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_interfaces/lib'
+[0.925s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_interfaces', 'ld_library_path_lib')
+[0.925s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/hook/ld_library_path_lib.ps1'
+[0.925s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/hook/ld_library_path_lib.dsv'
+[0.926s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/hook/ld_library_path_lib.sh'
+[0.926s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_interfaces/bin'
+[0.926s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_interfaces/lib/pkgconfig/robot_interfaces.pc'
+[0.926s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_interfaces/lib/python3.10/site-packages'
+[0.926s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_interfaces/bin'
+[0.927s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/package.ps1'
+[0.927s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/package.dsv'
+[0.927s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/package.sh'
+[0.928s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/package.bash'
+[0.928s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/package.zsh'
+[0.928s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ddon/software_robocon_2025/install/robot_interfaces/share/colcon-core/packages/robot_interfaces)
+[0.929s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_interfaces)
+[0.929s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_interfaces' for CMake module files
+[0.930s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_interfaces' for CMake config files
+[0.930s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_interfaces', 'cmake_prefix_path')
+[0.931s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/hook/cmake_prefix_path.ps1'
+[0.931s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/hook/cmake_prefix_path.dsv'
+[0.932s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/hook/cmake_prefix_path.sh'
+[0.932s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_interfaces/lib'
+[0.932s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_interfaces', 'ld_library_path_lib')
+[0.933s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/hook/ld_library_path_lib.ps1'
+[0.933s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/hook/ld_library_path_lib.dsv'
+[0.933s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/hook/ld_library_path_lib.sh'
+[0.934s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_interfaces/bin'
+[0.934s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_interfaces/lib/pkgconfig/robot_interfaces.pc'
+[0.934s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_interfaces/lib/python3.10/site-packages'
+[0.934s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/robot_interfaces/bin'
+[0.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/package.ps1'
+[0.935s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/package.dsv'
+[0.935s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/package.sh'
+[0.936s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/package.bash'
+[0.936s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/robot_interfaces/share/robot_interfaces/package.zsh'
+[0.936s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ddon/software_robocon_2025/install/robot_interfaces/share/colcon-core/packages/robot_interfaces)
+[0.937s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ddon/software_robocon_2025/gamepad_interface' with build type 'ament_cmake'
+[0.937s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ddon/software_robocon_2025/gamepad_interface'
+[0.937s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.937s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.941s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ddon/software_robocon_2025/main_controller_pkg' with build type 'ament_python'
+[0.941s] Level 1:colcon.colcon_core.shell:create_environment_hook('main_controller_pkg', 'ament_prefix_path')
+[0.941s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/main_controller_pkg/share/main_controller_pkg/hook/ament_prefix_path.ps1'
+[0.942s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ddon/software_robocon_2025/install/main_controller_pkg/share/main_controller_pkg/hook/ament_prefix_path.dsv'
+[0.942s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/main_controller_pkg/share/main_controller_pkg/hook/ament_prefix_path.sh'
+[0.943s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.943s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.946s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ddon/software_robocon_2025/odrive_interface' with build type 'ament_cmake'
+[0.947s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ddon/software_robocon_2025/odrive_interface'
+[0.947s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.947s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.964s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ddon/software_robocon_2025/build/gamepad_interface': CMAKE_PREFIX_PATH=/home/ddon/software_robocon_2025/install/robot_interfaces:/home/ddon/software_robocon_2025/install/odrive_interface:/home/ddon/software_robocon_2025/install/gamepad_interface:/home/ddon/software_robocon_2025/install/robot_bringup:/home/ddon/software_robocon_2025/install/astra_camera_msgs:/home/ddon/ros2_ws_cpp/install/shooter_control:/home/ddon/ros2_ws_cpp/install/robot_interfaces:/home/ddon/ros2_ws_cpp/install/robot_bringup:/home/ddon/ros2_ws_cpp/install/odrive_interface:/home/ddon/ros2_ws_cpp/install/can_control_package:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg:/home/ddon/ros2_ws_cpp/install/odrive_can_cpp:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain:/home/ddon/ros2_ws_cpp/install/gamepad_interface:/home/ddon/ros2_ws_cpp/install/dual_sense_controller:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --build /home/ddon/software_robocon_2025/build/gamepad_interface -- -j8 -l8
+[1.221s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ddon/software_robocon_2025/main_controller_pkg'
+[1.221s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.221s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.229s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(astra_camera_msgs)
+[1.229s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/astra_camera_msgs' for CMake module files
+[1.230s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ddon/software_robocon_2025/build/odrive_interface': CMAKE_PREFIX_PATH=/home/ddon/software_robocon_2025/install/robot_interfaces:/home/ddon/software_robocon_2025/install/odrive_interface:/home/ddon/software_robocon_2025/install/gamepad_interface:/home/ddon/software_robocon_2025/install/robot_bringup:/home/ddon/software_robocon_2025/install/astra_camera_msgs:/home/ddon/ros2_ws_cpp/install/shooter_control:/home/ddon/ros2_ws_cpp/install/robot_interfaces:/home/ddon/ros2_ws_cpp/install/robot_bringup:/home/ddon/ros2_ws_cpp/install/odrive_interface:/home/ddon/ros2_ws_cpp/install/can_control_package:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg:/home/ddon/ros2_ws_cpp/install/odrive_can_cpp:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain:/home/ddon/ros2_ws_cpp/install/gamepad_interface:/home/ddon/ros2_ws_cpp/install/dual_sense_controller:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --build /home/ddon/software_robocon_2025/build/odrive_interface -- -j8 -l8
+[1.230s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ddon/software_robocon_2025/build/astra_camera_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --install /home/ddon/software_robocon_2025/build/astra_camera_msgs
+[1.230s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/astra_camera_msgs' for CMake config files
+[1.231s] Level 1:colcon.colcon_core.shell:create_environment_hook('astra_camera_msgs', 'cmake_prefix_path')
+[1.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/astra_camera_msgs/hook/cmake_prefix_path.ps1'
+[1.231s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/astra_camera_msgs/hook/cmake_prefix_path.dsv'
+[1.232s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/astra_camera_msgs/hook/cmake_prefix_path.sh'
+[1.232s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/astra_camera_msgs/lib'
+[1.232s] Level 1:colcon.colcon_core.shell:create_environment_hook('astra_camera_msgs', 'ld_library_path_lib')
+[1.232s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/astra_camera_msgs/hook/ld_library_path_lib.ps1'
+[1.233s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/astra_camera_msgs/hook/ld_library_path_lib.dsv'
+[1.233s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/astra_camera_msgs/hook/ld_library_path_lib.sh'
+[1.233s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/astra_camera_msgs/bin'
+[1.233s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/astra_camera_msgs/lib/pkgconfig/astra_camera_msgs.pc'
+[1.233s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/astra_camera_msgs/lib/python3.10/site-packages'
+[1.234s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/astra_camera_msgs/bin'
+[1.234s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/astra_camera_msgs/package.ps1'
+[1.234s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/astra_camera_msgs/package.dsv'
+[1.235s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/astra_camera_msgs/package.sh'
+[1.235s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/astra_camera_msgs/package.bash'
+[1.235s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/astra_camera_msgs/package.zsh'
+[1.235s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/colcon-core/packages/astra_camera_msgs)
+[1.236s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(astra_camera_msgs)
+[1.236s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/astra_camera_msgs' for CMake module files
+[1.237s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/astra_camera_msgs' for CMake config files
+[1.237s] Level 1:colcon.colcon_core.shell:create_environment_hook('astra_camera_msgs', 'cmake_prefix_path')
+[1.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/astra_camera_msgs/hook/cmake_prefix_path.ps1'
+[1.238s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/astra_camera_msgs/hook/cmake_prefix_path.dsv'
+[1.238s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/astra_camera_msgs/hook/cmake_prefix_path.sh'
+[1.238s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/astra_camera_msgs/lib'
+[1.239s] Level 1:colcon.colcon_core.shell:create_environment_hook('astra_camera_msgs', 'ld_library_path_lib')
+[1.239s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/astra_camera_msgs/hook/ld_library_path_lib.ps1'
+[1.239s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/astra_camera_msgs/hook/ld_library_path_lib.dsv'
+[1.239s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/astra_camera_msgs/hook/ld_library_path_lib.sh'
+[1.240s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/astra_camera_msgs/bin'
+[1.240s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/astra_camera_msgs/lib/pkgconfig/astra_camera_msgs.pc'
+[1.240s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/astra_camera_msgs/lib/python3.10/site-packages'
+[1.240s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/astra_camera_msgs/bin'
+[1.240s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/astra_camera_msgs/package.ps1'
+[1.241s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/astra_camera_msgs/package.dsv'
+[1.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/astra_camera_msgs/package.sh'
+[1.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/astra_camera_msgs/package.bash'
+[1.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/astra_camera_msgs/package.zsh'
+[1.242s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ddon/software_robocon_2025/install/astra_camera_msgs/share/colcon-core/packages/astra_camera_msgs)
+[1.243s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ddon/software_robocon_2025/build/gamepad_interface' returned '0': CMAKE_PREFIX_PATH=/home/ddon/software_robocon_2025/install/robot_interfaces:/home/ddon/software_robocon_2025/install/odrive_interface:/home/ddon/software_robocon_2025/install/gamepad_interface:/home/ddon/software_robocon_2025/install/robot_bringup:/home/ddon/software_robocon_2025/install/astra_camera_msgs:/home/ddon/ros2_ws_cpp/install/shooter_control:/home/ddon/ros2_ws_cpp/install/robot_interfaces:/home/ddon/ros2_ws_cpp/install/robot_bringup:/home/ddon/ros2_ws_cpp/install/odrive_interface:/home/ddon/ros2_ws_cpp/install/can_control_package:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg:/home/ddon/ros2_ws_cpp/install/odrive_can_cpp:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain:/home/ddon/ros2_ws_cpp/install/gamepad_interface:/home/ddon/ros2_ws_cpp/install/dual_sense_controller:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --build /home/ddon/software_robocon_2025/build/gamepad_interface -- -j8 -l8
+[1.245s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ddon/software_robocon_2025/build/gamepad_interface': CMAKE_PREFIX_PATH=/home/ddon/software_robocon_2025/install/robot_interfaces:/home/ddon/software_robocon_2025/install/odrive_interface:/home/ddon/software_robocon_2025/install/gamepad_interface:/home/ddon/software_robocon_2025/install/robot_bringup:/home/ddon/software_robocon_2025/install/astra_camera_msgs:/home/ddon/ros2_ws_cpp/install/shooter_control:/home/ddon/ros2_ws_cpp/install/robot_interfaces:/home/ddon/ros2_ws_cpp/install/robot_bringup:/home/ddon/ros2_ws_cpp/install/odrive_interface:/home/ddon/ros2_ws_cpp/install/can_control_package:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg:/home/ddon/ros2_ws_cpp/install/odrive_can_cpp:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain:/home/ddon/ros2_ws_cpp/install/gamepad_interface:/home/ddon/ros2_ws_cpp/install/dual_sense_controller:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --install /home/ddon/software_robocon_2025/build/gamepad_interface
+[1.252s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gamepad_interface)
+[1.253s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/gamepad_interface' for CMake module files
+[1.253s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ddon/software_robocon_2025/build/gamepad_interface' returned '0': CMAKE_PREFIX_PATH=/home/ddon/software_robocon_2025/install/robot_interfaces:/home/ddon/software_robocon_2025/install/odrive_interface:/home/ddon/software_robocon_2025/install/gamepad_interface:/home/ddon/software_robocon_2025/install/robot_bringup:/home/ddon/software_robocon_2025/install/astra_camera_msgs:/home/ddon/ros2_ws_cpp/install/shooter_control:/home/ddon/ros2_ws_cpp/install/robot_interfaces:/home/ddon/ros2_ws_cpp/install/robot_bringup:/home/ddon/ros2_ws_cpp/install/odrive_interface:/home/ddon/ros2_ws_cpp/install/can_control_package:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg:/home/ddon/ros2_ws_cpp/install/odrive_can_cpp:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain:/home/ddon/ros2_ws_cpp/install/gamepad_interface:/home/ddon/ros2_ws_cpp/install/dual_sense_controller:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --install /home/ddon/software_robocon_2025/build/gamepad_interface
+[1.253s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/gamepad_interface' for CMake config files
+[1.254s] Level 1:colcon.colcon_core.shell:create_environment_hook('gamepad_interface', 'cmake_prefix_path')
+[1.254s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/hook/cmake_prefix_path.ps1'
+[1.254s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/hook/cmake_prefix_path.dsv'
+[1.255s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/hook/cmake_prefix_path.sh'
+[1.255s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/gamepad_interface/lib'
+[1.255s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/gamepad_interface/bin'
+[1.255s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/gamepad_interface/lib/pkgconfig/gamepad_interface.pc'
+[1.256s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/gamepad_interface/lib/python3.10/site-packages'
+[1.256s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/gamepad_interface/bin'
+[1.256s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/package.ps1'
+[1.257s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/package.dsv'
+[1.257s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/package.sh'
+[1.257s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/package.bash'
+[1.258s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/package.zsh'
+[1.258s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ddon/software_robocon_2025/install/gamepad_interface/share/colcon-core/packages/gamepad_interface)
+[1.258s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gamepad_interface)
+[1.259s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/gamepad_interface' for CMake module files
+[1.259s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/gamepad_interface' for CMake config files
+[1.259s] Level 1:colcon.colcon_core.shell:create_environment_hook('gamepad_interface', 'cmake_prefix_path')
+[1.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/hook/cmake_prefix_path.ps1'
+[1.260s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/hook/cmake_prefix_path.dsv'
+[1.260s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/hook/cmake_prefix_path.sh'
+[1.260s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/gamepad_interface/lib'
+[1.260s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/gamepad_interface/bin'
+[1.260s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/gamepad_interface/lib/pkgconfig/gamepad_interface.pc'
+[1.261s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/gamepad_interface/lib/python3.10/site-packages'
+[1.261s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/gamepad_interface/bin'
+[1.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/package.ps1'
+[1.262s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/package.dsv'
+[1.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/package.sh'
+[1.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/package.bash'
+[1.263s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/package.zsh'
+[1.263s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ddon/software_robocon_2025/install/gamepad_interface/share/colcon-core/packages/gamepad_interface)
+[1.283s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ddon/software_robocon_2025/build/odrive_interface' returned '0': CMAKE_PREFIX_PATH=/home/ddon/software_robocon_2025/install/robot_interfaces:/home/ddon/software_robocon_2025/install/odrive_interface:/home/ddon/software_robocon_2025/install/gamepad_interface:/home/ddon/software_robocon_2025/install/robot_bringup:/home/ddon/software_robocon_2025/install/astra_camera_msgs:/home/ddon/ros2_ws_cpp/install/shooter_control:/home/ddon/ros2_ws_cpp/install/robot_interfaces:/home/ddon/ros2_ws_cpp/install/robot_bringup:/home/ddon/ros2_ws_cpp/install/odrive_interface:/home/ddon/ros2_ws_cpp/install/can_control_package:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg:/home/ddon/ros2_ws_cpp/install/odrive_can_cpp:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain:/home/ddon/ros2_ws_cpp/install/gamepad_interface:/home/ddon/ros2_ws_cpp/install/dual_sense_controller:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --build /home/ddon/software_robocon_2025/build/odrive_interface -- -j8 -l8
+[1.284s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ddon/software_robocon_2025/build/odrive_interface': CMAKE_PREFIX_PATH=/home/ddon/software_robocon_2025/install/robot_interfaces:/home/ddon/software_robocon_2025/install/odrive_interface:/home/ddon/software_robocon_2025/install/gamepad_interface:/home/ddon/software_robocon_2025/install/robot_bringup:/home/ddon/software_robocon_2025/install/astra_camera_msgs:/home/ddon/ros2_ws_cpp/install/shooter_control:/home/ddon/ros2_ws_cpp/install/robot_interfaces:/home/ddon/ros2_ws_cpp/install/robot_bringup:/home/ddon/ros2_ws_cpp/install/odrive_interface:/home/ddon/ros2_ws_cpp/install/can_control_package:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg:/home/ddon/ros2_ws_cpp/install/odrive_can_cpp:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain:/home/ddon/ros2_ws_cpp/install/gamepad_interface:/home/ddon/ros2_ws_cpp/install/dual_sense_controller:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --install /home/ddon/software_robocon_2025/build/odrive_interface
+[1.292s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_interface)
+[1.292s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/odrive_interface' for CMake module files
+[1.293s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ddon/software_robocon_2025/build/odrive_interface' returned '0': CMAKE_PREFIX_PATH=/home/ddon/software_robocon_2025/install/robot_interfaces:/home/ddon/software_robocon_2025/install/odrive_interface:/home/ddon/software_robocon_2025/install/gamepad_interface:/home/ddon/software_robocon_2025/install/robot_bringup:/home/ddon/software_robocon_2025/install/astra_camera_msgs:/home/ddon/ros2_ws_cpp/install/shooter_control:/home/ddon/ros2_ws_cpp/install/robot_interfaces:/home/ddon/ros2_ws_cpp/install/robot_bringup:/home/ddon/ros2_ws_cpp/install/odrive_interface:/home/ddon/ros2_ws_cpp/install/can_control_package:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg:/home/ddon/ros2_ws_cpp/install/odrive_can_cpp:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain:/home/ddon/ros2_ws_cpp/install/gamepad_interface:/home/ddon/ros2_ws_cpp/install/dual_sense_controller:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --install /home/ddon/software_robocon_2025/build/odrive_interface
+[1.293s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/odrive_interface' for CMake config files
+[1.293s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_interface', 'cmake_prefix_path')
+[1.293s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/hook/cmake_prefix_path.ps1'
+[1.294s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/hook/cmake_prefix_path.dsv'
+[1.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/hook/cmake_prefix_path.sh'
+[1.294s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/odrive_interface/lib'
+[1.294s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/odrive_interface/bin'
+[1.295s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/odrive_interface/lib/pkgconfig/odrive_interface.pc'
+[1.295s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/odrive_interface/lib/python3.10/site-packages'
+[1.295s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/odrive_interface/bin'
+[1.295s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/package.ps1'
+[1.295s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/package.dsv'
+[1.296s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/package.sh'
+[1.296s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/package.bash'
+[1.296s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/package.zsh'
+[1.297s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ddon/software_robocon_2025/install/odrive_interface/share/colcon-core/packages/odrive_interface)
+[1.297s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_interface)
+[1.297s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/odrive_interface' for CMake module files
+[1.297s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/odrive_interface' for CMake config files
+[1.298s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_interface', 'cmake_prefix_path')
+[1.298s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/hook/cmake_prefix_path.ps1'
+[1.298s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/hook/cmake_prefix_path.dsv'
+[1.298s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/hook/cmake_prefix_path.sh'
+[1.299s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/odrive_interface/lib'
+[1.299s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/odrive_interface/bin'
+[1.299s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/odrive_interface/lib/pkgconfig/odrive_interface.pc'
+[1.299s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/odrive_interface/lib/python3.10/site-packages'
+[1.299s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/odrive_interface/bin'
+[1.299s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/package.ps1'
+[1.300s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/package.dsv'
+[1.300s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/package.sh'
+[1.301s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/package.bash'
+[1.301s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/package.zsh'
+[1.301s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ddon/software_robocon_2025/install/odrive_interface/share/colcon-core/packages/odrive_interface)
+[1.581s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ddon/software_robocon_2025/main_controller_pkg': CMAKE_PREFIX_PATH=/home/ddon/software_robocon_2025/install/robot_interfaces:/home/ddon/software_robocon_2025/install/odrive_interface:/home/ddon/software_robocon_2025/install/gamepad_interface:/home/ddon/software_robocon_2025/install/robot_bringup:/home/ddon/software_robocon_2025/install/astra_camera_msgs:/home/ddon/ros2_ws_cpp/install/shooter_control:/home/ddon/ros2_ws_cpp/install/robot_interfaces:/home/ddon/ros2_ws_cpp/install/robot_bringup:/home/ddon/ros2_ws_cpp/install/odrive_interface:/home/ddon/ros2_ws_cpp/install/can_control_package:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg:/home/ddon/ros2_ws_cpp/install/odrive_can_cpp:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain:/home/ddon/ros2_ws_cpp/install/gamepad_interface:/home/ddon/ros2_ws_cpp/install/dual_sense_controller:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs PYTHONPATH=/home/ddon/software_robocon_2025/build/main_controller_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/main_controller_pkg build --build-base /home/ddon/software_robocon_2025/build/main_controller_pkg/build install --record /home/ddon/software_robocon_2025/build/main_controller_pkg/install.log --single-version-externally-managed install_data
+[1.868s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/main_controller_pkg' for CMake module files
+[1.869s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ddon/software_robocon_2025/main_controller_pkg' returned '0': CMAKE_PREFIX_PATH=/home/ddon/software_robocon_2025/install/robot_interfaces:/home/ddon/software_robocon_2025/install/odrive_interface:/home/ddon/software_robocon_2025/install/gamepad_interface:/home/ddon/software_robocon_2025/install/robot_bringup:/home/ddon/software_robocon_2025/install/astra_camera_msgs:/home/ddon/ros2_ws_cpp/install/shooter_control:/home/ddon/ros2_ws_cpp/install/robot_interfaces:/home/ddon/ros2_ws_cpp/install/robot_bringup:/home/ddon/ros2_ws_cpp/install/odrive_interface:/home/ddon/ros2_ws_cpp/install/can_control_package:/home/ddon/ros2_ws_cpp/install/odrive_custom_msg:/home/ddon/ros2_ws_cpp/install/odrive_can_cpp:/home/ddon/ros2_ws_cpp/install/mecanum_drivetrain:/home/ddon/ros2_ws_cpp/install/gamepad_interface:/home/ddon/ros2_ws_cpp/install/dual_sense_controller:/home/ddon/ros2_ws_cpp/install/astra_camera_msgs PYTHONPATH=/home/ddon/software_robocon_2025/build/main_controller_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/main_controller_pkg build --build-base /home/ddon/software_robocon_2025/build/main_controller_pkg/build install --record /home/ddon/software_robocon_2025/build/main_controller_pkg/install.log --single-version-externally-managed install_data
+[1.869s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/main_controller_pkg' for CMake config files
+[1.869s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/main_controller_pkg/lib'
+[1.869s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/main_controller_pkg/bin'
+[1.869s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/main_controller_pkg/lib/pkgconfig/main_controller_pkg.pc'
+[1.869s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages'
+[1.869s] Level 1:colcon.colcon_core.shell:create_environment_hook('main_controller_pkg', 'pythonpath')
+[1.870s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/main_controller_pkg/share/main_controller_pkg/hook/pythonpath.ps1'
+[1.870s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ddon/software_robocon_2025/install/main_controller_pkg/share/main_controller_pkg/hook/pythonpath.dsv'
+[1.870s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ddon/software_robocon_2025/install/main_controller_pkg/share/main_controller_pkg/hook/pythonpath.sh'
+[1.871s] Level 1:colcon.colcon_core.environment:checking '/home/ddon/software_robocon_2025/install/main_controller_pkg/bin'
+[1.871s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(main_controller_pkg)
+[1.871s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/main_controller_pkg/share/main_controller_pkg/package.ps1'
+[1.871s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ddon/software_robocon_2025/install/main_controller_pkg/share/main_controller_pkg/package.dsv'
+[1.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/main_controller_pkg/share/main_controller_pkg/package.sh'
+[1.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/main_controller_pkg/share/main_controller_pkg/package.bash'
+[1.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/ddon/software_robocon_2025/install/main_controller_pkg/share/main_controller_pkg/package.zsh'
+[1.873s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ddon/software_robocon_2025/install/main_controller_pkg/share/colcon-core/packages/main_controller_pkg)
+[1.873s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.873s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.873s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.873s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.878s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.878s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.878s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.890s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.891s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ddon/software_robocon_2025/install/local_setup.ps1'
+[1.892s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ddon/software_robocon_2025/install/_local_setup_util_ps1.py'
+[1.893s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ddon/software_robocon_2025/install/setup.ps1'
+[1.895s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ddon/software_robocon_2025/install/local_setup.sh'
+[1.896s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ddon/software_robocon_2025/install/_local_setup_util_sh.py'
+[1.896s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ddon/software_robocon_2025/install/setup.sh'
+[1.898s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ddon/software_robocon_2025/install/local_setup.bash'
+[1.898s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ddon/software_robocon_2025/install/setup.bash'
+[1.900s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ddon/software_robocon_2025/install/local_setup.zsh'
+[1.901s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ddon/software_robocon_2025/install/setup.zsh'

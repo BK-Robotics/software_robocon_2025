@@ -1,0 +1,23 @@
+running egg_info
+writing ../build/main_controller_pkg/main_controller_pkg.egg-info/PKG-INFO
+writing dependency_links to ../build/main_controller_pkg/main_controller_pkg.egg-info/dependency_links.txt
+writing entry points to ../build/main_controller_pkg/main_controller_pkg.egg-info/entry_points.txt
+writing requirements to ../build/main_controller_pkg/main_controller_pkg.egg-info/requires.txt
+writing top-level names to ../build/main_controller_pkg/main_controller_pkg.egg-info/top_level.txt
+reading manifest file '../build/main_controller_pkg/main_controller_pkg.egg-info/SOURCES.txt'
+writing manifest file '../build/main_controller_pkg/main_controller_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+copying main_controller_pkg/full_calculation_node.py -> /home/ddon/software_robocon_2025/build/main_controller_pkg/build/lib/main_controller_pkg
+running install
+running install_lib
+copying /home/ddon/software_robocon_2025/build/main_controller_pkg/build/lib/main_controller_pkg/full_calculation_node.py -> /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages/main_controller_pkg
+byte-compiling /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages/main_controller_pkg/full_calculation_node.py to full_calculation_node.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages/main_controller_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../build/main_controller_pkg/main_controller_pkg.egg-info to /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/python3.10/site-packages/main_controller_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing full_calculation_node script to /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/main_controller_pkg
+Installing main_controller_node script to /home/ddon/software_robocon_2025/install/main_controller_pkg/lib/main_controller_pkg
+writing list of installed files to '/home/ddon/software_robocon_2025/build/main_controller_pkg/install.log'

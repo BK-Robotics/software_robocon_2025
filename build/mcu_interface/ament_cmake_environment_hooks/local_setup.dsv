@@ -1,0 +1,2 @@
+source;share/mcu_interface/environment/ament_prefix_path.sh
+source;share/mcu_interface/environment/path.sh

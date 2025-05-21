@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-894978bfa317ceec824d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "gamepad_interface",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "gamepad_driver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gamepad_driver-9df3b84da53990d275b7.json",
+					"name" : "gamepad_driver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gamepad_interface_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gamepad_interface_uninstall-d80f47a8b7341f6ea754.json",
+					"name" : "gamepad_interface_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gamepad_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gamepad_node-08171182b0fa7cb68d46.json",
+					"name" : "gamepad_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_input_mapper::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_input_mapper-465abd845af7947c1c64.json",
+					"name" : "robot_input_mapper",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-57e478af3aa1cd0304be.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ddon/software_robocon_2025/build/gamepad_interface",
+		"source" : "/home/ddon/software_robocon_2025/gamepad_interface"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

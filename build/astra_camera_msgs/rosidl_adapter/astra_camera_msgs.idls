@@ -1,0 +1,9 @@
+/home/ddon/software_robocon_2025/build/astra_camera_msgs/rosidl_adapter/astra_camera_msgs:msg/DeviceInfo.idl
+/home/ddon/software_robocon_2025/build/astra_camera_msgs/rosidl_adapter/astra_camera_msgs:msg/Extrinsics.idl
+/home/ddon/software_robocon_2025/build/astra_camera_msgs/rosidl_adapter/astra_camera_msgs:msg/Metadata.idl
+/home/ddon/software_robocon_2025/build/astra_camera_msgs/rosidl_adapter/astra_camera_msgs:srv/GetDeviceInfo.idl
+/home/ddon/software_robocon_2025/build/astra_camera_msgs/rosidl_adapter/astra_camera_msgs:srv/GetCameraInfo.idl
+/home/ddon/software_robocon_2025/build/astra_camera_msgs/rosidl_adapter/astra_camera_msgs:srv/GetCameraParams.idl
+/home/ddon/software_robocon_2025/build/astra_camera_msgs/rosidl_adapter/astra_camera_msgs:srv/GetInt32.idl
+/home/ddon/software_robocon_2025/build/astra_camera_msgs/rosidl_adapter/astra_camera_msgs:srv/GetString.idl
+/home/ddon/software_robocon_2025/build/astra_camera_msgs/rosidl_adapter/astra_camera_msgs:srv/SetInt32.idl

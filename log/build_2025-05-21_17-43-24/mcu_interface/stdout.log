@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target uart_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/uart_node.dir/src/MCU_Interface.cpp.o[0m
+[100%] [32m[1mLinking CXX executable uart_node[0m
+[100%] Built target uart_node
+-- Install configuration: ""
+-- Installing: /home/ddon/software_robocon_2025/install/mcu_interface/lib/mcu_interface/uart_node
+-- Set runtime path of "/home/ddon/software_robocon_2025/install/mcu_interface/lib/mcu_interface/uart_node" to ""
+-- Installing: /home/ddon/software_robocon_2025/install/mcu_interface/share/ament_index/resource_index/package_run_dependencies/mcu_interface
+-- Installing: /home/ddon/software_robocon_2025/install/mcu_interface/share/ament_index/resource_index/parent_prefix_path/mcu_interface
+-- Installing: /home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/environment/ament_prefix_path.sh
+-- Installing: /home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/environment/ament_prefix_path.dsv
+-- Installing: /home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/environment/path.sh
+-- Installing: /home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/environment/path.dsv
+-- Installing: /home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/local_setup.bash
+-- Installing: /home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/local_setup.sh
+-- Installing: /home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/local_setup.zsh
+-- Installing: /home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/local_setup.dsv
+-- Installing: /home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/package.dsv
+-- Installing: /home/ddon/software_robocon_2025/install/mcu_interface/share/ament_index/resource_index/packages/mcu_interface
+-- Installing: /home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/cmake/mcu_interfaceConfig.cmake
+-- Installing: /home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/cmake/mcu_interfaceConfig-version.cmake
+-- Installing: /home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/package.xml

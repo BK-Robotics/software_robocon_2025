@@ -1,0 +1,14 @@
+{
+  "package_name": "robot_interfaces",
+  "non_idl_tuples": [
+    "/home/ddon/software_robocon_2025/robot_interfaces:msg/IMU.msg",
+    "/home/ddon/software_robocon_2025/robot_interfaces:msg/BaseCmd.msg",
+    "/home/ddon/software_robocon_2025/robot_interfaces:srv/Control.srv",
+    "/home/ddon/software_robocon_2025/robot_interfaces:srv/RequestCalculation.srv",
+    "/home/ddon/software_robocon_2025/robot_interfaces:srv/RequestAction.srv",
+    "/home/ddon/software_robocon_2025/robot_interfaces:srv/RequestOdrive.srv",
+    "/home/ddon/software_robocon_2025/robot_interfaces:srv/RotateBase.srv",
+    "/home/ddon/software_robocon_2025/robot_interfaces:srv/PushBall.srv",
+    "/home/ddon/software_robocon_2025/robot_interfaces:srv/RequestMcu.srv"
+  ]
+}

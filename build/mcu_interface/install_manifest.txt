@@ -1,0 +1,16 @@
+/home/ddon/software_robocon_2025/install/mcu_interface/lib/mcu_interface/uart_node
+/home/ddon/software_robocon_2025/install/mcu_interface/share/ament_index/resource_index/package_run_dependencies/mcu_interface
+/home/ddon/software_robocon_2025/install/mcu_interface/share/ament_index/resource_index/parent_prefix_path/mcu_interface
+/home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/environment/ament_prefix_path.sh
+/home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/environment/ament_prefix_path.dsv
+/home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/environment/path.sh
+/home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/environment/path.dsv
+/home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/local_setup.bash
+/home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/local_setup.sh
+/home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/local_setup.zsh
+/home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/local_setup.dsv
+/home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/package.dsv
+/home/ddon/software_robocon_2025/install/mcu_interface/share/ament_index/resource_index/packages/mcu_interface
+/home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/cmake/mcu_interfaceConfig.cmake
+/home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/cmake/mcu_interfaceConfig-version.cmake
+/home/ddon/software_robocon_2025/install/mcu_interface/share/mcu_interface/package.xml

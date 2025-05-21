@@ -56,7 +56,7 @@ private:
     void send_initialization_commands(); ///< Gửi các gói cấu hình ban đầu đến MCU
 
     // ==== Giao tiếp ROS ====
-    void handle_base_cmd(const robot_interfaces::msg::BaseCMD::SharedPtr msg); ///< Xử lý base_cmd (subscriber)
+    void handle_base_cmd(const robot_interfaces::msg::BaseCmd::SharedPtr msg); ///< Xử lý base_cmd (subscriber)
     void handle_rotate_service(const std::shared_ptr<robot_interfaces::srv::RotateBase::Request> request,
                                std::shared_ptr<robot_interfaces::srv::RotateBase::Response> response); ///< Gửi góc quay từ service
     void handle_push_ball_service(const std::shared_ptr<robot_interfaces::srv::PushBall::Request> request,
@@ -84,7 +84,7 @@ private:
     rclcpp::Service<robot_interfaces::srv::RotateBase>::SharedPtr service_rotate_;
     rclcpp::Service<robot_interfaces::srv::RequestMcu>::SharedPtr service_request_mcu_;
     rclcpp::Service<robot_interfaces::srv::PushBall>::SharedPtr service_push_ball_;
-    rclcpp::Subscription<robot_interfaces::msg::BaseCMD>::SharedPtr sub_base_cmd_;
+    rclcpp::Subscription<robot_interfaces::msg::BaseCmd>::SharedPtr sub_base_cmd_;
     rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::TimerBase::SharedPtr uart_tx_timer_;
     std::thread uart_read_thread_;

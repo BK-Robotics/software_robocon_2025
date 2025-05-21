@@ -29,7 +29,7 @@ UARTNode::UARTNode() : Node("uart_node") {
         std::bind(&UARTNode::handle_push_ball_service, this, std::placeholders::_1, std::placeholders::_2)
     );
 
-    sub_base_cmd_ = this->create_subscription<robot_interfaces::msg::BaseCMD>(
+    sub_base_cmd_ = this->create_subscription<robot_interfaces::msg::BaseCmd>(
         "/base_cmd", 10,
         std::bind(&UARTNode::handle_base_cmd, this, std::placeholders::_1)
     );
@@ -184,7 +184,7 @@ void UARTNode::send_initialization_commands() {
 }
 
 // Cai data rot nay t dang thuc thi theo kieu xoay 4 huong trai, phai, stop_turn, back tozero nhe don.
-void UARTNode::handle_base_cmd(const robot_interfaces::msg::BaseCMD::SharedPtr msg) {
+void UARTNode::handle_base_cmd(const robot_interfaces::msg::BaseCmd::SharedPtr msg) {
     uint8_t data_vel[8];
     float32_to_little_endian_8byte(msg->velocity, data_vel);
     enqueue_uart_packet(0x0E, data_vel);

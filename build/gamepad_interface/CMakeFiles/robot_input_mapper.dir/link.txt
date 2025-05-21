@@ -1,0 +1,2 @@
+/usr/bin/ar qc librobot_input_mapper.a CMakeFiles/robot_input_mapper.dir/src/mapper.cpp.o
+/usr/bin/ranlib librobot_input_mapper.a

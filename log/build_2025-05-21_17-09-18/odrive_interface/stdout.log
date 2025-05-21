@@ -1,0 +1,24 @@
+[35m[1mConsolidate compiler generated dependencies of target odrive_interface_node[0m
+[100%] Built target odrive_interface_node
+-- Install configuration: ""
+-- Installing: /home/ddon/software_robocon_2025/install/odrive_interface/lib/odrive_interface/odrive_interface_node
+-- Set runtime path of "/home/ddon/software_robocon_2025/install/odrive_interface/lib/odrive_interface/odrive_interface_node" to ""
+-- Installing: /home/ddon/software_robocon_2025/install/odrive_interface/include
+-- Installing: /home/ddon/software_robocon_2025/install/odrive_interface/include/odrive_interface
+-- Installing: /home/ddon/software_robocon_2025/install/odrive_interface/include/odrive_interface/can_comm.hpp
+-- Installing: /home/ddon/software_robocon_2025/install/odrive_interface/include/odrive_interface/odrive_motor.hpp
+-- Installing: /home/ddon/software_robocon_2025/install/odrive_interface/share/ament_index/resource_index/package_run_dependencies/odrive_interface
+-- Installing: /home/ddon/software_robocon_2025/install/odrive_interface/share/ament_index/resource_index/parent_prefix_path/odrive_interface
+-- Installing: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/environment/ament_prefix_path.sh
+-- Installing: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/environment/ament_prefix_path.dsv
+-- Installing: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/environment/path.sh
+-- Installing: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/environment/path.dsv
+-- Installing: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/local_setup.bash
+-- Installing: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/local_setup.sh
+-- Installing: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/local_setup.zsh
+-- Installing: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/local_setup.dsv
+-- Installing: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/package.dsv
+-- Installing: /home/ddon/software_robocon_2025/install/odrive_interface/share/ament_index/resource_index/packages/odrive_interface
+-- Installing: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/cmake/odrive_interfaceConfig.cmake
+-- Installing: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/cmake/odrive_interfaceConfig-version.cmake
+-- Installing: /home/ddon/software_robocon_2025/install/odrive_interface/share/odrive_interface/package.xml
