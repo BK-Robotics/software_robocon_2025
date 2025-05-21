@@ -11,7 +11,6 @@ class MainControllerNode(Node):
         super().__init__('main_controller_node')
         self.imu_angle = 0.0
         self.action = 0
-        self.velocity = 0.0
         self.distance = 6.15
         self.request_angle = 0.0
         self.base_mode = 0
@@ -45,13 +44,13 @@ class MainControllerNode(Node):
             self.action = request.action
 
             # Call the control client as part of the action process
-            success = self.send_control_request(self.action, 0.0)
+            success = self.send_control_request(self.action)
         
         # Set response fields appropriately.
         response.success = success  # or False based on your logic
         return response
 
-    def send_control_request(self, action, velocity):
+    def send_control_request(self, action, velocity = 0):
         if not self.control_client.wait_for_service(timeout_sec=1.0):
             self.get_logger().error('Control service not available, exiting...')
             return False
