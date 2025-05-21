@@ -70,7 +70,7 @@ class MainControllerNode(Node):
             return
         request = RequestCalculation.Request()
         request.distance = distance
-        future = self.control_client.call_async(request)
+        future = self.request_calculation_client.call_async(request)
         rclpy.spin_until_future_complete(self, future, timeout_sec=2.0)
         if future.result() is not None:
             self.get_logger().info('Feedback %d' % distance)
@@ -83,7 +83,7 @@ class MainControllerNode(Node):
             return
         request = RotateBase.Request()
         request.angle = angle
-        future = self.control_client.call_async(request)
+        future = self.rotate_base_client.call_async(request)
         rclpy.spin_until_future_complete(self, future, timeout_sec=2.0)
         if future.result() is not None:
             self.get_logger().info('Feedback %d' % angle)
