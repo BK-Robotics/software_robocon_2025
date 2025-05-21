@@ -27,7 +27,7 @@ class FullCalculationNode(Node):
         velocity = self.calculate_initial_velocity(request.distance)
         self.get_logger().info('Calculated initial velocity: %f' % velocity)
 
-        rps = self.calculate_rps(velocity)
+        rps = int(self.calculate_rps(velocity))
         self.get_logger().info('Calculation velocity: %f' % rps)
 
         # Send the control request
