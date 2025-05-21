@@ -52,49 +52,71 @@ class MainControllerNode(Node):
 
     def send_control_request(self, action, velocity = 0):
         if not self.control_client.wait_for_service(timeout_sec=1.0):
-            self.get_logger().error('Control service not available, exiting...')
+            self.get_logger().error("No reponse")
             return False
         request = Control.Request()
         request.action = action
         request.velocity = velocity
         future = self.control_client.call_async(request)
-        rclpy.spin_until_future_complete(self, future)
+        timeout_sec = 2.0
+        start = self.get_clock().now()
+        while not future.done():
+            rclpy.spin_once(self, timeout_sec=0.1)
+            elapsed = (self.get_clock().now() - start).nanoseconds / 1e9
+            if elapsed > timeout_sec:
+                self.get_logger().error("No reponse")
+                return False
         if future.result() is not None:
-            self.get_logger().info('Control request sent: %d' % action)
+            self.get_logger().info("feedback")
             return True
         else:
-            self.get_logger().error('Control request failed')
+            self.get_logger().error("No reponse")
             return False
     
     def send_request_calculation(self, distance):
         if not self.request_calculation_client.wait_for_service(timeout_sec=1.0):
-            self.get_logger().error('Request calculation service not available, exiting...')
-            return
+            self.get_logger().error("No reponse")
+            return False
         request = RequestCalculation.Request()
         request.distance = distance
         future = self.request_calculation_client.call_async(request)
-        rclpy.spin_until_future_complete(self, future)
+        timeout_sec = 2.0
+        start = self.get_clock().now()
+        while not future.done():
+            rclpy.spin_once(self, timeout_sec=0.1)
+            elapsed = (self.get_clock().now() - start).nanoseconds / 1e9
+            if elapsed > timeout_sec:
+                self.get_logger().error("No reponse")
+                return False
         if future.result() is not None:
-            self.get_logger().info('Request calculation sent: %f' % distance)
+            self.get_logger().info("feedback")
             return True
         else:
-            self.get_logger().error('Request calculation failed')
+            self.get_logger().error("No reponse")
             return False
     
     def send_rotate_base_request(self, angle):
         if not self.rotate_base_client.wait_for_service(timeout_sec=1.0):
-            self.get_logger().error('Rotate base service not available, exiting...')
-            return
+            self.get_logger().error("No reponse")
+            return False
         request = RotateBase.Request()
         request.angle = angle
         future = self.rotate_base_client.call_async(request)
-        rclpy.spin_until_future_complete(self, future)
+        timeout_sec = 2.0
+        start = self.get_clock().now()
+        while not future.done():
+            rclpy.spin_once(self, timeout_sec=0.1)
+            elapsed = (self.get_clock().now() - start).nanoseconds / 1e9
+            if elapsed > timeout_sec:
+                self.get_logger().error("No reponse")
+                return False
         if future.result() is not None:
-            self.get_logger().info('Rotate base request sent: %f' % angle)
+            self.get_logger().info("feedback")
             return True
         else:
-            self.get_logger().error('Rotate base request failed')
+            self.get_logger().error("No reponse")
             return False
+
     def shooting_distance_process(self):
         calculated_distance = 0.0
         
