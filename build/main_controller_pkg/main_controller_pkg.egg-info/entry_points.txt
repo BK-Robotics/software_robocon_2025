@@ -1,4 +1,0 @@
-[console_scripts]
-full_calculation_node = main_controller_pkg.full_calculation_node:main
-main_controller_node = main_controller_pkg.main_controller_node:main
-
