@@ -37,14 +37,14 @@ class MainControllerNode(Node):
         if request.action == 1:
             # Main rotate base and distance calculation
             # self.distance = self.shooting_distance_process()
-            success = self.send_request_calculation(self.distance)
+            self.send_request_calculation(self.distance)
         elif request.action >= 5:
             self.base_mode = request.action - 5
         else:
             self.action = request.action
 
             # Call the control client as part of the action process
-            success = self.send_control_request(self.action)
+            self.send_control_request(self.action)
         
         # Set response fields appropriately.
         response.success = success  # or False based on your logic
