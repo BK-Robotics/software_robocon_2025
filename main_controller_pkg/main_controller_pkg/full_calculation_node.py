@@ -46,7 +46,7 @@ class FullCalculationNode(Node):
         request.action = action
         request.velocity = velocity
         future = self.control_client.call_async(request)
-        rclpy.spin_until_future_complete(self, future, timeout_sec=2.0)
+        rclpy.spin_until_future_complete(self, future, timeout_sec=0.5)
         if future.result() is not None:
             self.get_logger().info('Feedback %d' % action)
         else:

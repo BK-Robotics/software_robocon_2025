@@ -58,7 +58,7 @@ class MainControllerNode(Node):
         request.action = action
         request.velocity = velocity
         future = self.control_client.call_async(request)
-        rclpy.spin_until_future_complete(self, future, timeout_sec=2.0)
+        rclpy.spin_until_future_complete(self, future, timeout_sec=0.5)
         if future.result() is not None:
             self.get_logger().info('Feedback %d' % action)
         else:
@@ -71,20 +71,20 @@ class MainControllerNode(Node):
         request = RequestCalculation.Request()
         request.distance = distance
         future = self.request_calculation_client.call_async(request)
-        rclpy.spin_until_future_complete(self, future, timeout_sec=2.0)
+        rclpy.spin_until_future_complete(self, future, timeout_sec=0.5)
         if future.result() is not None:
             self.get_logger().info('Feedback %d' % distance)
         else:
             self.get_logger().warn('No response from control service: %r' % future.exception())
     
     def send_rotate_base_request(self, angle):
-        if not self.rotate_base_client.wait_for_service(timeout_sec=1.0):
+        if not self.rotate_base_client.wait_for_service(timeout_sec=0.5):
             self.get_logger().error('Control service not available, exiting...')
             return
         request = RotateBase.Request()
         request.angle = angle
         future = self.rotate_base_client.call_async(request)
-        rclpy.spin_until_future_complete(self, future, timeout_sec=2.0)
+        rclpy.spin_until_future_complete(self, future, timeout_sec=0.5)
         if future.result() is not None:
             self.get_logger().info('Feedback %d' % angle)
         else:
