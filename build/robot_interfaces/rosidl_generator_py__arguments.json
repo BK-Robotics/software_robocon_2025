@@ -1,0 +1,40 @@
+{
+  "package_name": "robot_interfaces",
+  "output_dir": "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_generator_py/robot_interfaces",
+  "template_dir": "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource",
+  "idl_tuples": [
+    "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces:msg/IMU.idl",
+    "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces:msg/BaseCmd.idl",
+    "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces:srv/Control.idl",
+    "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces:srv/RequestCalculation.idl",
+    "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces:srv/RequestAction.idl",
+    "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces:srv/RequestOdrive.idl",
+    "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces:srv/RotateBase.idl",
+    "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces:srv/PushBall.idl",
+    "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces:srv/RequestMcu.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/generate_py_impl.py",
+    "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_action_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_action.py.em",
+    "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_idl_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_idl_support.c.em",
+    "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_idl.py.em",
+    "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_msg_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_msg_support.c.em",
+    "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
+    "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
+    "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces/msg/IMU.idl",
+    "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces/msg/BaseCmd.idl",
+    "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces/srv/Control.idl",
+    "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces/srv/RequestCalculation.idl",
+    "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces/srv/RequestAction.idl",
+    "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces/srv/RequestOdrive.idl",
+    "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces/srv/RotateBase.idl",
+    "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces/srv/PushBall.idl",
+    "/home/ddon/software_robocon_2025/build/robot_interfaces/rosidl_adapter/robot_interfaces/srv/RequestMcu.idl"
+  ]
+}

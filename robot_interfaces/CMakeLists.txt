@@ -15,6 +15,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/Control.srv"
   "srv/RequestCalculation.srv"
   "srv/RequestAction.srv"
+  "srv/RequestOdrive.srv"
   "srv/RotateBase.srv"
   "srv/PushBall.srv"
   "srv/RequestMcu.srv"

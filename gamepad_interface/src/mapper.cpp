@@ -20,67 +20,73 @@ MapperOutput RobotInputMapper::update(const GamepadState &s)
     if (edge(10))
     { // PS = BTN_MODE
         semi_auto_ = !semi_auto_;
+        out.request_mcu = 5;
+        out.has_request_mcu = true;
+        out.request_action = 5 + static_cast<int>(semi_auto_);
+        out.has_request_action = true;
     }
 
     if (edge(0))
-    {
-        out.request_action = 1; // X → Fire
+    { // Cross: Fire
+        out.request_action = 1; 
         out.has_request_action = true;
     }
     if (edge(2))
-    {
-        out.request_action = 2; // Triangle → Brace
+    { // Triangle: Brace
+        out.request_action = 2; 
         out.has_request_action = true;
     }
     if (edge(3))
-    {
-        out.request_action = 3; // Square → Dribble
+    { // Square: Dribble
+        out.request_action = 3; 
         out.has_request_action = true;
     }
     if (edge(1))
-    {
-        out.request_action = 4; // Circle → Auto
+    { // Circle: Auto
+        out.request_action = 4; 
         out.has_request_action = true;
     }
 
     if (edge(4))
-    { // L1 → Idle
-        out.base_control_cmd = 0;
-        out.has_base_control_cmd = true;
-        out.request_action = 5;
+    { // L1: Idle
+        out.request_mcu = 0;
+        out.has_request_mcu = true;
+        out.request_odrive = 0;
+        out.has_request_odrive = true;
+        out.request_action = 7;
         out.has_request_action = true;
     }
     if (edge(5))
-    { // R1 → Closed Loop / Reset
-        out.base_control_cmd = 1;
-        out.has_base_control_cmd = true;
-        out.request_action = 6;
-        out.has_request_action = true;
+    { // R1: Closed Loop
+        out.request_mcu = 1;
+        out.has_request_mcu = true;
+        out.request_odrive = 1;
+        out.has_request_odrive = true;
     }
     if (edge(11))
-    {
-        out.base_control_cmd = 2; // R3 → Homing
-        out.has_base_control_cmd = true;
+    { // R3: Homing
+        out.request_mcu = 2; 
+        out.has_request_mcu = true;
     }
     if (edge(8))
-    { // CREATE → Reset
-        out.base_control_cmd = 3;
-        out.has_base_control_cmd = true;
-        out.request_action = 0;
-        out.has_request_action = true;
+    { // CREATE: Reset
+        out.request_mcu = 3;
+        out.has_request_mcu = true;
+        out.request_odrive = 3;
+        out.has_request_odrive = true;
     }
     if (edge(9))
-    { // OPTIONS → ClearError
-        out.base_control_cmd = 4;
-        out.has_base_control_cmd = true;
-        out.request_action = 7;
-        out.has_request_action = true;
+    { // OPTIONS: ClearError
+        out.request_mcu = 4;
+        out.has_request_mcu = true;
+        out.request_odrive = 4;
+        out.has_request_odrive = true;
     }
 
     /*---------------- MANUAL vs SEMI-AUTO ----------------*/
     if (!semi_auto_)
     { /************  MANUAL  ************/
-        robot_interfaces::msg::BaseCMD cmd;
+        robot_interfaces::msg::BaseCmd cmd;
 
         /* velocity : L2 (-) + R2 (+) */
         float v_neg = -s.axes[4] * max_speed_; // L2
@@ -147,26 +153,26 @@ MapperOutput RobotInputMapper::update(const GamepadState &s)
 
         if (dx == -1 && !dpad_locked_)
         {
-            out.base_control_cmd = 6;
-            out.has_base_control_cmd = true;
+            out.request_mcu = 6;
+            out.has_request_mcu = true;
             dpad_locked_ = true;
         }
         else if (dx == 1 && !dpad_locked_)
         {
-            out.base_control_cmd = 7;
-            out.has_base_control_cmd = true;
+            out.request_mcu = 7;
+            out.has_request_mcu = true;
             dpad_locked_ = true;
         }
         else if (dy == -1 && !dpad_locked_)
         {
-            out.base_control_cmd = 8;
-            out.has_base_control_cmd = true;
+            out.request_mcu = 8;
+            out.has_request_mcu = true;
             dpad_locked_ = true;
         }
         else if (dy == 1 && !dpad_locked_)
         {
-            out.base_control_cmd = 9;
-            out.has_base_control_cmd = true;
+            out.request_mcu = 9;
+            out.has_request_mcu = true;
             dpad_locked_ = true;
         }
         else if (dx == 0 && dy == 0)
@@ -176,9 +182,11 @@ MapperOutput RobotInputMapper::update(const GamepadState &s)
 
         if (edge(12))
         { // Touch-Pad click
-            out.base_control_cmd = 10;
-            out.has_base_control_cmd = true;
-            out.request_action = 8;
+            out.request_mcu = 10;
+            out.has_request_mcu = true;
+            out.request_odrive = 0;
+            out.has_request_odrive = true;
+            out.request_action = 7;
             out.has_request_action = true;
         }
     }

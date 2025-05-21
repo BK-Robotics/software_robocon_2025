@@ -1,20 +1,22 @@
 #include <rclcpp/rclcpp.hpp>
 #include "robot_interfaces/srv/control.hpp"
 #include "robot_interfaces/srv/push_ball.hpp"
+#include "robot_interfaces/srv/request_odrive.hpp"
 #include "odrive_interface/can_comm.hpp"
 #include "odrive_interface/odrive_motor.hpp"
 #include <thread>
 #include <chrono>
 #include <vector>
-
-using namespace std::chrono_literals;
+using namespace std;
+using namespace chrono_literals;
 using ControlSrv = robot_interfaces::srv::Control;
 using PushBall = robot_interfaces::srv::PushBall;
+using OdriveSrv = robot_interfaces::srv::RequestOdrive;
 
 static constexpr float BRACE_ON_POS = 12.0f;
 static constexpr float BRACE_OFF_POS = 0.0f;
-static const std::vector<uint8_t> SHOOTER_MOTOR_IDS = {0, 1, 2};
-static const std::vector<uint8_t> DRIBBLE_MOTOR_IDS = {3, 4};
+static const vector<uint8_t> SHOOTER_MOTOR_IDS = {0, 1, 2};
+static const vector<uint8_t> DRIBBLE_MOTOR_IDS = {3, 4};
 static const uint8_t BRACE_MOTOR_ID = 5;
 static constexpr float DRIBBLE_FWD_SPEED = 10.0f;
 static constexpr float DRIBBLE_REV_SPEED = 6.0f;
@@ -31,12 +33,12 @@ public:
   OdriveInterfaceNode()
       : Node("odrive_interface"), brace_on_(false)
   {
-    // --- 1. CAN và các OdriveMotor ---
+    // --- CAN và các OdriveMotor ---
     can_iface_ = std::make_unique<CANInterface>();
     if (!can_iface_->openInterface("can0"))
     {
       RCLCPP_FATAL(get_logger(), "Could not open can0");
-      throw std::runtime_error("CAN init failed");
+      throw runtime_error("CAN init failed");
     }
     // khởi tạo 6 motor
     for (uint8_t id = 0; id < 6; ++id)
@@ -48,26 +50,29 @@ public:
           std::make_unique<OdriveMotor>(id, mode, can_iface_.get()));
     }
 
-    // --- 2. Service Server /control ---
+    // --- Service Server /control ---
     control_srv_ = create_service<ControlSrv>(
         "control",
-        std::bind(&OdriveInterfaceNode::on_control, this,
-                  std::placeholders::_1, std::placeholders::_2));
+        bind(&OdriveInterfaceNode::on_control, this,
+             placeholders::_1, placeholders::_2));
 
-    // --- 3. Client cho /push_ball ---
+    // --- Service Server /request_odrive ---
+    odrive_srv_ = create_service<OdriveSrv>(
+        "request_odrive",
+        bind(&OdriveInterfaceNode::on_odrive_request, this,
+             placeholders::_1, placeholders::_2));
+
+    // --- Client cho /push_ball ---
     push_ball_client_ = create_client<PushBall>("push_ball");
 
     RCLCPP_INFO(get_logger(), "odrive_interface ready.");
   }
 
-  void on_control(const std::shared_ptr<ControlSrv::Request> req,
-                  std::shared_ptr<ControlSrv::Response> res)
+  void on_control(const shared_ptr<ControlSrv::Request> req,
+                  shared_ptr<ControlSrv::Response> res)
   {
     switch (req->action)
     {
-    case 0:
-      reset_motors();
-      break;
     case 1:
       action_push_ball(req->velocity);
       break;
@@ -88,6 +93,31 @@ public:
     res->success = true; // nếu tới được đây coi như OK
   }
 
+  void on_odrive_request(const shared_ptr<OdriveSrv::Request> req,
+                         shared_ptr<OdriveSrv::Response> res)
+  {
+    switch (req->action)
+    {
+    case 0:
+      idle();
+      break;
+    case 1:
+      closed_loop_control();
+      break;
+    case 3:
+      reset_motors();
+      break;
+    case 4:
+      clear_errors();
+      break;
+    default:
+      RCLCPP_WARN(get_logger(), "Unknown action %u", req->action);
+      res->success = false;
+      return;
+    }
+    res->success = true; // nếu tới được đây coi như OK
+  }
+
   // ────────────────────────────────────────────────────────────────
   // ⮞ Implementations
   // ────────────────────────────────────────────────────────────────
@@ -99,6 +129,27 @@ public:
     brace_on_ = false;
   }
 
+  void idle()
+  {
+    for (int id = 0; id < 6; id++)
+      motors_[id]->idle();
+    RCLCPP_INFO(get_logger(), "Idle done");
+  }
+
+  void closed_loop_control()
+  {
+    for (int id = 0; id < 6; id++)
+      motors_[id]->closeLoopControl();
+    RCLCPP_INFO(get_logger(), "Closed loop done");
+  }
+
+  void clear_errors()
+  {
+    for (int id = 0; id < 6; id++)
+      motors_[id]->clearError();
+    RCLCPP_INFO(get_logger(), "Clear errors done");
+  }
+
   // ---------------------------------------------------------------
   void action_push_ball(uint8_t vel)
   {
@@ -107,9 +158,9 @@ public:
       motors_[id]->setTarget(static_cast<float>(vel));
 
     // 2) sau 0.5 s gọi /push_ball – không block
-    std::thread([this]()
-                {
-      std::this_thread::sleep_for(500ms);
+    thread([this]()
+           {
+      this_thread::sleep_for(500ms);
 
       auto req  = std::make_shared<PushBall::Request>();
       req->wait_for_completion = true;
@@ -136,12 +187,12 @@ public:
   // ---------------------------------------------------------------
   void action_release()
   {
-    std::thread([this]()
-                {
+    thread([this]()
+           {
     for (auto id : DRIBBLE_MOTOR_IDS)
       motors_[id]->setTarget(RELEASE_SPEED * ((id % 2) ? 1.f : -1.f));
 
-    std::this_thread::sleep_for(RELEASE_DUR);
+    this_thread::sleep_for(RELEASE_DUR);
 
     // Stop dribble motors
     for (auto id : DRIBBLE_MOTOR_IDS)
@@ -160,17 +211,17 @@ public:
       return;
     }
     // Chạy trong thread riêng để callback /control không block
-    std::thread([this]()
-                {
+    thread([this]()
+           {
     // 1. Forward 200 ms
       for (auto id : DRIBBLE_MOTOR_IDS)
       motors_[id]->setTarget(DRIBBLE_FWD_SPEED * ((id % 2) ? 1.f : -1.f));
-      std::this_thread::sleep_for(DRIBBLE_FWD_DUR);
+      this_thread::sleep_for(DRIBBLE_FWD_DUR);
 
       // 2. Reverse 2 s
       for (auto id : DRIBBLE_MOTOR_IDS)
       motors_[id]->setTarget(DRIBBLE_REV_SPEED * ((id % 2) ? -1.f :  1.f));
-      std::this_thread::sleep_for(DRIBBLE_REV_DUR);
+      this_thread::sleep_for(DRIBBLE_REV_DUR);
 
       // 3. Stop
       for (auto id : DRIBBLE_MOTOR_IDS)
@@ -183,26 +234,26 @@ public:
   // ---------------------------------------------------------------
   void action_auto()
   {
-    std::thread([this]()
-                {
+    thread([this]()
+           {
     /**************** 1. BRACE ON nếu chưa ****************/
     if (!brace_on_) {
       motors_[BRACE_MOTOR_ID]->setTarget(BRACE_ON_POS);
       brace_on_ = true;                       // cập nhật cờ
       RCLCPP_INFO(get_logger(), "Auto: brace ON");
-      std::this_thread::sleep_for(200ms);     // cho cơ cấu ổn định một chút
+      this_thread::sleep_for(200ms);     // cho cơ cấu ổn định một chút
     }
 
     /**************** 2. DRIBBLE (nhồi 2 s) ****************/
     // forward 0,2 s
     for (auto id : DRIBBLE_MOTOR_IDS)
       motors_[id]->setTarget(DRIBBLE_FWD_SPEED * ((id % 2) ? 1.f : -1.f));
-    std::this_thread::sleep_for(DRIBBLE_FWD_DUR);
+    this_thread::sleep_for(DRIBBLE_FWD_DUR);
 
     // reverse 2 s
     for (auto id : DRIBBLE_MOTOR_IDS)
       motors_[id]->setTarget(DRIBBLE_REV_SPEED * ((id % 2) ? -1.f : 1.f));
-    std::this_thread::sleep_for(DRIBBLE_REV_DUR);        // tổng ≈ 2 s
+    this_thread::sleep_for(DRIBBLE_REV_DUR);        // tổng ≈ 2 s
 
     /**************** 3. BRACE OFF ****************/
     motors_[BRACE_MOTOR_ID]->setTarget(BRACE_OFF_POS);
@@ -212,23 +263,23 @@ public:
     /**************** 4. Đợi feedback vị trí = 0 ****************/
     constexpr float POS_EPS = 0.1f;                  // dung sai
     const auto      TIMEOUT = 5s;                    // tránh kẹt
-    auto            start   = std::chrono::steady_clock::now();
+    auto            start   = chrono::steady_clock::now();
 
     while (true) {
       float pos = motors_[BRACE_MOTOR_ID]->getPosition();  
-      if (std::abs(pos - BRACE_OFF_POS) < POS_EPS) break;
-      if (std::chrono::steady_clock::now() - start > TIMEOUT) {
+      if (abs(pos - BRACE_OFF_POS) < POS_EPS) break;
+      if (chrono::steady_clock::now() - start > TIMEOUT) {
         RCLCPP_ERROR(get_logger(), "Auto: brace never reached 0 !");
         return;   // hủy quy trình
       }
-      std::this_thread::sleep_for(50ms);
+      this_thread::sleep_for(50ms);
     }
 
     /**************** 5. RELEASE (speed = 4 trong 0,4 s) ****************/
     RCLCPP_INFO(get_logger(), "Auto: release");
     for (auto id : DRIBBLE_MOTOR_IDS)
       motors_[id]->setTarget(RELEASE_SPEED * ((id % 2) ? 1.f : -1.f));
-    std::this_thread::sleep_for(RELEASE_DUR);
+    this_thread::sleep_for(RELEASE_DUR);
     for (auto id : DRIBBLE_MOTOR_IDS)
       motors_[id]->setTarget(DRIBBLE_STOP_SPEED);
 
@@ -240,9 +291,10 @@ public:
   // Private data
   // ────────────────────────────────────────────────────────────────
 private:
-  std::unique_ptr<CANInterface> can_iface_;
-  std::vector<std::unique_ptr<OdriveMotor>> motors_;
+  unique_ptr<CANInterface> can_iface_;
+  vector<unique_ptr<OdriveMotor>> motors_;
   rclcpp::Service<ControlSrv>::SharedPtr control_srv_;
+  rclcpp::Service<OdriveSrv>::SharedPtr odrive_srv_;
   rclcpp::Client<PushBall>::SharedPtr push_ball_client_;
   bool brace_on_;
 };
