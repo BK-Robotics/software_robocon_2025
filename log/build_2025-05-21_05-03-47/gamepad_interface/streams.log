@@ -1,0 +1,36 @@
+[0.032s] Invoking command in '/home/ddon/software_robocon_2025/build/gamepad_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --build /home/ddon/software_robocon_2025/build/gamepad_interface -- -j8 -l8
+[0.121s] [ 33%] Built target gamepad_driver
+[0.176s] [35m[1mConsolidate compiler generated dependencies of target robot_input_mapper[0m
+[0.234s] [ 50%] [32mBuilding CXX object CMakeFiles/robot_input_mapper.dir/src/mapper.cpp.o[0m
+[1.449s] [ 66%] [32m[1mLinking CXX static library librobot_input_mapper.a[0m
+[1.486s] [ 66%] Built target robot_input_mapper
+[1.502s] [35m[1mConsolidate compiler generated dependencies of target gamepad_node[0m
+[1.522s] [ 83%] [32m[1mLinking CXX executable gamepad_node[0m
+[1.882s] [100%] Built target gamepad_node
+[1.897s] Invoked command in '/home/ddon/software_robocon_2025/build/gamepad_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --build /home/ddon/software_robocon_2025/build/gamepad_interface -- -j8 -l8
+[1.899s] Invoking command in '/home/ddon/software_robocon_2025/build/gamepad_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --install /home/ddon/software_robocon_2025/build/gamepad_interface
+[1.909s] -- Install configuration: ""
+[1.909s] -- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/include
+[1.909s] -- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/include/gamepad_interface
+[1.909s] -- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/include/gamepad_interface/mapper.hpp
+[1.909s] -- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/include/gamepad_interface/gamepad.hpp
+[1.909s] -- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/lib/libgamepad_driver.a
+[1.910s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/lib/librobot_input_mapper.a
+[1.910s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/lib/gamepad_interface/gamepad_node
+[1.913s] -- Set runtime path of "/home/ddon/software_robocon_2025/install/gamepad_interface/lib/gamepad_interface/gamepad_node" to ""
+[1.913s] -- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/share/ament_index/resource_index/package_run_dependencies/gamepad_interface
+[1.913s] -- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/share/ament_index/resource_index/parent_prefix_path/gamepad_interface
+[1.913s] -- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/environment/ament_prefix_path.sh
+[1.913s] -- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/environment/ament_prefix_path.dsv
+[1.913s] -- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/environment/path.sh
+[1.913s] -- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/environment/path.dsv
+[1.914s] -- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/local_setup.bash
+[1.914s] -- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/local_setup.sh
+[1.914s] -- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/local_setup.zsh
+[1.914s] -- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/local_setup.dsv
+[1.914s] -- Installing: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/package.dsv
+[1.914s] -- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/share/ament_index/resource_index/packages/gamepad_interface
+[1.914s] -- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/cmake/gamepad_interfaceConfig.cmake
+[1.914s] -- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/cmake/gamepad_interfaceConfig-version.cmake
+[1.914s] -- Up-to-date: /home/ddon/software_robocon_2025/install/gamepad_interface/share/gamepad_interface/package.xml
+[1.918s] Invoked command in '/home/ddon/software_robocon_2025/build/gamepad_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ddon/software_robocon_2025/install/main_controller_pkg:/opt/ros/humble /usr/bin/cmake --install /home/ddon/software_robocon_2025/build/gamepad_interface

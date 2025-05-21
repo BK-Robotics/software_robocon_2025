@@ -5,6 +5,8 @@
 #include <robot_interfaces/srv/request_action.hpp>
 #include <optional>
 
+using namespace std;
+
 struct MapperOutput
 {
     bool has_base_cmd{false};
@@ -33,4 +35,8 @@ private:
     int8_t last_dpad_x_{0};
     int8_t last_dpad_y_{0};
     std::array<uint8_t, 13> last_btn_{{0}};
+
+    float prev_raw_angle_{0.0f};
+    float cumulative_angle_{0.0f};
+    bool first_angle_read_{true};
 };

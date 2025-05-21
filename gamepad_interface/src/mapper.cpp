@@ -1,6 +1,6 @@
 #include "gamepad_interface/mapper.hpp"
 #include <cmath>
-#include <limits> 
+#include <limits>
 
 RobotInputMapper::RobotInputMapper(float max_speed)
     : max_speed_(max_speed) {}
@@ -85,14 +85,37 @@ MapperOutput RobotInputMapper::update(const GamepadState &s)
         /* velocity : L2 (-) + R2 (+) */
         float v_neg = -s.axes[4] * max_speed_; // L2
         float v_pos = s.axes[5] * max_speed_;  // R2
-        cmd.velocity = (std::fabs(v_pos) > std::fabs(v_neg)) ? v_pos : v_neg;
+        cmd.velocity = (fabs(v_pos) > fabs(v_neg)) ? v_pos : v_neg;
 
         /* angle : L-Stick */
         float lx = s.axes[0], ly = s.axes[1];
-        if (std::hypot(lx, ly) > 0.1f)
-            cmd.angle = std::atan2(-ly, lx) * 180.0f / M_PI; // degree
+        if (hypot(lx, ly) > 0.1f)
+        {
+            float raw = -atan2(-lx, -ly) * 180 / M_PI;
+
+            if (first_angle_read_)
+            {
+                cumulative_angle_ = raw;
+                prev_raw_angle_ = raw;
+                first_angle_read_ = false;
+            }
+            else 
+            {
+                float delta = raw - prev_raw_angle_;
+                if (delta > 180.0f)
+                    delta -= 360.0f;
+                if (delta < -180.0f)
+                    delta += 360.0f;
+                cumulative_angle_ += delta;
+                prev_raw_angle_ = raw;
+            }
+            cmd.angle = cumulative_angle_;
+        }
         else
-            cmd.angle = std::numeric_limits<float>::quiet_NaN();
+        {
+            first_angle_read_= true;
+            cmd.angle = 0.0f;
+        }
 
         /* rotate : D-Pad */
         int8_t dx = static_cast<int8_t>(s.axes[6]);

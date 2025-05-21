@@ -5,18 +5,15 @@
 #include <gamepad_interface/gamepad.hpp>
 #include <gamepad_interface/mapper.hpp>
 
+using namespace std;
+
 class GamepadNode : public rclcpp::Node
 {
 public:
-  GamepadNode()
-      : Node("gamepad_node"),
-        driver_(declare_parameter<std::string>("device_path",
-                                               DualSenseDriver::auto_detect())),
-        mapper_(4.0f)
+  GamepadNode() : Node("gamepad_node"), driver_(declare_parameter<string>("device_path", DualSenseDriver::auto_detect())), mapper_(4.0f)
   {
     base_cmd_pub_ = create_publisher<robot_interfaces::msg::BaseCMD>("base_cmd", 10);
-    timer_ = create_wall_timer(std::chrono::milliseconds(5),
-                               std::bind(&GamepadNode::loop, this));
+    timer_ = create_wall_timer(chrono::milliseconds(2), bind(&GamepadNode::loop, this));
   }
 
 private:

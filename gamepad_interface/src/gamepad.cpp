@@ -8,13 +8,13 @@
 #include <stdexcept>
 #include <cmath>
 
-/*------------------ ctor -------------------------------------------------*/
-DualSenseDriver::DualSenseDriver(const std::string &dev)
-    : fd_(-1)
+using namespace std;
+
+DualSenseDriver::DualSenseDriver(const string &dev) : fd_(-1)
 {
-    fd_ = ::open(dev.c_str(), O_RDONLY | O_NONBLOCK);
+    fd_ = open(dev.c_str(), O_RDONLY | O_NONBLOCK);
     if (fd_ < 0)
-        throw std::runtime_error("Cannot open " + dev + ": " + std::strerror(errno));
+        throw runtime_error("Cannot open " + dev + ": " + strerror(errno));
 }
 
 /*------------------ auto_detect -----------------------------------------*/
@@ -68,7 +68,7 @@ bool DualSenseDriver::read(GamepadState &out)
             switch (ev.code)
             {
             case ABS_X:
-                state_.axes[0] = (ev.value - 128) / 128.f; 
+                state_.axes[0] = (ev.value - 128) / 128.f;
                 break; // L-Joy X
             case ABS_Y:
                 state_.axes[1] = (ev.value - 128) / 128.f;
